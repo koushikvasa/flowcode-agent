@@ -84,33 +84,38 @@ Do not quote prices. Plans and prices change; the seller confirms them.
 
 ---
 
-## B. Scoring rubric: fit and impact
+## B. Scoring checklist: fit and impact
 
-The agent rates every opportunity on two scores from 1 to 5. Use only what the
-evidence says; do not assume facts that are not in the sources. If you are torn
-between two scores, pick the lower one. A 2 or 4 means "between the two
-descriptions around it".
+A separate judge answers these questions for every opportunity. The answers,
+not a gut-feel rating, decide the fit and impact scores. (Why yes/no questions
+instead of a 1-5 scale: judges agree with each other far more, and every score
+can be traced to specific answers.)
 
-### Fit: how naturally does a Flowcode product solve something in this activity?
+How to answer each question:
+- First copy the exact words from the sources that decide it, then answer.
+- Answer **yes**, **no**, or **unknown**. Use only the sources; never assume.
+- If the sources do not clearly say, answer **unknown**. Unknown counts as no.
+- A yes must come with a quote that appears word for word in a source.
 
-| Score | Meaning |
-|---|---|
-| **5** | There is a physical or broadcast touchpoint (TV spot, packaging, in-store, event, OOH, mail) **and** a clear gap between it and a digital action (sign-up, purchase, app install, data capture). A named Flowcode product fills that gap directly. Example: a national TV ad pushing people to download an app. |
-| **3** | A Flowcode product could help, but the link is indirect. Either the touchpoint exists but the digital goal is unclear, or the activity is mostly digital with a small physical part. Example: a social campaign that also has a few in-store posters. |
-| **1** | No physical or broadcast touchpoint, or no reason a code or link would help. Example: an earnings report, an executive hire, a purely online sale. |
+How the answers become scores: the code adds up the weights of the "yes"
+answers (weights are set in `agent/config.py`). If F1 is not a yes, the
+opportunity is dropped: no physical or broadcast touchpoint, no Flowcode play.
 
-### Impact: if Flowcode helped here, how much would it matter to the brand?
+### Fit: does a Flowcode product naturally solve something here?
 
-| Score | Meaning |
-|---|---|
-| **5** | Large audience (national TV, national packaging, every store, a major sponsorship) **and** tied to something the brand clearly cares about: revenue, loyalty or app growth, first-party data. Running now or about to start. |
-| **3** | Medium reach (one region, one event, one product line) or a clear goal but limited scale. Or a large program that just ended but is likely to repeat. |
-| **1** | Small, local or one-off; already over with no sign of repeating; or no measurable goal. |
+| ID | Question | Counts as yes, for example |
+|---|---|---|
+| F1 | Do the sources name a specific physical or broadcast touchpoint? | A TV spot, packaging, in-store display, menu board, event, stadium, billboard, direct mail. Not "a campaign" in general. |
+| F2 | Do the sources name a digital action the brand wants people to take? | Download the app, join loyalty, order online, sign up, enter a sweepstakes, scan, visit a page. |
+| F3 | Does it match a play in the channel table in section A? | A packaging launch matches "on-pack code for loyalty sign-up, offers". |
 
-### Checks before giving a 4 or 5
+### Impact: if Flowcode helped here, how much would it matter?
 
-- Can you name the exact touchpoint from the evidence (e.g. "the 30-second spot that aired during X")? If not, fit is at most 3.
-- Is the scale stated in the evidence (national, number of stores, audience size)? If not, impact is at most 3.
+| ID | Question | Counts as yes, for example |
+|---|---|---|
+| I1 | Do the sources state the scale? | A number of stores, markets, units, viewers, or a budget. |
+| I2 | Is it national or across several markets? | "Nationwide", "all U.S. locations", a national TV buy. Not one city or one store. |
+| I3 | Is it running now or about to start, as of the source's date? | Launch date in the future, "now available", "this month". Not a recap of something that already ended. |
 
 ---
 
