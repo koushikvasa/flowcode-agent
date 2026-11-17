@@ -46,24 +46,64 @@ class Signal(BaseModel):
     evidence: Evidence
 
 
-class Opportunity(BaseModel):
-    """Output of match(): a Signal mapped to a Flowcode play."""
+Product = Literal[
+    "flowcodes", "flowurls", "flowhubs", "flowid", "analytics", "workspaces_api",
+]
+
+
+class MatchProposal(BaseModel):
+    """What the match LLM returns for one opportunity.
+
+    Field order matters: the model writes the evidence and its reasoning
+    before it picks products. It does not score; the judge does that.
+    """
+    signal_ids: list[str] = Field(min_length=1)  # e.g. ["S1", "S4"]; duplicates merged
+    evidence_quote: str = Field(min_length=10)  # verbatim from one of those signals
     title: str
     what_happening: str
     channel: Channel
-    evidence: list[Evidence] = Field(min_length=1)  # at least one source, enforced
-    flowcode_products: list[str] = Field(min_length=1)
-    why_flowcode_fits: str
-    suggested_play: str  # written as a pre-call brief a seller could use
+    why_flowcode_fits: str  # the reasoning
+    flowcode_products: list[Product] = Field(min_length=1)  # only real products
+    suggested_play: str  # pre-call brief, format in flowcode_context.md section D
     would_measure: str  # what data it would capture or measure
-    fit: int = Field(ge=1, le=5)  # LLM-rated against the rubric in flowcode_context.md
-    impact: int = Field(ge=1, le=5)
+
+
+class NoFit(BaseModel):
+    """A signal the match LLM chose not to turn into an opportunity."""
+    signal_id: str
+    reason: str
+
+
+class MatchResult(BaseModel):
+    """Full output of the match call: every signal lands in exactly one list."""
+    opportunities: list[MatchProposal]
+    no_fit: list[NoFit]
+
+
+class Opportunity(MatchProposal):
+    """A proposal plus its evidence, attached by code from the signal_ids."""
+    evidence: list[Evidence] = Field(min_length=1)  # at least one source, enforced
+
+
+Answer = Literal["yes", "no", "unknown"]
+
+
+class Check(BaseModel):
+    """One checklist answer. Quote first, then the answer."""
+    quote: str  # exact words from a source; empty if none
+    answer: Answer  # unknown counts as no
 
 
 class Verdict(BaseModel):
-    """Output of verify(): does the quote actually support the claim?"""
-    supported: bool
+    """Output of verify(): the judge's answers (questions in flowcode_context.md section B)."""
     reason: str
+    supported: bool  # does the evidence actually support the claim?
+    f1_touchpoint: Check  # gate: no yes here, opportunity dropped
+    f2_digital_action: Check
+    f3_matches_play: Check
+    i1_scale_stated: Check
+    i2_national: Check
+    i3_live_or_upcoming: Check
 
 
 class Scores(BaseModel):
@@ -73,11 +113,13 @@ class Scores(BaseModel):
     fit: float
     impact: float
     total: float
+    passed: list[str]  # checklist items answered yes, e.g. ["f1_touchpoint", "i2_national"]
 
 
 class ScoredOpportunity(BaseModel):
-    """Output of rank()."""
+    """Output of rank(). Keeps the verdict so the report can show why."""
     opportunity: Opportunity
+    verdict: Verdict
     scores: Scores
     confidence: Literal["high", "medium", "low"]
 
