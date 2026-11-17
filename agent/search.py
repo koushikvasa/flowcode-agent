@@ -12,7 +12,7 @@ from agent.models import RunStats, Source
 class SearchProvider(Protocol):
     """Anything with this method can be the search engine."""
 
-    async def search(self, query: str, stats: RunStats) -> list[Source]: ...
+    async def search(self, query: str, stats: RunStats, recent_only: bool = True) -> list[Source]: ...
 
 
 def parse_date(value: str | None) -> date | None:
@@ -29,10 +29,11 @@ class ExaProvider:
     def __init__(self) -> None:
         self._client = AsyncExa(api_key=os.environ["EXA_API_KEY"])
 
-    async def search(self, query: str, stats: RunStats) -> list[Source]:
-        since = (date.today() - timedelta(days=config.LOOKBACK_DAYS)).isoformat()
-        # The date is part of the key, so a cached search is reused for the rest of the day.
-        key = f"{query} | n={config.RESULTS_PER_QUERY} | since={since}"
+    async def search(self, query: str, stats: RunStats, recent_only: bool = True) -> list[Source]:
+        # recent_only=False is for lookups like a brand's homepage, which often has no date.
+        since = (date.today() - timedelta(days=config.LOOKBACK_DAYS)).isoformat() if recent_only else None
+        # Today's date is part of the key, so a cached search is reused for the rest of the day.
+        key = f"{query} | n={config.RESULTS_PER_QUERY} | since={since} | day={date.today()}"
         rows = cache.get("search", key)
         if rows is None:
             response = await self._client.search(
@@ -61,6 +62,6 @@ class FakeProvider:
         self.results = results
         self.queries: list[str] = []  # what was asked, so tests can check it
 
-    async def search(self, query: str, stats: RunStats) -> list[Source]:
+    async def search(self, query: str, stats: RunStats, recent_only: bool = True) -> list[Source]:
         self.queries.append(query)
         return self.results.get(query, [])
