@@ -19,7 +19,7 @@ def main() -> None:
         sys.exit(f"Missing {', '.join(missing)}. Put them in .env and run: uv run --env-file .env python -m agent \"Brand\"")
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
-    logging.getLogger("httpx").setLevel(logging.WARNING)  # hide one log line per API request
+    logging.getLogger("httpx2").setLevel(logging.WARNING)  # hide one log line per API request (SDK 2.x uses httpx2)
     report = asyncio.run(run_company(args.company))
     md_path, json_path = write_outputs(report)
     s = report.stats
