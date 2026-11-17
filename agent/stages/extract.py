@@ -18,6 +18,8 @@ in-store or retail activity, events and sponsorships, app or loyalty programs, p
 
 Rules:
 - Only things {brand} is doing, launching or running. Skip general news, opinions, history, other brands.
+- Only activity in the United States, or global activity that includes the U.S. Skip anything limited
+  to other countries (for example a UK store opening or a promotion only in Spain).
 - For each finding, first copy the quote: one sentence copied word for word from the page, no edits.
 - Then say what is happening in one plain sentence, and pick the closest channel.
 - At most 3 findings. If the page has nothing that fits, return an empty list."""
