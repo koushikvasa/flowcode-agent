@@ -57,4 +57,5 @@ LOW_MIN_AGE_DAYS = 180  # newest source older than this = low
 # --- Run ---
 TOP_N = 5  # opportunities shown in the report
 CONCURRENCY = 8  # parallel network calls
-REQUEST_TIMEOUT_S = 30
+REQUEST_TIMEOUT_S = 30  # web requests
+LLM_TIMEOUT_S = 300  # Claude calls; match thinks over all signals at once
