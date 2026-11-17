@@ -46,6 +46,18 @@ class Signal(BaseModel):
     evidence: Evidence
 
 
+class ExtractedItem(BaseModel):
+    """What the extract LLM returns per finding. Quote first; URL and date are added by code."""
+    quote: str  # copied word for word from the page
+    what_happening: str
+    channel: Channel
+
+
+class ExtractResult(BaseModel):
+    """Everything the extract LLM found on one page (empty if nothing relevant)."""
+    items: list[ExtractedItem]
+
+
 Product = Literal[
     "flowcodes", "flowurls", "flowhubs", "flowid", "analytics", "workspaces_api",
 ]
