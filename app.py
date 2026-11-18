@@ -11,17 +11,17 @@ GET /api/run?company=X        live progress as Server-Sent Events, then the repo
 import asyncio
 import json
 import logging
-from typing import AsyncIterator
+from typing import AsyncIterator, Literal
 
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import FileResponse, Response, StreamingResponse
 
 from agent import config, store
 from agent.models import Report, RunStats
 from agent.pipeline import run_company
 from agent.search import ExaProvider
-from agent.stages.render import crm_row
-from agent.stages.resolve import resolve
+from agent.stages.render import crm_row, render_markdown
+from agent.stages.resolve import normalize, resolve
 
 HEARTBEAT_S = 15  # send a comment line this often so proxies don't close a quiet stream
 
@@ -71,6 +71,24 @@ def get_report(company: str = CompanyQuery) -> dict:
     if not report:
         raise HTTPException(404, f"No saved report for {company!r}")
     return report_json(report, cached=True)
+
+
+@app.get("/api/download")
+def download(company: str = CompanyQuery, format: Literal["json", "md"] = "json") -> Response:
+    """A saved report as a file: the same JSON and Markdown the CLI writes. Sent by the server
+    as an attachment, so it works in every browser (including Safari and phones)."""
+    report = store.find(company)
+    if not report:
+        raise HTTPException(404, f"No saved report for {company!r}")
+    stem = normalize(report.company.name).replace(" ", "-") or "report"
+    if format == "md":
+        body, media = render_markdown(report), "text/markdown; charset=utf-8"
+    else:
+        data = report_json(report, cached=True)
+        for page_only in ("cached", "top_n"):
+            data.pop(page_only)
+        body, media = json.dumps(data, indent=2, ensure_ascii=False), "application/json"
+    return Response(body, media_type=media, headers={"Content-Disposition": f'attachment; filename="{stem}.{format}"'})
 
 
 def cannot_run() -> str | None:

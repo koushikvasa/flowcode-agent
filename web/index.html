@@ -37,6 +37,7 @@
   .btn:disabled { opacity: .5; cursor: wait; }
   .btn.outline { background: #fff; color: var(--ink); border-color: #c6c6c6; padding: .6em 1.2em; font-size: .9rem; }
   .btn.outline:hover { border-color: var(--ink); }
+  a.btn { display: inline-block; text-decoration: none; line-height: 1.2; }
   .recent { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: .9rem; color: var(--muted); }
   .chip { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-pill); padding: .35rem .9rem; cursor: pointer; }
   .chip:hover { border-color: var(--brand); color: var(--brand); }
@@ -248,7 +249,8 @@ function renderReport(r) {
     </div>
     <div class="banner">${note}<div>
       ${r.cached ? `<button class="btn outline" id="rerun">Re-run fresh</button>` : ""}
-      <button class="btn outline" id="download">Download JSON</button></div></div>
+      <a class="btn outline" href="/api/download?company=${encodeURIComponent(c.domain)}&format=md" download>Download brief (.md)</a>
+      <a class="btn outline" href="/api/download?company=${encodeURIComponent(c.domain)}&format=json" download>Download JSON</a></div></div>
     <div class="opps">${r.opportunities.length ? r.opportunities.slice(0, r.top_n).map(oppCard).join("")
       : `<div class="card empty">No opportunity passed every check. See what was dropped below.</div>`}</div>
     ${r.opportunities.length > r.top_n ? `<p class="meta">${r.opportunities.length - r.top_n} more passed the judge but scored lower. They are in the JSON download.</p>` : ""}
@@ -257,11 +259,6 @@ function renderReport(r) {
     </details>`;
   $("result").classList.remove("hidden");
   if (r.cached) $("rerun").onclick = () => run(c.name, true);
-  $("download").onclick = () => {
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([JSON.stringify(r, null, 2)], {type: "application/json"}));
-    a.download = c.name.toLowerCase().replace(/\W+/g, "-") + ".json"; a.click();
-  };
 }
 
 function oppCard(item, i) {
