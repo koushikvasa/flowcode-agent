@@ -1,0 +1,12 @@
+# Never upload secrets, local caches or private notes to Vercel
+.env*
+.venv/
+.cache/
+runs/
+.playwright-mcp/
+__pycache__/
+*.pyc
+HANDOVER.md
+CLAUDE.md
+docs/
+tests/

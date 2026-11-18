@@ -8,3 +8,6 @@ HANDOVER.md
 docs/
 CLAUDE.md
 .playwright-mcp/
+
+.vercel
+.env*
