@@ -2,11 +2,13 @@
 
 score = sum(weight * component), every component 0 to 1, weights in config.py.
 """
+import re
 from datetime import date
 from typing import Literal
 
 from agent import config
 from agent.models import Company, Evidence, Opportunity, ScoredOpportunity, Scores, Verdict
+from agent.stages.match import context_section
 from agent.stages.resolve import domain_of
 from agent.stages.verify import CHECK_FIELDS
 
@@ -77,8 +79,35 @@ def score(opp: Opportunity, verdict: Verdict, company: Company, today: date) -> 
                              confidence=confidence(tiers, verdict, (today - newest).days))
 
 
+def proof_names() -> list[str]:
+    """Names from section A's proof points: "- ESPN College GameDay: 32,000 emails..." -> "ESPN College GameDay"."""
+    proof_list = context_section("A").split("### Proof points", 1)[1].split("\n\n")[1]
+    return re.findall(r"^- ([^:\n]+):", proof_list, flags=re.M)
+
+
+def drop_repeated_proofs(ranked: list[ScoredOpportunity], names: list[str]) -> list[ScoredOpportunity]:
+    """Each proof point stays only in the highest-ranked play that uses it; later plays lose that sentence.
+
+    The prompt asks for this too, but a seller reading the same result five times stops trusting it.
+    """
+    used: set[str] = set()
+    result = []
+    for item in ranked:
+        kept = []
+        for sentence in re.split(r"(?<=[.!?])\s+", item.opportunity.suggested_play):
+            found = {n for n in names if re.search(rf"\b{re.escape(n)}\b", sentence)}
+            if found & used:
+                continue  # already quoted by a better-ranked play
+            used |= found
+            kept.append(sentence)
+        play = " ".join(kept)
+        result.append(item.model_copy(update={"opportunity": item.opportunity.model_copy(update={"suggested_play": play})}))
+    return result
+
+
 def rank(company: Company, verified: list[tuple[Opportunity, Verdict]], today: date | None = None) -> list[ScoredOpportunity]:
-    """Score every verified opportunity, best first."""
+    """Score every verified opportunity, best first, with each proof point used once."""
     today = today or date.today()
     scored = [score(opp, verdict, company, today) for opp, verdict in verified]
-    return sorted(scored, key=lambda s: s.scores.total, reverse=True)
+    ranked = sorted(scored, key=lambda s: s.scores.total, reverse=True)
+    return drop_repeated_proofs(ranked, proof_names())

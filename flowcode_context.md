@@ -257,7 +257,10 @@ Write 4 to 6 short sentences covering, in this order:
 4. **What they would get**: the data or result it captures (scans by market,
    new loyalty members, app installs attributed to TV).
 5. **Proof**: one comparable proof point from section A, labelled as a Flowcode
-   result. Pick the closest match by industry or channel.
+   result. Pick the closest match by industry or channel. **Use each proof point
+   at most once per report**: if the closest one is already used by another play,
+   take the next closest. If none is left that fits, leave this sentence out
+   rather than repeat one.
 6. **Question to ask**: one discovery question that opens the conversation.
    ("How are you measuring TV-driven app installs today?")
 
