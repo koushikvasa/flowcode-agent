@@ -31,6 +31,18 @@ uv run pytest                                             # offline tests, no ke
 Writes `outputs/<brand>.md` and `outputs/<brand>.json`, and saves every stage's output to
 `runs/<brand>/<timestamp>/` for inspection.
 
+**Web app** (same pipeline, one page):
+
+```bash
+uv run --env-file .env uvicorn app:app --reload           # then open http://127.0.0.1:8000
+```
+
+Type a company and watch each stage finish live. A company researched in the last 7 days is
+shown instantly from its saved report at no cost (matched by name or website); "Re-run fresh"
+forces a new run. Deployed on Vercel, new reports are saved to Vercel Blob, and new runs are
+capped at 20 a day (`DAILY_RUN_LIMIT`, about $6) because the link is public. The cap is checked
+before anything is paid for.
+
 ## How it works
 
 | Stage | What it does | Model |
@@ -79,7 +91,8 @@ every weight, threshold, model and price.
   - Undated pages are excluded at search time.
   - About 40 pages per company.
   - Product facts in `flowcode_context.md` are Flowcode's own public claims.
-- **Skipped for the time box:** no UI, database or auth. No retries beyond the SDK's own. No
+- **Skipped for the time box:** no database or auth (the web app is one page plus a daily run
+  cap). No retries beyond the SDK's own. No
   separate page fetcher (Exa returns page text). No prompt caching or Batch API yet.
 
 ## Running it across thousands of companies
@@ -167,8 +180,12 @@ agent/config.py           models, prices, weights, thresholds
 agent/models.py           typed contracts between stages (where "no source, no opportunity" is enforced)
 agent/llm.py              one Claude wrapper: structured output, token and cost accounting
 agent/search.py           search interface: Exa provider plus a fake provider for tests
-agent/cache.py            disk cache, one JSON file per query
+agent/cache.py            disk cache, one JSON file per search or Claude answer
+agent/store.py            saved reports: find by name or domain, local folder or Vercel Blob
 agent/stages/             resolve, research, extract, match, verify, rank, render
-tests/test_rules.py       offline tests: quote check, recency math, dedupe
-outputs/                  sample output (Taco Bell)
+app.py                    web app: saved-report lookup, live run stream, daily run cap
+web/index.html            the page (plain HTML, CSS and JS)
+vercel.json               Vercel settings (300 s limit for a run)
+tests/                    offline tests: quote check, scoring, matcher gates, store, cache, pipeline
+outputs/                  sample outputs (Taco Bell, Sephora)
 ```

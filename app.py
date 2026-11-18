@@ -23,7 +23,6 @@ from agent.search import ExaProvider
 from agent.stages.render import crm_row
 from agent.stages.resolve import resolve
 
-PAGE = config.ROOT / "public" / "index.html"
 HEARTBEAT_S = 15  # send a comment line this often so proxies don't close a quiet stream
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
@@ -50,7 +49,7 @@ def sse(event: str, data: dict) -> str:
 
 @app.get("/")
 def page() -> FileResponse:
-    return FileResponse(PAGE)
+    return FileResponse(config.PAGE_FILE)
 
 
 @app.get("/api/reports")
@@ -70,6 +69,15 @@ def get_report(company: str = CompanyQuery) -> dict:
     return report_json(report, cached=True)
 
 
+def cannot_run() -> str | None:
+    """Why a new (paid) run is not allowed right now, or None if it is."""
+    if not store.can_save():
+        return "This deployment has no report storage connected, so new runs are off. Saved reports still work."
+    if store.runs_today() >= config.DAILY_RUN_LIMIT:
+        return f"Today's limit of {config.DAILY_RUN_LIMIT} new runs is reached. Saved reports still work; try again tomorrow."
+    return None
+
+
 async def run_events(query: str, fresh: bool) -> AsyncIterator[str]:
     """Run in a background task; stream its progress messages as they arrive, then the report."""
     queue: asyncio.Queue[tuple[str, dict] | None] = asyncio.Queue()
@@ -82,6 +90,9 @@ async def run_events(query: str, fresh: bool) -> AsyncIterator[str]:
         try:
             if report := saved(query):  # free: matched by the typed name or website
                 queue.put_nowait(("report", report_json(report, cached=True)))
+                return
+            if problem := cannot_run():  # checked before anything is paid for
+                queue.put_nowait(("failed", {"message": problem}))
                 return
             queue.put_nowait(("progress", {"stage": "resolve", "message": f"Looking up {query}…"}))
             search, stats = ExaProvider(), RunStats()

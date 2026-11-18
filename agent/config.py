@@ -1,12 +1,16 @@
 """Every tunable number in one place. Change behavior here, not in the stages."""
+import os
 from pathlib import Path
 
 # --- Paths ---
 ROOT = Path(__file__).resolve().parent.parent
+ON_VERCEL = bool(os.environ.get("VERCEL"))  # Vercel sets VERCEL=1; its disk is read-only except /tmp
+WRITE_DIR = Path("/tmp") if ON_VERCEL else ROOT
 CONTEXT_FILE = ROOT / "flowcode_context.md"  # product knowledge, checklist, customers
-CACHE_DIR = ROOT / ".cache"  # search results and pages, keyed by hash
-RUNS_DIR = ROOT / "runs"  # every stage's output, per brand and run
-OUTPUTS_DIR = ROOT / "outputs"  # final <brand>.md and <brand>.json
+CACHE_DIR = WRITE_DIR / ".cache"  # search results and Claude answers, keyed by hash
+RUNS_DIR = WRITE_DIR / "runs"  # every stage's output, per brand and run
+OUTPUTS_DIR = ROOT / "outputs"  # final <brand>.md and <brand>.json (read-only samples on Vercel)
+PAGE_FILE = ROOT / "web" / "index.html"  # the web app's single page
 
 # --- Models: cheap model for bulk extraction, strong model where judgment matters ---
 EXTRACT_MODEL = "claude-haiku-5-5"
@@ -60,3 +64,4 @@ CONCURRENCY = 8  # parallel network calls
 REQUEST_TIMEOUT_S = 30  # web requests
 LLM_TIMEOUT_S = 300  # Claude calls; match thinks over all signals at once
 REPORT_FRESH_DAYS = 7  # web app: a saved report younger than this is shown instead of re-running
+DAILY_RUN_LIMIT = 20  # web app: new (paid) runs per day, about $6; saved reports are always free
