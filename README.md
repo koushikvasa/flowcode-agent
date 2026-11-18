@@ -8,6 +8,8 @@ a suggested play written as a pre-call brief, and **where it was found: URL, dat
 **Core rule: no source, no opportunity.** Anything without a dated, quotable source is dropped,
 and the report lists what was dropped and why.
 
+**Live app: https://flowcode-agent.vercel.app** (type any company; saved reports open instantly).
+
 **Sample output (real run, Taco Bell, 2026-11-17):** [outputs/taco-bell.md](outputs/taco-bell.md)
 (seller-ready brief) and [outputs/taco-bell.json](outputs/taco-bell.json) (same data plus flat
 CRM-ready rows). Cost: **$0.30 and 54 seconds** for one company, from a cold cache.
