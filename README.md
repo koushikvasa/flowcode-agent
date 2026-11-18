@@ -16,6 +16,9 @@ CRM-ready rows). Cost: **$0.45 and 88 seconds** for one company, measured on tha
 cold cache (no cached searches or answers).
 A second brand the agent had never seen: [outputs/sephora.md](outputs/sephora.md) (2026-11-18).
 
+**Time spent:** about 3.5 hours: 120 minutes on the agent (backend) and 90 minutes on the web
+app and polish.
+
 ## Run it
 
 Needs Python 3.11+, [uv](https://docs.astral.sh/uv/), an [Exa](https://exa.ai) key and an Anthropic key.
