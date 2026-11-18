@@ -52,6 +52,7 @@ MAJOR_PRESS_DOMAINS = {
     "variety.com",
 }
 EVIDENCE_FULL_AT = 2.0  # sum of tier weights that counts as full evidence (two first-party sources)
+OTHER_TIER_MAX = 0.3  # all "other" sites together count at most as one (they often copy each other)
 
 # Confidence: rule-based, so a seller can see why. No first_party or major_press source at all = low.
 HIGH_MIN_SOURCES = 2  # plus: no unknowns, newest source under HIGH_MAX_AGE_DAYS

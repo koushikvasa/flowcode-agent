@@ -31,7 +31,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 </details>
 
 ### 2. Capture fans at Taco Bell's events and sponsorships (CFP student section, Olivia Rodrigo festival, College of Idaho)
-**Score 0.73** · confidence **medium** · channel: event · products: flowcodes, flowhubs, flowid, analytics, workspaces_api
+**Score 0.66** · confidence **medium** · channel: event · products: flowcodes, flowhubs, flowid, analytics, workspaces_api
 
 **What's happening:** Taco Bell runs live activations and sponsorships: the annual CFP Championship Tailgate student section (500 students, shown on ESPN), a pink Baja Blast activation at Olivia Rodrigo's festival, the 'Laps of Luxury' drive-thru event, and a multi-year College of Idaho basketball sponsorship with jerseys and student-section barriers.
 
@@ -49,14 +49,14 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 <details><summary>Why this score</summary>
 
-`0.73 = 0.3×recency 0.55 + 0.25×evidence 0.80 + 0.25×fit 0.67 + 0.2×impact 1.00`
+`0.66 = 0.3×recency 0.55 + 0.25×evidence 0.50 + 0.25×fit 0.67 + 0.2×impact 1.00`
 
 - Passed: F1 names a physical/broadcast touchpoint; F2 names a digital action; I1 scale stated; I2 national or multi-market; I3 running now or upcoming
 - Not passed (no or unknown): F3 matches a Flowcode play
 </details>
 
 ### 3. Put a code on sauce packets to enroll customers in the TerraCycle recycling program and Rewards
-**Score 0.67** · confidence **low** · channel: packaging · products: flowcodes, flowhubs, flowid, analytics
+**Score 0.59** · confidence **low** · channel: packaging · products: flowcodes, flowhubs, flowid, analytics
 
 **What's happening:** Taco Bell and TerraCycle run a sauce packet recycling program (reportedly one million items in five years, 415,000+ in 2025), and Rewards members get bonus points if they sign up with their Rewards email.
 
@@ -73,14 +73,14 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 <details><summary>Why this score</summary>
 
-`0.67 = 0.3×recency 0.34 + 0.25×evidence 0.45 + 0.25×fit 1.00 + 0.2×impact 1.00`
+`0.59 = 0.3×recency 0.34 + 0.25×evidence 0.15 + 0.25×fit 1.00 + 0.2×impact 1.00`
 
 - Passed: F1 names a physical/broadcast touchpoint; F2 names a digital action; F3 matches a Flowcode play; I1 scale stated; I2 national or multi-market; I3 running now or upcoming
 - Not passed (no or unknown): none
 </details>
 
 ### 4. Connect the Mendoza and Adams football TV campaign to the 'Manager Mendoza's Special' offer
-**Score 0.61** · confidence **medium** · channel: tv · products: flowcodes, flowhubs, flowurls, analytics
+**Score 0.57** · confidence **medium** · channel: tv · products: flowcodes, flowhubs, flowurls, analytics
 
 **What's happening:** Taco Bell runs a fall 2026 football campaign with Fernando Mendoza and Davante Adams, including TV spots, documentary-style content, a 'Manager Mendoza's Special' meal deal and a stadium store takeover.
 
@@ -97,7 +97,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 <details><summary>Why this score</summary>
 
-`0.61 = 0.3×recency 0.72 + 0.25×evidence 0.65 + 0.25×fit 0.67 + 0.2×impact 0.33`
+`0.57 = 0.3×recency 0.72 + 0.25×evidence 0.50 + 0.25×fit 0.67 + 0.2×impact 0.33`
 
 - Passed: F1 names a physical/broadcast touchpoint; F3 matches a Flowcode play; I3 running now or upcoming
 - Not passed (no or unknown): F2 names a digital action; I1 scale stated; I2 national or multi-market

@@ -44,7 +44,11 @@ def recency(newest: date, today: date) -> float:
 
 
 def evidence_score(tiers: dict[str, str]) -> float:
-    return min(1.0, sum(config.TIER_WEIGHTS[t] for t in tiers.values()) / config.EVIDENCE_FULL_AT)
+    """Tier weights of independent sites, out of EVIDENCE_FULL_AT. Small sites together count as one:
+    they often copy each other, so five blogs must not outweigh the brand's own press release."""
+    strong = sum(config.TIER_WEIGHTS[t] for t in tiers.values() if t != "other")
+    small = min(config.OTHER_TIER_MAX, sum(config.TIER_WEIGHTS[t] for t in tiers.values() if t == "other"))
+    return min(1.0, (strong + small) / config.EVIDENCE_FULL_AT)
 
 
 def checklist_score(verdict: Verdict, weights: dict[str, float]) -> float:

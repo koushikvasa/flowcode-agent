@@ -79,7 +79,8 @@ every weight, threshold, model and price.
   plain math. Each report shows its own formula.
 - **Simple, tunable scoring over a black box.** Weights are in config. Recency halves every 90
   days, which is an assumption to tune. Evidence counts independent sites, weighted by tier: brand
-  site or press release, then major press, then everything else. Confidence (high, medium, low)
+  site or press release, then major press, then everything else (all small sites together count
+  as one, since they often copy each other). Confidence (high, medium, low)
   follows written rules: an opportunity backed only by blogs and small sites is always "low",
   however well it scores.
 - **Cheap model for volume, strong model for judgment.** Haiku reads around 40 pages; Sonnet runs

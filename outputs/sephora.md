@@ -33,7 +33,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 </details>
 
 ### 2. Sports partnerships: turn fan activations into first-party fan data
-**Score 0.83** · confidence **medium** · channel: sponsorship · products: flowcodes, flowhubs, flowid, analytics, workspaces_api
+**Score 0.79** · confidence **medium** · channel: sponsorship · products: flowcodes, flowhubs, flowid, analytics, workspaces_api
 
 **What's happening:** Sephora has built a sports portfolio with Unrivaled, the Valkyries, the AUSL, the Warriors, F1 Academy and Toronto Tempo. It runs fan activations, glam bars at F1 Paddock Club for 18 Grands Prix, and jumbotron recognition for its Pretty Badass nominees.
 
@@ -50,7 +50,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 <details><summary>Why this score</summary>
 
-`0.83 = 0.3×recency 0.88 + 0.25×evidence 0.80 + 0.25×fit 0.67 + 0.2×impact 1.00`
+`0.79 = 0.3×recency 0.88 + 0.25×evidence 0.65 + 0.25×fit 0.67 + 0.2×impact 1.00`
 
 - Passed: F1 names a physical/broadcast touchpoint; F2 names a digital action; I1 scale stated; I2 national or multi-market; I3 running now or upcoming
 - Not passed (no or unknown): F3 matches a Flowcode play
@@ -81,7 +81,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 </details>
 
 ### 4. Beauty Insider: tier-aware holiday and savings event offers
-**Score 0.63** · confidence **low** · channel: retail · products: flowcodes, flowhubs, flowid, analytics
+**Score 0.55** · confidence **low** · channel: retail · products: flowcodes, flowhubs, flowid, analytics
 
 **What's happening:** Sephora runs tiered Beauty Insider savings events, a Rouge Celebration across 13 stores, and partner perks with DoorDash, Lyft and Venmo. The Mariah Carey "It's Time!" holiday push with a Times Square billboard anchored the Savings Event.
 
@@ -98,7 +98,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 <details><summary>Why this score</summary>
 
-`0.63 = 0.3×recency 0.93 + 0.25×evidence 0.45 + 0.25×fit 0.67 + 0.2×impact 0.33`
+`0.55 = 0.3×recency 0.93 + 0.25×evidence 0.15 + 0.25×fit 0.67 + 0.2×impact 0.33`
 
 - Passed: F1 names a physical/broadcast touchpoint; F3 matches a Flowcode play; I1 scale stated
 - Not passed (no or unknown): F2 names a digital action; I2 national or multi-market; I3 running now or upcoming

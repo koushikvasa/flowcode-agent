@@ -4,7 +4,7 @@ from datetime import date
 import pytest
 
 from agent.models import Check, Company, Evidence, Opportunity, ScoredOpportunity, Scores, Verdict
-from agent.stages.rank import confidence, drop_repeated_proofs, proof_names, score
+from agent.stages.rank import confidence, drop_repeated_proofs, evidence_score, proof_names, score
 
 ACME = Company(name="Acme", domain="acme.com")
 
@@ -75,3 +75,9 @@ def test_confidence_rules():
     assert confidence(strong_pair, yes, age_days=120) == "medium"  # older than 90 days
     assert confidence(strong_pair, two_unknowns, age_days=10) == "low"
     assert confidence({"blog.com": "other", "pointsblog.com": "other"}, yes, age_days=10) == "low"  # blogs only
+
+
+def test_many_small_sites_count_as_one_and_never_outweigh_the_brand():
+    five_blogs = {f"blog{i}.com": "other" for i in range(5)}
+    assert evidence_score(five_blogs) == pytest.approx(0.3 / 2.0)  # same as a single blog
+    assert evidence_score({"acme.com": "first_party", **five_blogs}) == pytest.approx((1.0 + 0.3) / 2.0)
