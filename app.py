@@ -39,6 +39,7 @@ def report_json(report: Report, cached: bool) -> dict:
     data = report.model_dump(mode="json")
     data["crm_rows"] = [crm_row(i, s, report) for i, s in enumerate(report.opportunities, start=1)]
     data["cached"] = cached
+    data["top_n"] = config.TOP_N  # the page shows this many cards, like the Markdown brief
     return data
 
 

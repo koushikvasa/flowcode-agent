@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opportunity Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Colors, radii and fonts taken from flowcode.com's own stylesheet */
+  :root {
+    --bg: #ffffff; --surface: #f9fafb; --text: #232323; --muted: #5a5a5a; --line: #e3e3e3;
+    --brand: #1a56db; --brand-hover: #1546b8; --ink: #0c0c0d; --neon: #e4ff42;
+    --green: #0f7a3d; --amber: #a15c00; --red: #b42318;
+    --r-pill: 2.5rem; --r-card: 1.5rem; --r-sm: .75rem;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 Inter, sans-serif; letter-spacing: -.01em; }
+  h1, h2, h3 { font-family: "Instrument Sans", Arial, sans-serif; line-height: 1.15; margin: 0; }
+  a { color: var(--brand); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font: 700 1.1rem "Instrument Sans", sans-serif; }
+  .tag { font-size: .8rem; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); padding: .2rem .7rem; }
+
+  .hero { padding: 56px 0 28px; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3rem); max-width: 14ch; }
+  .hero p { color: var(--muted); max-width: 52ch; margin: 12px 0 28px; font-size: 1.1rem; }
+  form { display: flex; gap: 12px; max-width: 640px; }
+  input { flex: 1; min-width: 0; font: inherit; padding: 1em 1.4em; border: 1px solid #c6c6c6; border-radius: var(--r-pill); outline: none; }
+  input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px #1a56db22; }
+  .btn { font: 500 1rem Inter, sans-serif; padding: 1em 2em; border-radius: var(--r-pill); border: 1px solid transparent;
+         background: var(--brand); color: #fff; cursor: pointer; white-space: nowrap; transition: background .2s; }
+  .btn:hover { background: var(--brand-hover); }
+  .btn:disabled { opacity: .5; cursor: wait; }
+  .btn.outline { background: #fff; color: var(--ink); border-color: #c6c6c6; padding: .6em 1.2em; font-size: .9rem; }
+  .btn.outline:hover { border-color: var(--ink); }
+  .recent { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: .9rem; color: var(--muted); }
+  .chip { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-pill); padding: .35rem .9rem; cursor: pointer; }
+  .chip:hover { border-color: var(--brand); color: var(--brand); }
+
+  .card { border: 1px solid var(--line); border-radius: var(--r-card); padding: 24px; background: var(--bg); }
+  .hidden { display: none !important; }
+  #progress { margin: 8px 0 32px; }
+  #progress h2 { font-size: 1.2rem; margin-bottom: 16px; display: flex; justify-content: space-between; }
+  #progress h2 span { font: 400 .9rem Inter, sans-serif; color: var(--muted); }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .steps li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; align-items: start; color: #9e9e9e; }
+  .steps li b { font-weight: 500; }
+  .steps li small { display: block; color: var(--muted); }
+  .dot { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--line); margin-top: 2px; }
+  .steps li.active, .steps li.done { color: var(--text); }
+  .steps li.active .dot { border-color: var(--brand); border-top-color: transparent; animation: spin .8s linear infinite; }
+  .steps li.done .dot { background: var(--brand); border-color: var(--brand); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .error { color: var(--red); margin-top: 12px; }
+
+  .summary { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .summary h2 { font-size: 1.8rem; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .banner { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 12px 16px; display: flex;
+            flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; font-size: .95rem; margin-bottom: 20px; }
+  .banner div { display: flex; gap: 8px; flex-wrap: wrap; }
+  .badge { display: inline-block; font-size: .8rem; font-weight: 500; border-radius: var(--r-pill); padding: .15rem .65rem; background: var(--surface); border: 1px solid var(--line); }
+  .badge.customer { background: var(--neon); border-color: var(--neon); color: var(--ink); }
+
+  .opps { display: grid; gap: 20px; }
+  .opp-head { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: start; }
+  .opp-head h3 { font-size: 1.25rem; }
+  .score { background: var(--ink); color: var(--neon); border-radius: var(--r-sm); padding: 8px 12px; text-align: center; min-width: 64px; }
+  .score b { display: block; font: 700 1.5rem "Instrument Sans", sans-serif; line-height: 1; }
+  .score small { font-size: .7rem; color: #c6c6c6; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+  .conf-high { color: var(--green); } .conf-medium { color: var(--amber); } .conf-low { color: var(--red); }
+  .section { margin-top: 16px; }
+  .section h4 { margin: 0 0 4px; font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+  .section p { margin: 0; }
+  .play { background: var(--surface); border-radius: var(--r-sm); padding: 14px 16px; }
+  .sources { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .sources li { border-left: 3px solid var(--brand); padding: 2px 0 2px 12px; }
+  .sources q { display: block; font-style: italic; }
+  .sources .src { font-size: .85rem; color: var(--muted); overflow-wrap: anywhere; }
+  details { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 12px; }
+  summary { cursor: pointer; font-weight: 500; }
+  .bars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 12px 0; font-size: .85rem; }
+  .bar { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin-top: 4px; }
+  .bar i { display: block; height: 100%; background: var(--brand); }
+  .checks { list-style: none; padding: 0; margin: 0; font-size: .9rem; display: grid; gap: 6px; }
+  .ans { font-weight: 600; margin-right: 6px; } .ans.yes { color: var(--green); } .ans.no { color: var(--red); } .ans.unknown { color: #9e9e9e; }
+  .checks small { display: block; color: var(--muted); }
+  .dropped { margin-top: 20px; }
+  .dropped li { margin-bottom: 8px; font-size: .9rem; }
+  .empty { color: var(--muted); }
+  footer { color: var(--muted); font-size: .85rem; padding: 40px 16px; }
+
+  @media (max-width: 640px) {
+    .hero { padding-top: 32px; }
+    form { flex-direction: column; }
+    .card { padding: 18px; }
+    .bars { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="logo">Opportunity Agent</span><span class="tag">for Flowcode sellers</span></div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Where can Flowcode help this brand right now?</h1>
+    <p>Type a company. The agent researches what it is doing right now and returns ranked Flowcode plays. Every claim links to its source, date and exact quote.</p>
+    <form id="form">
+      <input id="company" placeholder="Company name or website, e.g. Sephora" autocomplete="off" required minlength="2" maxlength="100">
+      <button class="btn" id="go">Find opportunities</button>
+    </form>
+    <div class="recent" id="recent"></div>
+  </section>
+
+  <section id="progress" class="card hidden">
+    <h2>Researching <span id="timer">0s</span></h2>
+    <ul class="steps" id="steps"></ul>
+    <div class="error hidden" id="error"></div>
+  </section>
+
+  <section id="result" class="hidden"></section>
+</main>
+<footer class="wrap">No source, no opportunity: anything without a dated, quotable source is dropped and listed at the bottom of the report.</footer>
+
+<script>
+// --- Labels ---
+const STAGES = [
+  ["resolve", "Find the company"], ["research", "Search the web (last 12 months)"],
+  ["extract", "Read pages and pull exact quotes"], ["match", "Match to Flowcode plays"],
+  ["verify", "Fact-check with a separate judge"], ["rank", "Score and rank"],
+];
+const CHECKS = {
+  f1_touchpoint: "Names a physical or broadcast touchpoint", f2_digital_action: "Names a digital action",
+  f3_matches_play: "Matches a Flowcode play", i1_scale_stated: "Scale is stated",
+  i2_national: "National or multi-market", i3_live_or_upcoming: "Running now or upcoming",
+};
+
+// --- Helpers. esc() is applied to every piece of text that came from the web. ---
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const safeUrl = (u) => /^https?:\/\//i.test(u) ? esc(u) : "#";
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
+const day = (iso) => new Date(iso).toLocaleDateString("en-US", {month: "short", day: "numeric", year: "numeric"});
+let source = null, timer = null;
+
+async function loadRecent() {
+  const reports = await fetch("/api/reports").then((r) => r.json()).catch(() => []);
+  $("recent").innerHTML = reports.length ? "Recently analyzed:" + reports.map((r) =>
+    `<button class="chip" data-company="${esc(r.name)}">${esc(r.name)}</button>`).join("") : "";
+}
+
+// --- Running: open the event stream and tick off stages as messages arrive ---
+function showProgress(stage, message) {
+  const i = STAGES.findIndex(([id]) => id === stage);
+  const finished = message.endsWith("…") ? i : i + 1;  // "Looking up X…" means resolve has only started
+  STAGES.forEach(([id], j) => {
+    const li = document.querySelector(`[data-stage="${id}"]`);
+    li.className = j < finished ? "done" : j === finished ? "active" : "";
+  });
+  document.querySelector(`[data-stage="${stage}"] small`).textContent = message;
+}
+
+function run(company, fresh = false) {
+  if (source) source.close();
+  history.replaceState(null, "", "?company=" + encodeURIComponent(company));
+  $("company").value = company; $("go").disabled = true;
+  $("result").classList.add("hidden"); $("error").classList.add("hidden");
+  $("progress").classList.remove("hidden");
+  $("steps").innerHTML = STAGES.map(([id, label]) =>
+    `<li data-stage="${id}"><span class="dot"></span><div><b>${label}</b><small></small></div></li>`).join("");
+  const started = Date.now();
+  clearInterval(timer);
+  timer = setInterval(() => $("timer").textContent = Math.round((Date.now() - started) / 1000) + "s", 1000);
+
+  source = new EventSource(`/api/run?company=${encodeURIComponent(company)}&fresh=${fresh}`);
+  source.addEventListener("progress", (e) => { const p = JSON.parse(e.data); showProgress(p.stage, p.message); });
+  source.addEventListener("report", (e) => { finish(); renderReport(JSON.parse(e.data)); loadRecent(); });
+  source.addEventListener("failed", (e) => finish(JSON.parse(e.data).message));
+  source.onerror = () => finish("Lost connection to the server.");  // also stops EventSource auto-reconnecting
+}
+
+function finish(error) {
+  source.close(); clearInterval(timer); $("go").disabled = false;
+  if (error) { $("error").textContent = error; $("error").classList.remove("hidden"); }
+  else $("progress").classList.add("hidden");
+}
+
+// --- The report ---
+function renderReport(r) {
+  const s = r.stats, c = r.company;
+  const note = r.cached
+    ? `<span>Saved report from <b>${day(r.generated_at)}</b>, shown instantly at no cost.</span>`
+    : `<span>Fresh run: ${s.search_calls} searches · $${s.cost_usd.toFixed(2)} · ${Math.round(s.seconds)}s</span>`;
+  $("result").innerHTML = `
+    <div class="summary">
+      <div><h2>${esc(c.name)}</h2><div class="meta">${esc(c.domain)} · researched ${day(r.generated_at)}</div></div>
+      ${c.is_existing_customer ? `<span class="badge customer" title="${esc(c.customer_evidence)}">Existing Flowcode customer: expansion</span>` : ""}
+    </div>
+    <div class="banner">${note}<div>
+      ${r.cached ? `<button class="btn outline" id="rerun">Re-run fresh</button>` : ""}
+      <button class="btn outline" id="download">Download JSON</button></div></div>
+    <div class="opps">${r.opportunities.length ? r.opportunities.slice(0, r.top_n).map(oppCard).join("")
+      : `<div class="card empty">No opportunity passed every check. See what was dropped below.</div>`}</div>
+    ${r.opportunities.length > r.top_n ? `<p class="meta">${r.opportunities.length - r.top_n} more passed the judge but scored lower. They are in the JSON download.</p>` : ""}
+    <details class="card dropped"><summary>What we couldn't verify (${r.dropped.length})</summary>
+      <ul>${r.dropped.map((d) => `<li><b>${esc(d.stage)}</b>: ${esc(d.what)}<br><span class="meta">${esc(d.reason)}</span></li>`).join("")}</ul>
+    </details>`;
+  $("result").classList.remove("hidden");
+  if (r.cached) $("rerun").onclick = () => run(c.name, true);
+  $("download").onclick = () => {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(r, null, 2)], {type: "application/json"}));
+    a.download = c.name.toLowerCase().replace(/\W+/g, "-") + ".json"; a.click();
+  };
+}
+
+function oppCard(item, i) {
+  const o = item.opportunity, v = item.verdict, sc = item.scores;
+  const bar = (label, x) => `<div>${label} ${Math.round(x * 100)}<div class="bar"><i style="width:${x * 100}%"></i></div></div>`;
+  return `<article class="card">
+    <div class="opp-head">
+      <div><div class="meta">#${i + 1} · ${esc(o.channel)}</div><h3>${esc(o.title)}</h3>
+        <div class="tags"><span class="badge conf-${esc(item.confidence)}">${esc(item.confidence)} confidence</span>
+        ${o.flowcode_products.map((p) => `<span class="badge">${esc(p)}</span>`).join("")}</div></div>
+      <div class="score"><b>${Math.round(sc.total * 100)}</b><small>score</small></div>
+    </div>
+    <div class="section"><h4>What's happening</h4><p>${esc(o.what_happening)}</p></div>
+    <div class="section"><h4>Why Flowcode fits</h4><p>${esc(o.why_flowcode_fits)}</p></div>
+    <div class="section"><h4>Suggested play</h4><p class="play">${esc(o.suggested_play)}</p></div>
+    <div class="section"><h4>What we'd measure</h4><p>${esc(o.would_measure)}</p></div>
+    <div class="section"><h4>Sources</h4><ul class="sources">${o.evidence.map((e) => `<li><q>${esc(e.quote)}</q>
+      <span class="src">${day(e.published)} · <a href="${safeUrl(e.url)}" target="_blank" rel="noopener noreferrer">${esc(host(e.url))}</a></span></li>`).join("")}</ul></div>
+    <details><summary>Why this score</summary>
+      <div class="bars">${bar("Recency", sc.recency)}${bar("Evidence", sc.evidence)}${bar("Fit", sc.fit)}${bar("Impact", sc.impact)}</div>
+      <ul class="checks">${Object.entries(CHECKS).map(([k, label]) => `<li><span class="ans ${esc(v[k].answer)}">${esc(v[k].answer)}</span>${label}
+        ${v[k].quote ? `<small>“${esc(v[k].quote)}”</small>` : ""}</li>`).join("")}</ul>
+      <p class="meta">Judge: ${esc(v.reason)}</p>
+    </details>
+  </article>`;
+}
+
+// --- Start: wire up the form and chips; ?company=X in the URL runs straight away ---
+$("form").onsubmit = (e) => { e.preventDefault(); const q = $("company").value.trim(); if (q.length >= 2) run(q); };
+$("recent").onclick = (e) => { if (e.target.dataset.company) run(e.target.dataset.company); };
+loadRecent();
+const initial = new URLSearchParams(location.search).get("company");
+if (initial) run(initial);
+</script>
+</body>
+</html>
