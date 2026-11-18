@@ -74,7 +74,8 @@ every weight, threshold, model and price.
 - **U.S. only, by a prompt rule.** It holds well, but it is an instruction, not a code check: in the
   sample run one Northern Ireland item got through extract and was then dropped at match.
 - **Known limits:**
-  - LLM steps vary a little between runs (the API no longer accepts `temperature`).
+  - LLM steps vary a little between days (the API no longer accepts `temperature`). Within a day,
+    Claude's answers are cached by exact prompt, so a re-run is identical and free.
   - Undated pages are excluded at search time.
   - About 40 pages per company.
   - Product facts in `flowcode_context.md` are Flowcode's own public claims.
@@ -116,7 +117,7 @@ semaphore and the SDK's backoff respect rate limits. 10,000 companies across 20 
 7.5 hours. Rate limits are the real ceiling, not code.
 
 **Keeping data fresh.**
-- Searches are cached per query per day, so reruns the same day are free.
+- Searches and Claude's answers are cached per day, so reruns the same day are free and identical.
 - Every run saves its sources, so the next run can skip pages it has already seen and only
   extract and judge what is new.
 - Refresh by account tier.

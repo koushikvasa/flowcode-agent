@@ -1,10 +1,11 @@
 """The one door to Claude: send a prompt, get back a validated Pydantic object, count the cost."""
+from datetime import date
 from typing import Literal, TypeVar
 
 import anthropic
 from pydantic import BaseModel
 
-from agent import config
+from agent import cache, config
 from agent.models import RunStats
 
 Stage = Literal["extract", "match", "judge"]
@@ -41,8 +42,17 @@ def add_cost(stats: RunStats, model: str, input_tokens: int, output_tokens: int)
 
 async def ask(stage: Stage, system: str, prompt: str, schema: type[T], stats: RunStats,
               max_tokens: int = 16000) -> T:
-    """Call the model for this stage and return its answer as a `schema` object."""
+    """Call the model for this stage and return its answer as a `schema` object.
+
+    Answers are cached per day by the exact model, settings and prompts, so re-running a company
+    on the same day gives the same result for free (the cached call adds no cost to `stats`).
+    """
     model = MODEL_FOR[stage]
+    key = (f"{model} | effort={config.EFFORT[stage]} | max_tokens={max_tokens} | {schema.__name__} | "
+           f"day={date.today()}\n{system}\n---\n{prompt}")
+    if (saved := cache.get("llm", key)) is not None:
+        return schema.model_validate(saved)
+
     response = await _get_client().messages.parse(
         model=model,
         max_tokens=max_tokens,
@@ -59,4 +69,5 @@ async def ask(stage: Stage, system: str, prompt: str, schema: type[T], stats: Ru
         raise LLMError(f"{stage}: answer cut off at max_tokens={max_tokens}")
     if response.parsed_output is None:
         raise LLMError(f"{stage}: answer did not match {schema.__name__}")
+    cache.put("llm", key, response.parsed_output.model_dump(mode="json"))  # only good answers are cached
     return response.parsed_output
