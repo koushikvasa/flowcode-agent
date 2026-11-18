@@ -40,3 +40,13 @@ def test_research_keeps_one_copy_of_the_same_page_and_drops_undated():
 
     assert [s.url for s in sources] == ["https://acme.com/news/a"]
     assert [d.what for d in dropped] == ["https://blog.com/b"]
+
+
+def test_resolve_keeps_the_main_domain_so_every_subdomain_is_first_party():
+    from agent.stages.rank import tier
+    from agent.stages.resolve import main_domain, resolve
+
+    assert main_domain("shop.lululemon.com") == "lululemon.com" and main_domain("acme.com") == "acme.com"
+    company = asyncio.run(resolve("https://shop.lululemon.com/story", FakeProvider({}), RunStats()))
+    assert (company.name, company.domain) == ("lululemon", "lululemon.com")
+    assert tier("https://corporate.lululemon.com/media/press", company) == "first_party"

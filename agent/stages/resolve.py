@@ -43,6 +43,14 @@ def load_known_customers() -> dict[str, str]:
     return known
 
 
+def main_domain(host: str) -> str:
+    """'shop.lululemon.com' -> 'lululemon.com', so every subdomain (newsroom, corporate, shop) is the brand's own.
+
+    Keeps the last two labels: right for .com/.org/.net, the U.S. sites this agent targets.
+    """
+    return ".".join(host.split(".")[-2:])
+
+
 def find_domain(name: str, results: list[Source]) -> str:
     """Pick the brand's own site: a domain containing the name wins, else the first non-directory site."""
     candidates = [domain_of(s.url) for s in results]
@@ -64,12 +72,12 @@ async def resolve(query: str, search: SearchProvider, stats: RunStats) -> Compan
     """Turn what the user typed into a Company, flagging likely existing Flowcode customers."""
     query = query.strip()
     if "." in query and " " not in query:  # a website was given
-        domain = domain_of(query)
+        domain = main_domain(domain_of(query))
         name = domain.split(".")[0]
     else:
         name = query
         homepage = await search.search(f"{name} official website", stats, recent_only=False)
-        domain = find_domain(name, homepage)
+        domain = main_domain(find_domain(name, homepage))
 
     listed = load_known_customers().get(normalize(name))
     if listed:
