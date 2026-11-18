@@ -126,9 +126,10 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 - Not passed (no or unknown): F2 names a digital action; I1 scale stated
 </details>
 
-## What we couldn't verify
+## Removed along the way
 
-Items removed along the way, and why. No source, no opportunity.
+Claims we could not verify against their sources, and signals judged not a Flowcode fit, each with
+the reason. No source, no opportunity.
 
 **match** (7)
 

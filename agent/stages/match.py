@@ -23,9 +23,11 @@ each with a quote from a dated source. Turn them into Flowcode opportunities.
 Steps:
 1. Group signals about the same campaign, launch or program. One group = one opportunity; list all its signal IDs.
    The parts of one campaign (a TV spot, a store takeover, a social stunt with the same name, talent or theme)
-   are ONE opportunity, not one per touchpoint; its play can cover several touchpoints.
+   are ONE opportunity, not one per touchpoint; its play can cover several touchpoints. A signal about a
+   campaign that already has an opportunity goes into that opportunity's signal_ids, never into no_fit.
 2. For each group, decide honestly whether a Flowcode product solves something real. If not, put each of
-   its signal IDs in no_fit with a short reason. A no_fit is better than a stretched pitch.
+   its signal IDs in no_fit with a short reason. A no_fit is better than a stretched pitch, but no_fit
+   means Flowcode does not fit, not "this campaign is already covered" or "small detail of a bigger one".
 3. For each opportunity: copy evidence_quote word for word from one of its signals' quotes, then explain
    why Flowcode fits, then pick products, then write the suggested play and what it would measure.
 

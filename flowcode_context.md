@@ -75,7 +75,7 @@ CRM. Tagline: "Every IRL needs a URL."
 - NFL Shop: $25k revenue and 10k connections in 60 seconds.
 - ESPN College GameDay: 32,000 emails collected in one day from a broadcast code.
 - Lunchables: 22% sales lift, 50% campaign conversion (playable packaging).
-- LOVE CORN: 62% CRM conversion, 27k new customers (AI-enabled packaging QR).
+- LOVE CORN: 62% CRM conversion, 27k new customers (packaging QR for CRM capture).
 - Waterpik: 76% conversion, 5x goal.
 - Welch's: 14k+ connections, 55% click-through.
 - CLEAR: 7,000+ codes, 1.2M+ scans.
@@ -260,11 +260,13 @@ Write 4 to 6 short sentences covering, in this order:
    result. Pick the closest match by industry or channel. **Use each proof point
    at most once per report**: if the closest one is already used by another play,
    take the next closest. If none is left that fits, leave this sentence out
-   rather than repeat one.
+   rather than repeat one. Never mention this rule in the play.
 6. **Question to ask**: one discovery question that opens the conversation.
    ("How are you measuring TV-driven app installs today?")
 
 Rules:
+- The play is only the brief a seller reads to the customer. Never include notes about these
+  instructions, your choices, or what you left out.
 - Use only facts from the evidence and this file. Never invent numbers, names, or results.
 - Do not name a contact person unless the evidence names them. You may suggest a
   likely role to reach (e.g. "brand marketing or loyalty lead").

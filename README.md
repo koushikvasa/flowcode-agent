@@ -10,9 +10,9 @@ and the report lists what was dropped and why.
 
 **Live app: https://flowcode-agent.vercel.app** (type any company; saved reports open instantly).
 
-**Sample output (real run, Taco Bell, 2026-11-17):** [outputs/taco-bell.md](outputs/taco-bell.md)
+**Sample output (real run, Taco Bell, 2026-11-18):** [outputs/taco-bell.md](outputs/taco-bell.md)
 (seller-ready brief) and [outputs/taco-bell.json](outputs/taco-bell.json) (same data plus flat
-CRM-ready rows). Cost: **$0.30 and 54 seconds** for one company, from a cold cache.
+CRM-ready rows). Cost: **about $0.30 and under a minute** for one company, from a cold cache.
 A second brand the agent had never seen: [outputs/sephora.md](outputs/sephora.md) (2026-11-18).
 
 ## Run it
@@ -58,8 +58,8 @@ before anything is paid for.
 | 6. Rank | Transparent score in code: `0.30 recency + 0.25 evidence + 0.25 fit + 0.20 impact`. | none |
 | 7. Render | Markdown brief (top 5) and JSON. | none |
 
-The Taco Bell run: 39 dated sources, 60 signals, 6 proposed opportunities (17 signals judged
-"no Flowcode fit"), **5 verified**. One was dropped by the judge.
+The Taco Bell run: 38 dated sources, 69 signals, 12 proposed opportunities (18 signals judged
+"no Flowcode fit"), **9 verified**. Three were dropped by the judge.
 
 **Editable without code:** `flowcode_context.md` holds the product knowledge, the scoring checklist,
 the known-customers list (with aliases) and the "suggested play" format. `agent/config.py` holds
@@ -73,9 +73,9 @@ every weight, threshold, model and price.
   opportunity with a weak source gets dropped rather than guessed.
 - **A checklist judge, not a 1-5 rating.** LLM judges agree far more on yes/no questions than on
   1-5 scales ([CheckEval, EMNLP 2025](https://arxiv.org/abs/2403.18771)), and every score traces back
-  to specific answers and quotes. The judge is a separate call from the matcher, as
-  [Anthropic's eval guidance](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
-  recommends. Fit and impact are the share of "yes" answers. Recency and evidence strength are
+  to specific answers and quotes. Each opportunity is judged in its own isolated call, which
+  matches [Anthropic's guidance on isolated LLM judges](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents).
+  Fit and impact are the share of "yes" answers. Recency and evidence strength are
   plain math. Each report shows its own formula.
 - **Simple, tunable scoring over a black box.** Weights are in config. Recency halves every 90
   days, which is an assumption to tune. Evidence counts independent sites, weighted by tier: brand
@@ -104,7 +104,7 @@ every weight, threshold, model and price.
 The unit of work is one function, `run_company(name) -> Report`. The CLI calls it; a queue worker
 would call the same function.
 
-**Cost.** Measured on the Taco Bell run:
+**Cost.** Measured on a cold Taco Bell run (2026-11-17):
 
 | Item | Per company |
 |---|---|
@@ -141,8 +141,8 @@ semaphore and the SDK's backoff respect rate limits. 10,000 companies across 20 
 - Alert when a new opportunity scores above a threshold.
 
 **Checking quality.**
-- Built in: the quote checks, the separate judge, the touchpoint gate, and the "what we couldn't
-  verify" log.
+- Built in: the quote checks, the separate judge, the touchpoint gate, and the "removed along the
+  way" log (every unverified claim and every "no Flowcode fit" call, with its reason).
 - At scale, add an eval set: about 20 brands with human-labeled good and bad opportunities.
   Track precision (do sellers agree it's a real play?), source validity (does the quote still
   say that?) and the judge's agreement with humans.

@@ -252,7 +252,7 @@ function renderReport(r) {
     <div class="opps">${r.opportunities.length ? r.opportunities.slice(0, r.top_n).map(oppCard).join("")
       : `<div class="card empty">No opportunity passed every check. See what was dropped below.</div>`}</div>
     ${r.opportunities.length > r.top_n ? `<p class="meta">${r.opportunities.length - r.top_n} more passed the judge but scored lower. They are in the JSON download.</p>` : ""}
-    <details class="card dropped"><summary>What we couldn't verify (${r.dropped.length})</summary>
+    <details class="card dropped"><summary>Removed along the way (${r.dropped.length}): unverified claims and "no Flowcode fit" calls</summary>
       <ul>${r.dropped.map((d) => `<li><b>${esc(d.stage)}</b>: ${esc(d.what)}<br><span class="meta">${esc(d.reason)}</span></li>`).join("")}</ul>
     </details>`;
   $("result").classList.remove("hidden");
