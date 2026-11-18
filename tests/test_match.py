@@ -2,7 +2,7 @@
 from datetime import date
 
 from agent.models import Dropped, Evidence, MatchProposal, Opportunity, Signal
-from agent.stages.match import check_proposal
+from agent.stages.match import check_proposal, same_campaign
 
 
 def signal(url: str, quote: str) -> Signal:
@@ -36,3 +36,16 @@ def test_proposals_are_dropped_for_unknown_signals_reused_signals_or_a_quote_not
     assert "already used" in check_proposal(proposal(["S1"]), SIGNALS, {"S1"}).reason
     made_up = check_proposal(proposal(["S1"], quote="Acme doubled its TV budget"), SIGNALS, set())
     assert isinstance(made_up, Dropped) and "not found" in made_up.reason
+
+
+def opp_citing(*urls: str) -> Opportunity:
+    evidence = [Evidence(url=u, published=date(2026, 11, 1), quote="Acme launched a thing.") for u in urls]
+    return Opportunity(**proposal(["S1"]).model_dump(), evidence=evidence)
+
+
+def test_a_second_pitch_on_mostly_the_same_sources_is_the_same_campaign():
+    tv = opp_citing("https://acme.com/a", "https://news.com/b", "https://blog.com/c")
+
+    assert same_campaign(opp_citing("https://acme.com/a", "https://news.com/b"), [tv]) is tv  # 2 of 2 shared
+    assert same_campaign(opp_citing("https://news.com/b", "https://other.com/d"), [tv]) is None  # 1 of 2: a roundup
+    assert same_campaign(opp_citing("https://other.com/d"), [tv]) is None

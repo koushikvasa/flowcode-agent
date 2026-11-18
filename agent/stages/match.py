@@ -22,6 +22,8 @@ each with a quote from a dated source. Turn them into Flowcode opportunities.
 
 Steps:
 1. Group signals about the same campaign, launch or program. One group = one opportunity; list all its signal IDs.
+   The parts of one campaign (a TV spot, a store takeover, a social stunt with the same name, talent or theme)
+   are ONE opportunity, not one per touchpoint; its play can cover several touchpoints.
 2. For each group, decide honestly whether a Flowcode product solves something real. If not, put each of
    its signal IDs in no_fit with a short reason. A no_fit is better than a stretched pitch.
 3. For each opportunity: copy evidence_quote word for word from one of its signals' quotes, then explain
@@ -70,6 +72,18 @@ def check_proposal(p: MatchProposal, signals: dict[str, Signal], used: set[str])
     return Opportunity(**p.model_dump(exclude={"signal_ids"}), signal_ids=fresh, evidence=evidence)
 
 
+def same_campaign(opp: Opportunity, accepted: list[Opportunity]) -> Opportunity | None:
+    """The accepted opportunity that already cites more than half of this one's sources, if any.
+
+    Two pitches built on the same articles are almost always one campaign split by touchpoint.
+    """
+    urls = {e.url for e in opp.evidence}
+    for other in accepted:
+        if len(urls & {e.url for e in other.evidence}) * 2 > len(urls):
+            return other
+    return None
+
+
 async def match(company: Company, signal_list: list[Signal], stats: RunStats) -> tuple[list[Opportunity], list[Dropped]]:
     """Propose opportunities with one call, then keep only the ones that pass the code gates."""
     if not signal_list:
@@ -85,6 +99,8 @@ async def match(company: Company, signal_list: list[Signal], stats: RunStats) ->
     used: set[str] = set()
     for proposal in result.opportunities:
         outcome = check_proposal(proposal, signals, used)
+        if isinstance(outcome, Opportunity) and (twin := same_campaign(outcome, opportunities)):
+            outcome = Dropped(stage="match", what=outcome.title, reason=f"same sources as '{twin.title}': likely the same campaign")
         (dropped if isinstance(outcome, Dropped) else opportunities).append(outcome)
     for nf in result.no_fit:
         if nf.signal_id in signals and nf.signal_id not in used:
