@@ -8,12 +8,12 @@ import logging
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 from pydantic import BaseModel
 
 from agent import config
-from agent.models import Report, RunStats
+from agent.models import Company, Report, RunStats
 from agent.search import ExaProvider, SearchProvider
 from agent.stages.extract import extract
 from agent.stages.match import match
@@ -39,39 +39,60 @@ def _save(run_dir: Path, name: str, value: Any) -> None:
     (run_dir / f"{name}.json").write_text(json.dumps(_plain(value), indent=1, ensure_ascii=False), encoding="utf-8")
 
 
-async def run_company(query: str, search: SearchProvider | None = None) -> Report:
-    """Research one company end to end and return the Report (also saved under runs/)."""
+OnProgress = Callable[[str, str], None]  # (stage, message), e.g. ("research", "39 dated sources")
+
+
+async def run_company(
+    query: str,
+    search: SearchProvider | None = None,
+    on_progress: OnProgress | None = None,
+    company: Company | None = None,
+    stats: RunStats | None = None,
+) -> Report:
+    """Research one company end to end and return the Report (also saved under runs/).
+
+    on_progress is called after each stage (the web app streams these to the page).
+    If the caller already resolved the company, pass `company` and the `stats` from that call
+    so resolve isn't run (or paid for) twice.
+    """
     search = search or ExaProvider()
-    stats, started = RunStats(), time.time()
+    stats, started = stats or RunStats(), time.time()
     generated_at = datetime.now(timezone.utc)
 
-    company = await resolve(query, search, stats)
+    def step(stage: str, message: str) -> None:
+        log.info("%s: %s", stage, message)
+        if on_progress:
+            on_progress(stage, message)
+
+    company = company or await resolve(query, search, stats)
     run_dir = config.RUNS_DIR / normalize(company.name).replace(" ", "-") / generated_at.strftime("%Y%m%d-%H%M%S")
     _save(run_dir, "1_company", company)
-    log.info("resolve: %s (%s), existing customer: %s", company.name, company.domain, company.is_existing_customer)
+    customer = ", existing Flowcode customer" if company.is_existing_customer else ""
+    step("resolve", f"{company.name} ({company.domain}){customer}")
 
     sources, dropped = await research(company, search, stats)
     _save(run_dir, "2_sources", sources)
-    log.info("research: %d dated sources", len(sources))
+    step("research", f"{len(sources)} dated sources")
 
     signals, more = await extract(company, sources, stats)
     dropped += more
     _save(run_dir, "3_signals", signals)
-    log.info("extract: %d signals", len(signals))
+    step("extract", f"{len(signals)} signals with exact quotes")
 
     opportunities, more = await match(company, signals, stats)
     dropped += more
     _save(run_dir, "4_opportunities", opportunities)
-    log.info("match: %d opportunities proposed", len(opportunities))
+    step("match", f"{len(opportunities)} opportunities proposed")
 
     verified, more = await verify(company, opportunities, sources, stats)
     dropped += more
     _save(run_dir, "5_verified", verified)
-    log.info("verify: %d passed the judge", len(verified))
+    step("verify", f"{len(verified)} passed the judge")
 
     ranked = rank(company, verified)
     stats.seconds = round(time.time() - started, 1)
     report = Report(company=company, generated_at=generated_at, opportunities=ranked, dropped=dropped, stats=stats)
     _save(run_dir, "6_report", report)
-    log.info("rank: done, saved stage outputs to %s", run_dir)
+    step("rank", f"top {len(ranked)} ranked")
+    log.info("saved stage outputs to %s", run_dir)
     return report
