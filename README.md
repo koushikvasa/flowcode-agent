@@ -11,6 +11,7 @@ and the report lists what was dropped and why.
 **Sample output (real run, Taco Bell, 2026-11-17):** [outputs/taco-bell.md](outputs/taco-bell.md)
 (seller-ready brief) and [outputs/taco-bell.json](outputs/taco-bell.json) (same data plus flat
 CRM-ready rows). Cost: **$0.30 and 54 seconds** for one company, from a cold cache.
+A second brand the agent had never seen: [outputs/sephora.md](outputs/sephora.md) (2026-11-18).
 
 ## Run it
 

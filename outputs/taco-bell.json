@@ -73,10 +73,10 @@
       },
       "scores": {
         "recency": 1.0,
-        "evidence": 0.3,
+        "evidence": 0.5,
         "fit": 0.667,
         "impact": 1.0,
-        "total": 0.742,
+        "total": 0.792,
         "passed": [
           "f1_touchpoint",
           "f3_matches_play",
@@ -111,7 +111,7 @@
           "analytics",
           "workspaces_api"
         ],
-        "suggested_play": "Your annual Live Más Student Section at the CFP Championship Tailgate (reported March 2026), the pink Baja Blast activation at Olivia Rodrigo's festival (Aug 2026) and the College of Idaho sponsorship (Nov 2025) all put Taco Bell in front of fans. Likely none of that is tied to individual sign-ups today. Put unique Flowcodes on signage, merch, photo ops and the student-section barriers that open a FlowHub with Rewards sign-up, a sweepstakes entry or the current drop. Use a separate code per event so each activation reports on its own, and a Workspace per event team or agency partner. Taco Bell would get scan counts and new first-party contacts per event. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How do you measure the return on event and sponsorship activations today?",
+        "suggested_play": "Your annual Live Más Student Section at the CFP Championship Tailgate (reported March 2026), the pink Baja Blast activation at Olivia Rodrigo's festival (Aug 2026) and the College of Idaho sponsorship (Nov 2025) all put Taco Bell in front of fans. Likely none of that is tied to individual sign-ups today. Put unique Flowcodes on signage, merch, photo ops and the student-section barriers that open a FlowHub with Rewards sign-up, a sweepstakes entry or the current drop. Use a separate code per event so each activation reports on its own, and a Workspace per event team or agency partner. Taco Bell would get scan counts and new first-party contacts per event. How do you measure the return on event and sponsorship activations today?",
         "would_measure": "Scans per event, sign-ups and sweepstakes entries per activation, Rewards enrollment, and later app activity from event contacts.",
         "evidence": [
           {
@@ -261,7 +261,7 @@
           "i3_live_or_upcoming"
         ]
       },
-      "confidence": "medium"
+      "confidence": "low"
     },
     {
       "opportunity": {
@@ -283,7 +283,7 @@
           "flowurls",
           "analytics"
         ],
-        "suggested_play": "Your football campaign with Fernando Mendoza and Davante Adams, announced Oct 5, 2026, includes TV spots, a 'Manager Mendoza's Special' meal deal and a stadium store takeover. You likely cannot link a TV view to a redemption or a new Rewards member. Add a Flowcode to the TV spots and the store takeover that opens a FlowHub with the Manager's Special offer and a Rewards sign-up, using a FlowURL on Taco Bell's domain for the spoken or social version. Taco Bell would see scans per spot, market and store, and the new contacts they bring in. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How do you tie TV exposure to offer redemption in this campaign today?",
+        "suggested_play": "Your football campaign with Fernando Mendoza and Davante Adams, announced Oct 5, 2026, includes TV spots, a 'Manager Mendoza's Special' meal deal and a stadium store takeover. You likely cannot link a TV view to a redemption or a new Rewards member. Add a Flowcode to the TV spots and the store takeover that opens a FlowHub with the Manager's Special offer and a Rewards sign-up, using a FlowURL on Taco Bell's domain for the spoken or social version. Taco Bell would see scans per spot, market and store, and the new contacts they bring in. How do you tie TV exposure to offer redemption in this campaign today?",
         "would_measure": "Scans per spot and market, offer redemptions, new Rewards sign-ups, and store-level response at the takeover.",
         "evidence": [
           {
@@ -525,9 +525,9 @@
       "title": "Turn Taco Bell's owned streaming shows (Live Más Open, Live Más LIVE) into measurable Rewards sign-ups",
       "channel": "tv",
       "products": "flowcodes; flowhubs; flowid; analytics",
-      "score_total": 0.742,
+      "score_total": 0.792,
       "score_recency": 1.0,
-      "score_evidence": 0.3,
+      "score_evidence": 0.5,
       "score_fit": 0.667,
       "score_impact": 1.0,
       "confidence": "medium",
@@ -559,7 +559,7 @@
       "source_urls": "https://engagestar.com/insights/taco-bell-college-football-playoff-national-championship/ | https://yoteathletics.com/news/2025/11/20/talking-taco-bell-yotes-womens-basketball-partners-with-taco-bell.aspx | https://www.eventmarketer.com/article/experiential-marketing-trend-of-the-week-concert-tie-ins/ | https://www.adweek.com/creativity/taco-bell-turns-the-drive-thru-into-a-luxury-tasting-experience/",
       "what_happening": "Taco Bell runs live activations and sponsorships: the annual CFP Championship Tailgate student section (500 students, shown on ESPN), a pink Baja Blast activation at Olivia Rodrigo's festival, the 'Laps of Luxury' drive-thru event, and a multi-year College of Idaho basketball sponsorship with jerseys and student-section barriers.",
       "why_flowcode_fits": "These are high-attention physical moments where fans are present but, in the evidence, there is no stated way to capture them. Codes on signage, merch, barriers and screens can turn attendance into Rewards sign-ups and measure each activation.",
-      "suggested_play": "Your annual Live Más Student Section at the CFP Championship Tailgate (reported March 2026), the pink Baja Blast activation at Olivia Rodrigo's festival (Aug 2026) and the College of Idaho sponsorship (Nov 2025) all put Taco Bell in front of fans. Likely none of that is tied to individual sign-ups today. Put unique Flowcodes on signage, merch, photo ops and the student-section barriers that open a FlowHub with Rewards sign-up, a sweepstakes entry or the current drop. Use a separate code per event so each activation reports on its own, and a Workspace per event team or agency partner. Taco Bell would get scan counts and new first-party contacts per event. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How do you measure the return on event and sponsorship activations today?",
+      "suggested_play": "Your annual Live Más Student Section at the CFP Championship Tailgate (reported March 2026), the pink Baja Blast activation at Olivia Rodrigo's festival (Aug 2026) and the College of Idaho sponsorship (Nov 2025) all put Taco Bell in front of fans. Likely none of that is tied to individual sign-ups today. Put unique Flowcodes on signage, merch, photo ops and the student-section barriers that open a FlowHub with Rewards sign-up, a sweepstakes entry or the current drop. Use a separate code per event so each activation reports on its own, and a Workspace per event team or agency partner. Taco Bell would get scan counts and new first-party contacts per event. How do you measure the return on event and sponsorship activations today?",
       "would_measure": "Scans per event, sign-ups and sweepstakes entries per activation, Rewards enrollment, and later app activity from event contacts.",
       "generated_at": "2026-11-17T21:01:45.468551+00:00"
     },
@@ -576,7 +576,7 @@
       "score_evidence": 0.45,
       "score_fit": 1.0,
       "score_impact": 1.0,
-      "confidence": "medium",
+      "confidence": "low",
       "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i1_scale_stated; i2_national; i3_live_or_upcoming",
       "newest_source_date": "2026-07-02",
       "source_urls": "https://packaging-journal.de/en/yum-brands-is-focusing-on-more-circular-packaging/ | https://www.packagingeurope.com/one-million-taco-bell-sauce-packets-collected-through-us-recycling-programme/ | https://www.foodbeast.com/news/taco-bell-recyclable-sauce-packets/",
@@ -605,7 +605,7 @@
       "source_urls": "https://lbbonline.com/news/fernando-mendoza-davante-adams-taco-bell | https://adage.com/media/tv-streaming/aa-hot-spots-taco-bell-fernanco-mendoza/ | https://abancommercials.com/taco-bell/-quotcantina-chicken-bowl-quot-featuring-davante-adams-sitcom-style-spot-commercial/301844/",
       "what_happening": "Taco Bell runs a fall 2026 football campaign with Fernando Mendoza and Davante Adams, including TV spots, documentary-style content, a 'Manager Mendoza's Special' meal deal and a stadium store takeover.",
       "why_flowcode_fits": "The campaign pairs TV with a specific offer and a physical store takeover. A code on the spot and in the store can show which ads and markets drive redemptions and Rewards sign-ups.",
-      "suggested_play": "Your football campaign with Fernando Mendoza and Davante Adams, announced Oct 5, 2026, includes TV spots, a 'Manager Mendoza's Special' meal deal and a stadium store takeover. You likely cannot link a TV view to a redemption or a new Rewards member. Add a Flowcode to the TV spots and the store takeover that opens a FlowHub with the Manager's Special offer and a Rewards sign-up, using a FlowURL on Taco Bell's domain for the spoken or social version. Taco Bell would see scans per spot, market and store, and the new contacts they bring in. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How do you tie TV exposure to offer redemption in this campaign today?",
+      "suggested_play": "Your football campaign with Fernando Mendoza and Davante Adams, announced Oct 5, 2026, includes TV spots, a 'Manager Mendoza's Special' meal deal and a stadium store takeover. You likely cannot link a TV view to a redemption or a new Rewards member. Add a Flowcode to the TV spots and the store takeover that opens a FlowHub with the Manager's Special offer and a Rewards sign-up, using a FlowURL on Taco Bell's domain for the spoken or social version. Taco Bell would see scans per spot, market and store, and the new contacts they bring in. How do you tie TV exposure to offer redemption in this campaign today?",
       "would_measure": "Scans per spot and market, offer redemptions, new Rewards sign-ups, and store-level response at the takeover.",
       "generated_at": "2026-11-17T21:01:45.468551+00:00"
     },

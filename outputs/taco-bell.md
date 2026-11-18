@@ -8,7 +8,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 ## Top opportunities
 
 ### 1. Turn Taco Bell's owned streaming shows (Live Más Open, Live Más LIVE) into measurable Rewards sign-ups
-**Score 0.74** · confidence **medium** · channel: tv · products: flowcodes, flowhubs, flowid, analytics
+**Score 0.79** · confidence **medium** · channel: tv · products: flowcodes, flowhubs, flowid, analytics
 
 **What's happening:** Taco Bell now produces its own programming: the Live Más LIVE variety show (March 2026, premiered on Peacock, 20+ menu items revealed) and the Live Más Open golf tournament streaming on Peacock and airing on Golf Channel.
 
@@ -24,7 +24,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 <details><summary>Why this score</summary>
 
-`0.74 = 0.3×recency 1.00 + 0.25×evidence 0.30 + 0.25×fit 0.67 + 0.2×impact 1.00`
+`0.79 = 0.3×recency 1.00 + 0.25×evidence 0.50 + 0.25×fit 0.67 + 0.2×impact 1.00`
 
 - Passed: F1 names a physical/broadcast touchpoint; F3 matches a Flowcode play; I1 scale stated; I2 national or multi-market; I3 running now or upcoming
 - Not passed (no or unknown): F2 names a digital action
@@ -37,7 +37,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 **Why Flowcode fits:** These are high-attention physical moments where fans are present but, in the evidence, there is no stated way to capture them. Codes on signage, merch, barriers and screens can turn attendance into Rewards sign-ups and measure each activation.
 
-**Suggested play (pre-call brief):** Your annual Live Más Student Section at the CFP Championship Tailgate (reported March 2026), the pink Baja Blast activation at Olivia Rodrigo's festival (Aug 2026) and the College of Idaho sponsorship (Nov 2025) all put Taco Bell in front of fans. Likely none of that is tied to individual sign-ups today. Put unique Flowcodes on signage, merch, photo ops and the student-section barriers that open a FlowHub with Rewards sign-up, a sweepstakes entry or the current drop. Use a separate code per event so each activation reports on its own, and a Workspace per event team or agency partner. Taco Bell would get scan counts and new first-party contacts per event. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How do you measure the return on event and sponsorship activations today?
+**Suggested play (pre-call brief):** Your annual Live Más Student Section at the CFP Championship Tailgate (reported March 2026), the pink Baja Blast activation at Olivia Rodrigo's festival (Aug 2026) and the College of Idaho sponsorship (Nov 2025) all put Taco Bell in front of fans. Likely none of that is tied to individual sign-ups today. Put unique Flowcodes on signage, merch, photo ops and the student-section barriers that open a FlowHub with Rewards sign-up, a sweepstakes entry or the current drop. Use a separate code per event so each activation reports on its own, and a Workspace per event team or agency partner. Taco Bell would get scan counts and new first-party contacts per event. How do you measure the return on event and sponsorship activations today?
 
 **What it would measure:** Scans per event, sign-ups and sweepstakes entries per activation, Rewards enrollment, and later app activity from event contacts.
 
@@ -56,7 +56,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 </details>
 
 ### 3. Put a code on sauce packets to enroll customers in the TerraCycle recycling program and Rewards
-**Score 0.67** · confidence **medium** · channel: packaging · products: flowcodes, flowhubs, flowid, analytics
+**Score 0.67** · confidence **low** · channel: packaging · products: flowcodes, flowhubs, flowid, analytics
 
 **What's happening:** Taco Bell and TerraCycle run a sauce packet recycling program (reportedly one million items in five years, 415,000+ in 2025), and Rewards members get bonus points if they sign up with their Rewards email.
 
@@ -86,7 +86,7 @@ Score = recency, evidence strength, Flowcode fit and impact (weights and checkli
 
 **Why Flowcode fits:** The campaign pairs TV with a specific offer and a physical store takeover. A code on the spot and in the store can show which ads and markets drive redemptions and Rewards sign-ups.
 
-**Suggested play (pre-call brief):** Your football campaign with Fernando Mendoza and Davante Adams, announced Oct 5, 2026, includes TV spots, a 'Manager Mendoza's Special' meal deal and a stadium store takeover. You likely cannot link a TV view to a redemption or a new Rewards member. Add a Flowcode to the TV spots and the store takeover that opens a FlowHub with the Manager's Special offer and a Rewards sign-up, using a FlowURL on Taco Bell's domain for the spoken or social version. Taco Bell would see scans per spot, market and store, and the new contacts they bring in. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How do you tie TV exposure to offer redemption in this campaign today?
+**Suggested play (pre-call brief):** Your football campaign with Fernando Mendoza and Davante Adams, announced Oct 5, 2026, includes TV spots, a 'Manager Mendoza's Special' meal deal and a stadium store takeover. You likely cannot link a TV view to a redemption or a new Rewards member. Add a Flowcode to the TV spots and the store takeover that opens a FlowHub with the Manager's Special offer and a Rewards sign-up, using a FlowURL on Taco Bell's domain for the spoken or social version. Taco Bell would see scans per spot, market and store, and the new contacts they bring in. How do you tie TV exposure to offer redemption in this campaign today?
 
 **What it would measure:** Scans per spot and market, offer redemptions, new Rewards sign-ups, and store-level response at the takeover.
 

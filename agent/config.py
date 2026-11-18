@@ -49,6 +49,7 @@ PRESS_RELEASE_DOMAINS = {"businesswire.com", "prnewswire.com", "globenewswire.co
 MAJOR_PRESS_DOMAINS = {
     "nytimes.com", "wsj.com", "bloomberg.com", "reuters.com", "apnews.com", "cnbc.com",
     "forbes.com", "adage.com", "adweek.com", "marketingdive.com", "thedrum.com", "digiday.com",
+    "variety.com",
 }
 EVIDENCE_FULL_AT = 2.0  # sum of tier weights that counts as full evidence (two first-party sources)
 

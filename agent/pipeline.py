@@ -93,6 +93,6 @@ async def run_company(
     stats.seconds = round(time.time() - started, 1)
     report = Report(company=company, generated_at=generated_at, opportunities=ranked, dropped=dropped, stats=stats)
     _save(run_dir, "6_report", report)
-    step("rank", f"top {len(ranked)} ranked")
+    step("rank", f"{len(ranked)} scored, best first")
     log.info("saved stage outputs to %s", run_dir)
     return report

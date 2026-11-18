@@ -1,0 +1,829 @@
+{
+  "company": {
+    "name": "Sephora",
+    "domain": "sephora.com",
+    "is_existing_customer": false,
+    "customer_evidence": null
+  },
+  "generated_at": "2026-11-18T18:36:22.074838Z",
+  "opportunities": [
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S1",
+          "S3",
+          "S4",
+          "S5",
+          "S7",
+          "S30",
+          "S31"
+        ],
+        "evidence_quote": "The campaign will roll out officially on October 29 th across CTV, linear television, streaming and social, and clients can shop for Seth's curated holiday picks on Sephora.com and the Sephora App.",
+        "title": "Seth Rogen 'We All Sephora' holiday TV: attribute CTV and linear response",
+        "what_happening": "Sephora's 'We All Sephora' holiday campaign with Seth Rogen rolled out October 29 across CTV, linear TV, streaming and social in the U.S. and Canada, aimed at gift-givers new to beauty, with picks shoppable on Sephora.com and the app.",
+        "channel": "tv",
+        "why_flowcode_fits": "The campaign targets gift-givers who are likely not Beauty Insider members. A code on CTV and linear spots could tie each spot and market to a sign-up or app install, and capture first-party data from people Sephora may not know yet.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your 'We All Sephora' holiday campaign with Seth Rogen has been on CTV and linear TV in the U.S. and Canada since October 29. You likely cannot see which spots or markets send gift-givers to Sephora.com or the app, or turn them into known customers. A dynamic Flowcode on the CTV and linear spots could open a FlowHub with Seth's curated gift picks, an app download and a Beauty Insider sign-up. You would get scans by spot, network and market, plus new sign-ups and app installs attributed to TV, synced to your CRM. Flowcode's ESPN College GameDay broadcast code collected 32,000 emails in one day. Who owns measurement of TV-driven app installs and loyalty sign-ups for the holiday campaign?",
+        "would_measure": "Scans by spot, network and market; Beauty Insider sign-ups and app installs from TV; gift-picks page engagement; CRM conversion.",
+        "evidence": [
+          {
+            "url": "https://newsroom.sephora.com/sephora-partners-with-seth-rogen-to-celebrate-the-beauty-gifter-in-everyone-this-holiday-season/",
+            "published": "2026-10-26",
+            "quote": "The campaign will roll out officially on October 29 th across CTV, linear television, streaming and social, and clients can shop for Seth's curated holiday picks on Sephora.com and the Sephora App."
+          },
+          {
+            "url": "https://www.marketingdive.com/news/sephora-casts-seth-rogen-for-holiday-ads-targeted-at-gift-givers/872877/",
+            "published": "2026-10-28",
+            "quote": "The full \"We All Sephora\" campaign, which rolls out Thursday, will appear across connected and linear TV, streaming and social."
+          },
+          {
+            "url": "https://www.cosmeticsbusiness.com/inside-beautys-2026-christmas-campaigns",
+            "published": "2026-11-16",
+            "quote": "Sephora US and Canada has teamed up with actor and writer Seth Rogen to unveil its ‘We All Sephora’ holiday campaign with a comedic twist."
+          },
+          {
+            "url": "https://news.designrush.com/sephora-seth-rogen-holiday-push-gut-new-york",
+            "published": "2026-10-27",
+            "quote": "The campaign launches in the U.S. and Canada on October 29 across connected TV, linear TV, streaming, and social."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Every fact in the claim appears in the sources: the 'We All Sephora' campaign with Seth Rogen, the October 29 rollout across CTV, linear TV, streaming and social, the U.S. and Canada markets, the target of gift-givers new to beauty, and picks shoppable on Sephora.com and the app. The Sephora newsroom, Marketing Dive and DesignRush sources all support these points.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "The campaign will roll out officially on October 29 th across CTV, linear television, streaming and social",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "clients can shop for Seth’s curated holiday picks on Sephora.com and the Sephora App",
+          "answer": "yes"
+        },
+        "f3_matches_play": {
+          "quote": "The campaign will roll out officially on October 29 th across CTV, linear television, streaming and social",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "The “We All Sephora” spot, which is running in 30- and 60-second versions ... which is running in the U.S. and Canada.",
+          "answer": "unknown"
+        },
+        "i2_national": {
+          "quote": "The campaign launches in the U.S. and Canada on October 29 across connected TV, linear TV, streaming, and social.",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "The campaign will roll out officially on October 29 th across CTV, linear television, streaming and social",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.985,
+        "evidence": 1.0,
+        "fit": 1.0,
+        "impact": 0.667,
+        "total": 0.929,
+        "passed": [
+          "f1_touchpoint",
+          "f2_digital_action",
+          "f3_matches_play",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S2",
+          "S6",
+          "S8",
+          "S32"
+        ],
+        "evidence_quote": "To kick off the Holiday campaign, Sephora brought \"We All Sephora\" to life through a \"Sethphora\" takeover at The Grove location in Los Angeles, CA, bringing the activation to Seth's home city.",
+        "title": "Sethphora Grove store takeover: capture foot-traffic and social buzz",
+        "what_happening": "Sephora temporarily renamed its Grove store in Los Angeles 'Sethphora' as a guerrilla stunt to tease the holiday campaign.",
+        "channel": "retail",
+        "why_flowcode_fits": "A high-visibility facade draws crowds and photos, but passersby likely cannot be identified or reached afterward. A code at the store could route them to the holiday picks and sign-up.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "analytics"
+        ],
+        "suggested_play": "Your 'Sethphora' takeover of The Grove store in Los Angeles teased the holiday campaign in late October. You likely cannot tell how many passersby engaged or what they did after. A Flowcode on the facade signage and in-store displays could open a FlowHub with Seth's holiday picks and a Beauty Insider sign-up. You would get location-level scans and new members from the stunt. Which tools do you use today to measure foot traffic and sign-ups from a stunt like this?",
+        "would_measure": "Scans at The Grove, sign-ups, clicks to holiday picks, and comparison with other stores.",
+        "evidence": [
+          {
+            "url": "https://newsroom.sephora.com/sephora-partners-with-seth-rogen-to-celebrate-the-beauty-gifter-in-everyone-this-holiday-season/",
+            "published": "2026-10-26",
+            "quote": "To kick off the Holiday campaign, Sephora brought \"We All Sephora\" to life through a \"Sethphora\" takeover at The Grove location in Los Angeles, CA, bringing the activation to Seth's home city."
+          },
+          {
+            "url": "https://www.marketingdive.com/news/sephora-casts-seth-rogen-for-holiday-ads-targeted-at-gift-givers/872877/",
+            "published": "2026-10-28",
+            "quote": "The retailer teased the partnership at its location in The Grove in Los Angeles, where the store's name temporarily became Sethpora, and via social posts last week."
+          },
+          {
+            "url": "https://www.cosmeticsbusiness.com/inside-beautys-2026-christmas-campaigns",
+            "published": "2026-11-16",
+            "quote": "Sephora US and Canada teased the campaign via a guerrilla marketing stunt in Los Angeles, US, which saw a playful ‘Sethphora’ facade – where Sephora’s brand name was merged with Rogen’s first name – hung on the front of the retailer’s The Grove store."
+          },
+          {
+            "url": "https://news.designrush.com/sephora-seth-rogen-holiday-push-gut-new-york",
+            "published": "2026-10-27",
+            "quote": "Sephora extended the concept into a physical activation at The Grove in Los Angeles, the actor's home city."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "The claim says Sephora temporarily renamed its Grove store in Los Angeles 'Sethphora' as a guerrilla stunt to tease the holiday campaign. The sources support each part. Designrush says 'The store temporarily changed its name to \"Sethphora,\" teasing the brand partnership'. Cosmetics Business calls it 'a guerrilla marketing stunt' at The Grove store. Sephora's newsroom describes the takeover at The Grove in LA teasing the upcoming partnership. The claim is supported.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "a \"Sethphora\" takeover at The Grove location in Los Angeles, CA",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "clients can shop for Seth's curated holiday picks on Sephora.com and the Sephora App.",
+          "answer": "yes"
+        },
+        "f3_matches_play": {
+          "quote": "Shelf, display and table codes for offers, coupons, app downloads",
+          "answer": "unknown"
+        },
+        "i1_scale_stated": {
+          "quote": "The campaign will roll out officially on October 29 th across CTV, linear television, streaming and social",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "Today, Sephora U.S. and Canada unveil \"We All Sephora,\" a holiday campaign",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Sephora clients will discover exclusive products and expertly curated edits that you can only find at Sephora, now and throughout the holiday season.",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.985,
+        "evidence": 1.0,
+        "fit": 0.667,
+        "impact": 1.0,
+        "total": 0.912,
+        "passed": [
+          "f1_touchpoint",
+          "f2_digital_action",
+          "i1_scale_stated",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S11",
+          "S12",
+          "S13",
+          "S42"
+        ],
+        "evidence_quote": "Beginning August 20, an assortment of 19 OLIVE YOUNG-curated Korean beauty brands will launch in more than 500 SEPHORA stores nationwide and on Sephora.com, marking the partnership’s first market activation.",
+        "title": "OLIVE YOUNG K-Beauty Edit: shelf codes in 500+ stores",
+        "what_happening": "Sephora launched 19 OLIVE YOUNG-curated K-beauty brands in 500+ U.S. stores, with a dedicated Times Square space and the 'OLIVE YOUNG K-beauty Edit' assortment, including FULLY in 580+ stores.",
+        "channel": "retail",
+        "why_flowcode_fits": "Shoppers meeting unfamiliar K-beauty brands in store likely want education and reviews. Shelf codes could deliver that while showing which stores and brands drive engagement.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "analytics",
+          "workspaces_api"
+        ],
+        "suggested_play": "Your OLIVE YOUNG K-beauty Edit has been in 500+ U.S. stores and at Times Square since August 20. You likely cannot see which shelves or stores generate interest in these new brands. A Flowcode on each K-beauty shelf display could open a FlowHub with routines, brand stories and a link to buy or join Beauty Insider. You would get scans by store and brand, and a view of which of the 19 brands draw interest. Separate workspaces could let each brand see its own results. How do you currently gauge in-store interest in a new assortment like this?",
+        "would_measure": "Scans by store and brand; clicks to product pages; sign-ups; Times Square versus other stores.",
+        "evidence": [
+          {
+            "url": "https://newsroom.sephora.com/sephora-introduces-olive-young-curated-k-beauty-to-u-s-consumers-beginning-august-20/",
+            "published": "2026-08-04",
+            "quote": "The U.S. debut will launch with a dedicated OLIVE YOUNG K-beauty space at SEPHORA’s Times Square flagship in New York City, while curated assortments will also be available in more than 500 SEPHORA stores nationwide under ‘OLIVE YOUNG K-beauty Edit’ and on Sephora.com."
+          },
+          {
+            "url": "https://massmarketretailers.com/fully-expands-u-s-retail-presence-with-sephora-launch/",
+            "published": "2026-10-27",
+            "quote": "Korean skin care brand FULLY has launched in more than 580 Sephora stores across the United States as part of the OLIVE YOUNG K-Beauty Edit, marking its largest U.S. brick-and-mortar expansion to date."
+          },
+          {
+            "url": "https://newsroom.sephora.com/sephora-and-olive-young-partner-to-bring-the-best-of-korean-beauty-to-sephora-consumers/",
+            "published": "2026-01-20",
+            "quote": "The partnership will debut this fall as a visionary omnichannel partnership in the United States, Canada, Hong Kong SAR and Southeast Asia (Singapore, Malaysia, Thailand), with expansion into additional regions including the Middle East, the UK and Australia in 2027."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Every fact in the claim appears in the sources. The Sephora newsroom release of Aug 4, 2026 gives 19 OLIVE YOUNG-curated brands, 'more than 500 SEPHORA stores nationwide', the dedicated OLIVE YOUNG K-beauty space at the Times Square flagship, and the 'OLIVE YOUNG K-beauty Edit' assortment. The Oct 27, 2026 article says FULLY launched in more than 580 Sephora stores as part of the OLIVE YOUNG K-Beauty Edit. FULLY is on the 19-brand list.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "a dedicated OLIVE YOUNG K-beauty space at SEPHORA’s Times Square flagship in New York City, while curated assortments will also be available in more than 500 SEPHORA stores nationwide",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "curated assortments will also be available in more than 500 SEPHORA stores nationwide under ‘OLIVE YOUNG K-beauty Edit’ and on Sephora.com",
+          "answer": "no"
+        },
+        "f3_matches_play": {
+          "quote": "a dedicated OLIVE YOUNG K-beauty space at SEPHORA’s Times Square flagship",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "will launch in more than 500 SEPHORA stores nationwide and on Sephora.com",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "more than 500 SEPHORA stores nationwide",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Beginning August 20, an assortment of 19 OLIVE YOUNG-curated Korean beauty brands will launch",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.844,
+        "evidence": 0.65,
+        "fit": 0.667,
+        "impact": 1.0,
+        "total": 0.782,
+        "passed": [
+          "f1_touchpoint",
+          "f3_matches_play",
+          "i1_scale_stated",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S14",
+          "S15",
+          "S16",
+          "S23",
+          "S24",
+          "S25"
+        ],
+        "evidence_quote": "Sephora has introduced fan-focused activations across its sports partnerships, including a parachute drop at Valkyries games and a branded player arrival tunnel with Unrivaled.",
+        "title": "Sports partnerships portfolio: fan data capture across leagues",
+        "what_happening": "Sephora has built a sports portfolio (Unrivaled, Valkyries, AUSL, Warriors, F1 Academy, Toronto Tempo) with fan activations, jumbotron recognition, jersey, TV, OOH and transit.",
+        "channel": "sponsorship",
+        "why_flowcode_fits": "Many partnerships mean many fan touchpoints. Codes on jumbotrons, signage and transit could capture fans as Beauty Insider members and show which partnership delivers, using one workspace per team.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics",
+          "workspaces_api"
+        ],
+        "suggested_play": "Your sports portfolio now spans Unrivaled, the Valkyries, AUSL, the Warriors, F1 Academy and Toronto Tempo, with activations like the Valkyries parachute drop. Beyond social engagement, you likely cannot compare how many fans each property turns into known customers. A Flowcode on jumbotron moments, signage and transit ads could open a FlowHub with a sign-up and a team-specific offer, with one workspace per partnership. You would get scans and sign-ups per team, venue and market, rolled up for leadership. Flowcode's NFL Shop result was 10k connections in 60 seconds. How do you compare return across your sports partnerships today?",
+        "would_measure": "Scans and sign-ups per team, venue and activation; Beauty Insider conversions; the Pretty Badass nomination flow.",
+        "evidence": [
+          {
+            "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/02/power-players-innovators-in-womens-sports-nanette-nunu-sephora/",
+            "published": "2026-11-02",
+            "quote": "Since launching its first U.S. sports partnership with Unrivaled, Sephora has expanded its portfolio to include the Valkyries, the AUSL, the Warriors and F1 Academy."
+          },
+          {
+            "url": "https://www.thesponsor.com/womens-sport-partnerships-inside-cibc-and-sephoras-first-season-with-toronto-tempo/",
+            "published": "2026-09-22",
+            "quote": "High-visibility assets like the jersey, TV, out-of-home and transit establish the association and put Sephora alongside one of the most interesting new properties in Canadian sport."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Claim facts appear in sources: the portfolio of Unrivaled, Valkyries, AUSL, Warriors and F1 Academy is in the SBJ article, and Toronto Tempo is in The Sponsor. Fan activations (parachute drop, player tunnel), jumbotron recognition, and the jersey, TV, OOH and transit assets are all stated. The claim is supported. Scale is not stated as a number of stores, markets, or a budget. Sephora has six partnerships, but no scale metric is given. National: Tempo is Canada's first WNBA team and the Sephora Canada CMO speaks of 'across the country', but the portfolio is US/Canada; it's loosely multi-market. Timing: Nov 2026 and Sep 2026 articles describe the first season as almost complete, so the Tempo season is ending; ongoing partnerships generally but no explicit upcoming date.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "High-visibility assets like the jersey, TV, out-of-home and transit establish the association",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "Sephora invited Canadians to nominate a Pretty Badass woman in their own lives, then brought some of those stories into the partnership through social content, courtside experiences and recognition on the jumbotron.",
+          "answer": "yes"
+        },
+        "f3_matches_play": {
+          "quote": "Codes on screens, signage, merch for fan sign-up, sweepstakes, ticketing",
+          "answer": "unknown"
+        },
+        "i1_scale_stated": {
+          "quote": "Sephora has expanded its portfolio to include the Valkyries, the AUSL, the Warriors and F1 Academy.",
+          "answer": "no"
+        },
+        "i2_national": {
+          "quote": "We could see the energy and excitement building across the country and believed that Canadians were ready to rally behind the Toronto Tempo",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "With the inaugural season almost complete, their experiences show how sponsors can do more than associate themselves",
+          "answer": "unknown"
+        }
+      },
+      "scores": {
+        "recency": 0.884,
+        "evidence": 0.3,
+        "fit": 0.667,
+        "impact": 0.333,
+        "total": 0.574,
+        "passed": [
+          "f1_touchpoint",
+          "f2_digital_action",
+          "i2_national"
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S9",
+          "S10"
+        ],
+        "evidence_quote": "Carey's annual \"It's Time!\" video, the viral ritual that unofficially opens the Christmas season, premiered across her and Sephora's Instagram accounts and on a Times Square billboard, reimagined as a full holiday campaign for the beauty retailer.",
+        "title": "Mariah Carey Times Square billboard and Savings Event: measure OOH response",
+        "what_happening": "Sephora's 'Give Something Beautiful' holiday push, with Mariah Carey's 'It's Time!' video, premiered on Instagram and a Times Square billboard, tied to a Savings Event through November 10.",
+        "channel": "ooh",
+        "why_flowcode_fits": "A Times Square billboard drives huge exposure that is hard to link to action. A code on the billboard, or in follow-on OOH, could connect exposure to Savings Event traffic and sign-ups.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowurls",
+          "analytics"
+        ],
+        "suggested_play": "Your Mariah Carey 'It's Time!' video premiered on a Times Square billboard in early November alongside the Savings Event through November 10. You likely cannot see how many billboard viewers acted on it. A Flowcode on OOH creative could link to a Savings Event or gifting page, with a branded FlowURL for the social posts. You would get scans by location and time, and a comparison of OOH against social. How do you attribute billboard exposure to sales or app activity today?",
+        "would_measure": "Scans by billboard and time; clicks to Savings Event and gifting pages; OOH versus social response.",
+        "evidence": [
+          {
+            "url": "https://www.thehypemagazine.com/2026/11/09/mariah-careys-its-time-becomes-a-sephora-holiday-campaign/",
+            "published": "2026-11-09",
+            "quote": "The campaign anchors Sephora's \"Give Something Beautiful\" holiday push and its Savings Event, which runs through November 10."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Every fact in the claim appears in the source: the 'Give Something Beautiful' holiday push, Mariah Carey's 'It's Time!' video, the premiere on Instagram and a Times Square billboard, and the Savings Event running through November 10. The source is dated 2026-11-09, so the Savings Event ends the next day. The claim is supported. F1 is yes (Times Square billboard). F2 is unknown: the sources name no digital action people are asked to take; the Savings Event is named but no action is specified. F3 is yes since a billboard matches the out-of-home play. I1 is unknown: no store, market, viewer or budget figure is given. I2 is unknown: a Times Square billboard is one location, and the Instagram accounts are not stated to be national. I3 is yes since the event runs through November 10 and the source is dated November 9.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "premiered across her and Sephora’s Instagram accounts and on a Times Square billboard",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "The campaign anchors Sephora’s “Give Something Beautiful” holiday push and its Savings Event, which runs through November 10.",
+          "answer": "unknown"
+        },
+        "f3_matches_play": {
+          "quote": "on a Times Square billboard",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "premiered across her and Sephora’s Instagram accounts and on a Times Square billboard",
+          "answer": "unknown"
+        },
+        "i2_national": {
+          "quote": "on a Times Square billboard",
+          "answer": "unknown"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "its Savings Event, which runs through November 10",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.933,
+        "evidence": 0.15,
+        "fit": 0.667,
+        "impact": 0.333,
+        "total": 0.551,
+        "passed": [
+          "f1_touchpoint",
+          "f3_matches_play",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S17",
+          "S18",
+          "S19"
+        ],
+        "evidence_quote": "This deal also includes a partnership with F1 Paddock Club, the luxury hospitality suite, and will see Sephora’s iconic Glam Bars available to Paddock Club guests at 18 Grands Prix across the 2026 season, further elevating the event experience.",
+        "title": "F1 Academy Glam Bars: capture guests at 18 Grands Prix",
+        "what_happening": "Sephora is the official F1 Academy partner, running glam bars and fan activations at select races (including Austin) and Glam Bars for Paddock Club guests at 18 Grands Prix.",
+        "channel": "event",
+        "why_flowcode_fits": "Glam Bars serve many guests across races and countries, yet guests likely leave without being linked to Sephora's CRM. A code at each bar could capture them and show results by race.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your Glam Bars are at 18 Grands Prix through the 2026 season for Paddock Club guests, plus F1 Academy fan activations. You likely do not capture who visited each bar or connect them to Beauty Insider. A Flowcode at each bar could open a FlowHub with a sign-up, a booking for a look and a post-event offer. You would get scans and sign-ups by race and country. Flowcode's CLEAR deployment drove 1.2M+ scans across 7,000+ codes. How do you follow up with Glam Bar guests after a race weekend?",
+        "would_measure": "Scans per race; sign-ups; Glam Bar bookings; follow-up offer redemption.",
+        "evidence": [
+          {
+            "url": "https://newsroom.sephora.com/f1-academy-and-sephora-launch-partnership-ahead-of-2026-season/",
+            "published": "2026-03-11",
+            "quote": "SEPHORA is also proudly sponsoring a new end-of-year drivers’ celebration spotlighting progress and performance across the season."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "The claim's facts all appear in the source: official partner of F1 Academy, glam bars and fan activations at select races, Austin mentioned by the CMO ('from Shanghai to Austin'), and Glam Bars for Paddock Club guests at 18 Grands Prix across 2026. The source does not say the Austin activation specifically includes glam bars, but the CMO quote about engaging audiences from Shanghai to Austin supports it loosely. Supported. Touchpoint is physical (glam bars, Paddock Club, races). No explicit digital action is named. Scale is stated (18 Grands Prix, 35 markets, 80M members). Global, multi-market. The season is underway/starting now.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "immersive glam bars and fan activations at select races",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "No digital action named in the sources",
+          "answer": "no"
+        },
+        "f3_matches_play": {
+          "quote": "immersive glam bars and fan activations at select races",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "Glam Bars available to Paddock Club guests at 18 Grands Prix across the 2026 season",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "With a presence in 35 global markets, and 80 million active members",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "the 2026 F1 ACADEMY season, which begins this week in Shanghai",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.144,
+        "evidence": 0.5,
+        "fit": 0.667,
+        "impact": 1.0,
+        "total": 0.535,
+        "passed": [
+          "f1_touchpoint",
+          "f3_matches_play",
+          "i1_scale_stated",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S20",
+          "S21",
+          "S22"
+        ],
+        "evidence_quote": "Sephora has been named the Official Beauty Partner of US television competition series Dancing with the Stars.",
+        "title": "Dancing with the Stars official beauty partner: broadcast response",
+        "what_happening": "Sephora is Official Beauty Partner of Dancing with the Stars with on-air integrations, vanity stations for the audience and a cast 'last looks' activation.",
+        "channel": "tv",
+        "why_flowcode_fits": "On-air integrations reach a cross-generational audience, but viewer response is likely unmeasured. A code in segments or on vanity stations could link broadcast to sign-ups.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your Dancing with the Stars partnership, announced in September, puts Sephora on air and at on-site vanity stations. You likely cannot tell which integrations lead viewers to Sephora. A Flowcode on screen during Sephora segments and on the vanity stations could open a FlowHub with the looks featured and a Beauty Insider sign-up. You would get scans per episode and segment, plus live-audience sign-ups. How do you measure viewer response to this partnership now?",
+        "would_measure": "Scans per episode and segment; sign-ups; clicks to featured products; studio audience versus TV viewers.",
+        "evidence": [
+          {
+            "url": "https://cosmeticsbusiness.com/sephora-named-official-beauty-partner-dancing-with-stars",
+            "published": "2026-09-11",
+            "quote": "The partnership gives Sephora a major platform to reach an \"engaged, cross-generational audience with its message of beauty as a source of confidence and self-expression\", Megan Black, SVP of Digital Marketing & Media at Sephora, told Cosmetics Business."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "The claim's facts all appear in the source: Official Beauty Partner of Dancing with the Stars, on-air integrations, on-site Sephora vanity stations for audience members, and a new on-set 'last looks' activation for the cast. The source also notes the season 35 premiere on 15 September. Nothing in the claim is unsupported. However, the sources name no digital action Sephora wants viewers to take and give no scale figure.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "on-site Sephora vanity stations and glam touch-ups for audience members, and a new on-set “last looks” activation for the cast",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "with on-air integrations, custom social content and experiential activations",
+          "answer": "no"
+        },
+        "f3_matches_play": {
+          "quote": "on-air integrations, custom social content and experiential activations",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "will appear throughout season 35 of the show",
+          "answer": "no"
+        },
+        "i2_national": {
+          "quote": "Sephora has been named the Official Beauty Partner of US television competition series Dancing with the Stars.",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Beginning with the 15 September premiere, the LVMH-owned beauty retailer will appear throughout season 35",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.592,
+        "evidence": 0.15,
+        "fit": 0.667,
+        "impact": 0.667,
+        "total": 0.515,
+        "passed": [
+          "f1_touchpoint",
+          "f3_matches_play",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
+    }
+  ],
+  "dropped": [
+    {
+      "stage": "match",
+      "what": "Sephora is running its Beauty Re(Purposed) program, which lets shoppers drop off empty beauty packaging at any Sephora store for recycling into new products.",
+      "reason": "no Flowcode fit: Recycling drop-off exists, but evidence is thin on a campaign or touchpoint gap."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora is piloting its app inside ChatGPT in the U.S. to give AI-powered beauty advice, recommendations and shopping help.",
+      "reason": "no Flowcode fit: In-ChatGPT app is already digital; Flowcode is a weak fit."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora's ChatGPT app lets customers use Beauty Insider loyalty rewards, free shipping promotions and samples, with in-app checkout planned for later.",
+      "reason": "no Flowcode fit: Already digital loyalty features inside ChatGPT."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora is launching its app inside ChatGPT as a U.S. pilot, with AI-driven beauty advice and product recommendations.",
+      "reason": "no Flowcode fit: Same ChatGPT pilot; already digital."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora plans to let shoppers use Beauty Insider loyalty rewards, free shipping promotions and samples within the ChatGPT app.",
+      "reason": "no Flowcode fit: Same ChatGPT pilot; already digital."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora ran a four-day Rouge Celebration event for loyalty members across in-store and online activations, with 30 brands activated across 13 stores.",
+      "reason": "no Flowcode fit: Past loyalty event with little detail on touchpoints to build a play."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora has partnerships with DoorDash, Lyft and Venmo that extend Beauty Insider rewards and benefits beyond its stores.",
+      "reason": "no Flowcode fit: Partner benefit integrations are digital, not offline touchpoints."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora runs twice-yearly Savings Events where Beauty Insider members get 10% to 20% off eligible purchases depending on tier.",
+      "reason": "no Flowcode fit: Consumer commentary on sale pricing, not a Sephora initiative with a gap."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora's Beauty Insider loyalty program gives tiered discounts during its seasonal sales, with Rouge members getting 20% off.",
+      "reason": "no Flowcode fit: Tiered discounts are a loyalty mechanic, not an offline touchpoint."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora stocks new product launches from various brands in its stores, often ahead of other retailers.",
+      "reason": "no Flowcode fit: General shopper observation; no specific program."
+    },
+    {
+      "stage": "match",
+      "what": "Laura Geller is launching its boxed set and in-store testers inside Sephora at Kohl's in the U.S., a partnership that returns the brand to physical retail.",
+      "reason": "no Flowcode fit: Brand partner launching at Sephora at Kohl's; thin evidence and not Sephora's own campaign."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora held its SEPHORiA 2026 consumer beauty event in Los Angeles, drawing more than 8,000 attendees over two days in March.",
+      "reason": "no Flowcode fit: Past March event; thin forward-looking hook compared with other plays."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora announced a long-term partnership with Alex Cooper's Unwell network and a podcast network glam studio called Big Al's Sephora Beauty Bar, unveiled at SEPHORiA.",
+      "reason": "no Flowcode fit: Podcast network partnership; mostly digital and no clear gap."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora's SEPHORiA event featured over 65 brand activations and sponsor experiences from partners such as Starbucks, Sephora Credit Card, Alani Nu, La Croix, and Unwell.",
+      "reason": "no Flowcode fit: Sponsor activations at a past event; no specific gap to pitch."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora launched Dolce&Gabbana Beauty with the Pop & Glow Lounge, a multi-day mobile pop-up in SoHo and Greenwich Village, New York.",
+      "reason": "no Flowcode fit: Pop-up for a partner brand launch that has already happened."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora is running Sephoria, a ticketed two-day immersive consumer event with over 65 brands, in Los Angeles.",
+      "reason": "no Flowcode fit: Past March event, already covered by other signals with little new gap."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora is running an out-of-home ad campaign in Los Angeles and posting social content during the Sephoria weekend.",
+      "reason": "no Flowcode fit: Short event-weekend OOH in a past period; no durable hook."
+    },
+    {
+      "stage": "match",
+      "what": "Sephora added Starbucks as a partner for Sephoria, with coffee stands offering free drinks and snacks at the event.",
+      "reason": "no Flowcode fit: Starbucks sponsor stands at a past event; no clear fit."
+    },
+    {
+      "stage": "verify",
+      "what": "Vendor ingredient and packaging compliance programs",
+      "reason": "no specific physical or broadcast touchpoint named in the sources"
+    }
+  ],
+  "stats": {
+    "input_tokens": 154759,
+    "output_tokens": 19132,
+    "search_calls": 0,
+    "cost_usd": 0.2421796,
+    "seconds": 48.1
+  },
+  "crm_rows": [
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 1,
+      "title": "Seth Rogen 'We All Sephora' holiday TV: attribute CTV and linear response",
+      "channel": "tv",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.929,
+      "score_recency": 0.985,
+      "score_evidence": 1.0,
+      "score_fit": 1.0,
+      "score_impact": 0.667,
+      "confidence": "medium",
+      "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-11-16",
+      "source_urls": "https://newsroom.sephora.com/sephora-partners-with-seth-rogen-to-celebrate-the-beauty-gifter-in-everyone-this-holiday-season/ | https://www.marketingdive.com/news/sephora-casts-seth-rogen-for-holiday-ads-targeted-at-gift-givers/872877/ | https://www.cosmeticsbusiness.com/inside-beautys-2026-christmas-campaigns | https://news.designrush.com/sephora-seth-rogen-holiday-push-gut-new-york",
+      "what_happening": "Sephora's 'We All Sephora' holiday campaign with Seth Rogen rolled out October 29 across CTV, linear TV, streaming and social in the U.S. and Canada, aimed at gift-givers new to beauty, with picks shoppable on Sephora.com and the app.",
+      "why_flowcode_fits": "The campaign targets gift-givers who are likely not Beauty Insider members. A code on CTV and linear spots could tie each spot and market to a sign-up or app install, and capture first-party data from people Sephora may not know yet.",
+      "suggested_play": "Your 'We All Sephora' holiday campaign with Seth Rogen has been on CTV and linear TV in the U.S. and Canada since October 29. You likely cannot see which spots or markets send gift-givers to Sephora.com or the app, or turn them into known customers. A dynamic Flowcode on the CTV and linear spots could open a FlowHub with Seth's curated gift picks, an app download and a Beauty Insider sign-up. You would get scans by spot, network and market, plus new sign-ups and app installs attributed to TV, synced to your CRM. Flowcode's ESPN College GameDay broadcast code collected 32,000 emails in one day. Who owns measurement of TV-driven app installs and loyalty sign-ups for the holiday campaign?",
+      "would_measure": "Scans by spot, network and market; Beauty Insider sign-ups and app installs from TV; gift-picks page engagement; CRM conversion.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    },
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 2,
+      "title": "Sethphora Grove store takeover: capture foot-traffic and social buzz",
+      "channel": "retail",
+      "products": "flowcodes; flowhubs; analytics",
+      "score_total": 0.912,
+      "score_recency": 0.985,
+      "score_evidence": 1.0,
+      "score_fit": 0.667,
+      "score_impact": 1.0,
+      "confidence": "medium",
+      "checks_passed": "f1_touchpoint; f2_digital_action; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-11-16",
+      "source_urls": "https://newsroom.sephora.com/sephora-partners-with-seth-rogen-to-celebrate-the-beauty-gifter-in-everyone-this-holiday-season/ | https://www.marketingdive.com/news/sephora-casts-seth-rogen-for-holiday-ads-targeted-at-gift-givers/872877/ | https://www.cosmeticsbusiness.com/inside-beautys-2026-christmas-campaigns | https://news.designrush.com/sephora-seth-rogen-holiday-push-gut-new-york",
+      "what_happening": "Sephora temporarily renamed its Grove store in Los Angeles 'Sethphora' as a guerrilla stunt to tease the holiday campaign.",
+      "why_flowcode_fits": "A high-visibility facade draws crowds and photos, but passersby likely cannot be identified or reached afterward. A code at the store could route them to the holiday picks and sign-up.",
+      "suggested_play": "Your 'Sethphora' takeover of The Grove store in Los Angeles teased the holiday campaign in late October. You likely cannot tell how many passersby engaged or what they did after. A Flowcode on the facade signage and in-store displays could open a FlowHub with Seth's holiday picks and a Beauty Insider sign-up. You would get location-level scans and new members from the stunt. Which tools do you use today to measure foot traffic and sign-ups from a stunt like this?",
+      "would_measure": "Scans at The Grove, sign-ups, clicks to holiday picks, and comparison with other stores.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    },
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 3,
+      "title": "OLIVE YOUNG K-Beauty Edit: shelf codes in 500+ stores",
+      "channel": "retail",
+      "products": "flowcodes; flowhubs; analytics; workspaces_api",
+      "score_total": 0.782,
+      "score_recency": 0.844,
+      "score_evidence": 0.65,
+      "score_fit": 0.667,
+      "score_impact": 1.0,
+      "confidence": "high",
+      "checks_passed": "f1_touchpoint; f3_matches_play; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-10-27",
+      "source_urls": "https://newsroom.sephora.com/sephora-introduces-olive-young-curated-k-beauty-to-u-s-consumers-beginning-august-20/ | https://massmarketretailers.com/fully-expands-u-s-retail-presence-with-sephora-launch/ | https://newsroom.sephora.com/sephora-and-olive-young-partner-to-bring-the-best-of-korean-beauty-to-sephora-consumers/",
+      "what_happening": "Sephora launched 19 OLIVE YOUNG-curated K-beauty brands in 500+ U.S. stores, with a dedicated Times Square space and the 'OLIVE YOUNG K-beauty Edit' assortment, including FULLY in 580+ stores.",
+      "why_flowcode_fits": "Shoppers meeting unfamiliar K-beauty brands in store likely want education and reviews. Shelf codes could deliver that while showing which stores and brands drive engagement.",
+      "suggested_play": "Your OLIVE YOUNG K-beauty Edit has been in 500+ U.S. stores and at Times Square since August 20. You likely cannot see which shelves or stores generate interest in these new brands. A Flowcode on each K-beauty shelf display could open a FlowHub with routines, brand stories and a link to buy or join Beauty Insider. You would get scans by store and brand, and a view of which of the 19 brands draw interest. Separate workspaces could let each brand see its own results. How do you currently gauge in-store interest in a new assortment like this?",
+      "would_measure": "Scans by store and brand; clicks to product pages; sign-ups; Times Square versus other stores.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    },
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 4,
+      "title": "Sports partnerships portfolio: fan data capture across leagues",
+      "channel": "sponsorship",
+      "products": "flowcodes; flowhubs; flowid; analytics; workspaces_api",
+      "score_total": 0.574,
+      "score_recency": 0.884,
+      "score_evidence": 0.3,
+      "score_fit": 0.667,
+      "score_impact": 0.333,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f2_digital_action; i2_national",
+      "newest_source_date": "2026-11-02",
+      "source_urls": "https://www.sportsbusinessjournal.com/Articles/2026/11/02/power-players-innovators-in-womens-sports-nanette-nunu-sephora/ | https://www.thesponsor.com/womens-sport-partnerships-inside-cibc-and-sephoras-first-season-with-toronto-tempo/",
+      "what_happening": "Sephora has built a sports portfolio (Unrivaled, Valkyries, AUSL, Warriors, F1 Academy, Toronto Tempo) with fan activations, jumbotron recognition, jersey, TV, OOH and transit.",
+      "why_flowcode_fits": "Many partnerships mean many fan touchpoints. Codes on jumbotrons, signage and transit could capture fans as Beauty Insider members and show which partnership delivers, using one workspace per team.",
+      "suggested_play": "Your sports portfolio now spans Unrivaled, the Valkyries, AUSL, the Warriors, F1 Academy and Toronto Tempo, with activations like the Valkyries parachute drop. Beyond social engagement, you likely cannot compare how many fans each property turns into known customers. A Flowcode on jumbotron moments, signage and transit ads could open a FlowHub with a sign-up and a team-specific offer, with one workspace per partnership. You would get scans and sign-ups per team, venue and market, rolled up for leadership. Flowcode's NFL Shop result was 10k connections in 60 seconds. How do you compare return across your sports partnerships today?",
+      "would_measure": "Scans and sign-ups per team, venue and activation; Beauty Insider conversions; the Pretty Badass nomination flow.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    },
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 5,
+      "title": "Mariah Carey Times Square billboard and Savings Event: measure OOH response",
+      "channel": "ooh",
+      "products": "flowcodes; flowurls; analytics",
+      "score_total": 0.551,
+      "score_recency": 0.933,
+      "score_evidence": 0.15,
+      "score_fit": 0.667,
+      "score_impact": 0.333,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f3_matches_play; i3_live_or_upcoming",
+      "newest_source_date": "2026-11-09",
+      "source_urls": "https://www.thehypemagazine.com/2026/11/09/mariah-careys-its-time-becomes-a-sephora-holiday-campaign/",
+      "what_happening": "Sephora's 'Give Something Beautiful' holiday push, with Mariah Carey's 'It's Time!' video, premiered on Instagram and a Times Square billboard, tied to a Savings Event through November 10.",
+      "why_flowcode_fits": "A Times Square billboard drives huge exposure that is hard to link to action. A code on the billboard, or in follow-on OOH, could connect exposure to Savings Event traffic and sign-ups.",
+      "suggested_play": "Your Mariah Carey 'It's Time!' video premiered on a Times Square billboard in early November alongside the Savings Event through November 10. You likely cannot see how many billboard viewers acted on it. A Flowcode on OOH creative could link to a Savings Event or gifting page, with a branded FlowURL for the social posts. You would get scans by location and time, and a comparison of OOH against social. How do you attribute billboard exposure to sales or app activity today?",
+      "would_measure": "Scans by billboard and time; clicks to Savings Event and gifting pages; OOH versus social response.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    },
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 6,
+      "title": "F1 Academy Glam Bars: capture guests at 18 Grands Prix",
+      "channel": "event",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.535,
+      "score_recency": 0.144,
+      "score_evidence": 0.5,
+      "score_fit": 0.667,
+      "score_impact": 1.0,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f3_matches_play; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-03-11",
+      "source_urls": "https://newsroom.sephora.com/f1-academy-and-sephora-launch-partnership-ahead-of-2026-season/",
+      "what_happening": "Sephora is the official F1 Academy partner, running glam bars and fan activations at select races (including Austin) and Glam Bars for Paddock Club guests at 18 Grands Prix.",
+      "why_flowcode_fits": "Glam Bars serve many guests across races and countries, yet guests likely leave without being linked to Sephora's CRM. A code at each bar could capture them and show results by race.",
+      "suggested_play": "Your Glam Bars are at 18 Grands Prix through the 2026 season for Paddock Club guests, plus F1 Academy fan activations. You likely do not capture who visited each bar or connect them to Beauty Insider. A Flowcode at each bar could open a FlowHub with a sign-up, a booking for a look and a post-event offer. You would get scans and sign-ups by race and country. Flowcode's CLEAR deployment drove 1.2M+ scans across 7,000+ codes. How do you follow up with Glam Bar guests after a race weekend?",
+      "would_measure": "Scans per race; sign-ups; Glam Bar bookings; follow-up offer redemption.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    },
+    {
+      "company": "Sephora",
+      "domain": "sephora.com",
+      "existing_customer": false,
+      "rank": 7,
+      "title": "Dancing with the Stars official beauty partner: broadcast response",
+      "channel": "tv",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.515,
+      "score_recency": 0.592,
+      "score_evidence": 0.15,
+      "score_fit": 0.667,
+      "score_impact": 0.667,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f3_matches_play; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-09-11",
+      "source_urls": "https://cosmeticsbusiness.com/sephora-named-official-beauty-partner-dancing-with-stars",
+      "what_happening": "Sephora is Official Beauty Partner of Dancing with the Stars with on-air integrations, vanity stations for the audience and a cast 'last looks' activation.",
+      "why_flowcode_fits": "On-air integrations reach a cross-generational audience, but viewer response is likely unmeasured. A code in segments or on vanity stations could link broadcast to sign-ups.",
+      "suggested_play": "Your Dancing with the Stars partnership, announced in September, puts Sephora on air and at on-site vanity stations. You likely cannot tell which integrations lead viewers to Sephora. A Flowcode on screen during Sephora segments and on the vanity stations could open a FlowHub with the looks featured and a Beauty Insider sign-up. You would get scans per episode and segment, plus live-audience sign-ups. How do you measure viewer response to this partnership now?",
+      "would_measure": "Scans per episode and segment; sign-ups; clicks to featured products; studio audience versus TV viewers.",
+      "generated_at": "2026-11-18T18:36:22.074838+00:00"
+    }
+  ]
+}
