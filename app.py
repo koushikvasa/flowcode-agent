@@ -54,10 +54,14 @@ def page() -> FileResponse:
 
 @app.get("/api/reports")
 def list_reports() -> list[dict]:
+    """One entry per company (its newest report): every run is kept, but a chip should appear once."""
+    newest = {}
+    for r in store.saved_reports():  # newest first, so the first one seen per domain wins
+        newest.setdefault(r.company.domain, r)
     return [
         {"name": r.company.name, "domain": r.company.domain, "generated_at": r.generated_at.isoformat(),
          "opportunities": len(r.opportunities), "fresh": store.is_fresh(r)}
-        for r in store.saved_reports()
+        for r in newest.values()
     ]
 
 
