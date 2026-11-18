@@ -10,3 +10,4 @@ HANDOVER.md
 CLAUDE.md
 docs/
 tests/
+.cache-before-cold-run/

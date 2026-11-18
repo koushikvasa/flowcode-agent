@@ -12,7 +12,8 @@ and the report lists what was dropped and why.
 
 **Sample output (real run, Taco Bell, 2026-11-18):** [outputs/taco-bell.md](outputs/taco-bell.md)
 (seller-ready brief) and [outputs/taco-bell.json](outputs/taco-bell.json) (same data plus flat
-CRM-ready rows). Cost: **about $0.30 and under a minute** for one company, from a cold cache.
+CRM-ready rows). Cost: **$0.45 and 88 seconds** for one company, measured on that run from a
+cold cache (no cached searches or answers).
 A second brand the agent had never seen: [outputs/sephora.md](outputs/sephora.md) (2026-11-18).
 
 ## Run it
@@ -43,7 +44,7 @@ uv run --env-file .env uvicorn app:app --reload           # then open http://127
 Type a company and watch each stage finish live. A company researched in the last 7 days is
 shown instantly from its saved report at no cost (matched by name or website); "Re-run fresh"
 forces a new run. Deployed on Vercel, new reports are saved to Vercel Blob, and new runs are
-capped at 20 a day (`DAILY_RUN_LIMIT`, about $6) because the link is public. The cap is checked
+capped at 20 a day (`DAILY_RUN_LIMIT`, about $9) because the link is public. The cap is checked
 before anything is paid for.
 
 ## How it works
@@ -58,8 +59,8 @@ before anything is paid for.
 | 6. Rank | Transparent score in code: `0.30 recency + 0.25 evidence + 0.25 fit + 0.20 impact`. | none |
 | 7. Render | Markdown brief (top 5) and JSON. | none |
 
-The Taco Bell run: 38 dated sources, 69 signals, 12 proposed opportunities (18 signals judged
-"no Flowcode fit"), **9 verified**. Three were dropped by the judge.
+The Taco Bell run: 38 dated sources, 66 signals, 13 proposed opportunities (12 signals judged
+"no Flowcode fit"), **11 verified**. Two were dropped by the judge.
 
 **Editable without code:** `flowcode_context.md` holds the product knowledge, the scoring checklist,
 the known-customers list (with aliases) and the "suggested play" format. `agent/config.py` holds
@@ -104,20 +105,24 @@ every weight, threshold, model and price.
 The unit of work is one function, `run_company(name) -> Report`. The CLI calls it; a queue worker
 would call the same function.
 
-**Cost.** Measured on a cold Taco Bell run (2026-11-17):
+**Cost.** Measured stage by stage on the cold Taco Bell sample run (2026-11-18, every run logs
+its running cost after each stage):
 
 | Item | Per company |
 |---|---|
-| Exa: 10 searches (Exa-reported cost) | $0.07 |
-| Extract: Haiku over about 40 pages | ~$0.01 |
-| Match: one Sonnet call | ~$0.08 |
-| Verify: one Sonnet call per opportunity, reading full pages | ~$0.15 |
-| **Total, cold run** | **~$0.30** |
+| Exa: 10 searches (Exa-reported cost) | $0.070 |
+| Extract: Haiku over 38 pages | $0.014 |
+| Match: one Sonnet call | $0.127 |
+| Verify: one Sonnet call per opportunity (13), reading full pages | $0.238 |
+| **Total, cold run** | **$0.449** |
+
+Cost grows with the number of proposed opportunities (one judge call each), so it varies by
+brand: an earlier Taco Bell run with 6 proposals cost $0.30.
 
 | Accounts | One full refresh | Monthly, refreshing by tier* |
 |---|---|---|
-| 1,000 | ~$300 | ~$210 |
-| 10,000 | ~$3,000 | ~$2,100 |
+| 1,000 | ~$450 | ~$315 |
+| 10,000 | ~$4,500 | ~$3,150 |
 
 \*5% of accounts weekly (tier 1), 25% monthly (tier 2), 70% quarterly (tier 3): about 0.7 runs
 per account per month. Before any of the savings below.
@@ -128,10 +133,11 @@ Ways to bring that down:
 - Run non-urgent refreshes through the Batch API, which costs 50% less.
 - Only extract and judge sources that are new since the last run (see Freshness).
 
-**Speed.** 54 seconds per company today, with searches and LLM calls already parallel inside a run.
-At scale: a queue (SQS, Celery or similar) with N workers, each running `run_company`. A
-semaphore and the SDK's backoff respect rate limits. 10,000 companies across 20 workers is about
-7.5 hours. Rate limits are the real ceiling, not code.
+**Speed.** 88 seconds per company on the cold sample run (the single match call is about a
+minute of that), with searches and LLM calls already parallel inside a run. At scale: a queue
+(SQS, Celery or similar) with N workers, each running `run_company`. A semaphore and the SDK's
+backoff respect rate limits. 10,000 companies across 20 workers is about 12 hours. Rate limits
+are the real ceiling, not code.
 
 **Keeping data fresh.**
 - Searches and Claude's answers are cached per day, so reruns the same day are free and identical.

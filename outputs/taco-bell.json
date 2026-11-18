@@ -5,153 +5,53 @@
     "is_existing_customer": false,
     "customer_evidence": null
   },
-  "generated_at": "2026-11-18T19:59:34.417015Z",
+  "generated_at": "2026-11-18T20:28:09.957405Z",
   "opportunities": [
-    {
-      "opportunity": {
-        "signal_ids": [
-          "S10",
-          "S11",
-          "S12",
-          "S19",
-          "S42",
-          "S50",
-          "S52",
-          "S53",
-          "S68"
-        ],
-        "evidence_quote": "Taco Bell is introducing a month-long taco celebration of deals, drops and surprises featuring go-to menu orders from Kevin Hart, Paris Hilton and Doja Cat",
-        "title": "Tuesday Drops and Rewards: pull in-person traffic into the app",
-        "what_happening": "Taco Bell runs weekly app-only Tuesday Drops, including the $1 Kevin Hart's Usual, the 200 Flamin' Hot puffer jackets, the Pretty Pink Picnic Kit and a free month of Super Duolingo. Some rewards can be redeemed only in the app.",
-        "channel": "app",
-        "why_flowcode_fits": "Drops are app-only, so every physical touchpoint (cups, bags, receipts, table tents, store windows) can drive members into the app. Taco Bell likely cannot tell which in-restaurant message brought someone into Rewards.",
-        "flowcode_products": [
-          "flowcodes",
-          "flowhubs",
-          "flowid",
-          "analytics"
-        ],
-        "suggested_play": "Your Tuesday Drops, from the $1 Kevin Hart's Usual in October to the 200 Flamin' Hot puffer jackets on Nov 17, are app-only. You likely cannot tell which in-restaurant or packaging message pulls guests in to join Rewards or enter a Drop. Put dynamic Flowcodes on cups, bags and in-store signage that open a FlowHub with the current Drop, an app download and a Rewards sign-up, changing each week without reprinting. You would get scans by store and market, app installs and new members by touchpoint, and a CRM sync. Flowcode's LOVE CORN packaging code produced a 62% CRM conversion. Which in-store touchpoint do you rely on today to drive Drop sign-ups?",
-        "would_measure": "Scans by store and week, app installs, new Rewards members and Drop entries by touchpoint.",
-        "evidence": [
-          {
-            "url": "https://www.tacobell.com/newsroom/taco-bell-national-taco-month-celebration",
-            "published": "2026-10-09",
-            "quote": "Taco Bell is introducing a month-long taco celebration of deals, drops and surprises featuring go-to menu orders from Kevin Hart, Paris Hilton and Doja Cat"
-          },
-          {
-            "url": "https://www.usatoday.com/story/food/dining/2026/11/17/taco-bell-flamin-hot-puffer-jacket/92807789007/",
-            "published": "2026-11-17",
-            "quote": "Fans can feel \"Flamin' Hot\" during the cold winter months with Taco Bell's latest giveaway, celebrating the debut of its newest salad and the return of a fan-favorite entree."
-          },
-          {
-            "url": "https://www.nrn.com/quick-service/taco-bell-brings-back-flamin-hot-burrito-tests-carne-asada",
-            "published": "2026-11-12",
-            "quote": "To celebrate these launches, the Taco Bell Rewards program’s Tuesday Drop will include the chance to win one of 200 limited-edition Taco Bell x Flamin’ Hot puffer jackets on Nov. 17."
-          },
-          {
-            "url": "https://abancommercials.com/taco-bell/luxe-value-menu-quotluxierge-quot-2026-ad-commercial/287778/",
-            "published": "2026-01-24",
-            "quote": "Learn how to use the Taco Bell app to snag Luxe items for just $1 during special \"Tuesday Drops\"."
-          },
-          {
-            "url": "https://thepointsguy.com/loyalty-programs/taco-bell-rewards",
-            "published": "2026-08-19",
-            "quote": "Then, Taco Bell layers on a packet of fun with mystery \"Tuesday Drops,\" early access to limited-time menu items and other app-only deals."
-          },
-          {
-            "url": "https://www.tbmenus.com/app/",
-            "published": "2026-09-25",
-            "quote": "Redeem exclusive rewards only on the app."
-          },
-          {
-            "url": "https://www.tacobell.com/newsroom/taco-bell-and-duolingo-take-national-taco-day-global",
-            "published": "2026-09-30",
-            "quote": "Keep the streak going on us: From October 1 through October 6, Taco Bell Rewards Members can unlock one month of Super Duolingo for free, giving fans even more reason to keep learning the love language of tacos and beyond."
-          }
-        ]
-      },
-      "verdict": {
-        "reason": "Most claim elements are supported: weekly app Tuesday Drops for Rewards Members; Kevin Hart's Usual at $1 (Oct 13); 200 Flamin' Hot puffer jackets via the app (Nov 17); Pretty Pink Picnic Kit Tuesday Drop (Sept 29); one month of Super Duolingo free for Rewards Members; and rewards redeemable only in the app. However, the claim calls them 'weekly app-only Tuesday Drops' including the Super Duolingo free month, and the Duolingo offer was unlocked Oct 1-6 for Rewards Members, not explicitly described as a Tuesday Drop in the sources. Also, the Kevin Hart $1 deal was a Tuesday Drop in the app, while the $4 version was available nationwide, so 'app-only' is somewhat loose. Overall the core facts are in the sources, but the Super Duolingo item being called a Tuesday Drop is a mild stretch. I judge it supported with this minor caveat.",
-        "supported": true,
-        "f1_touchpoint": {
-          "quote": "Duo and friends will take their taco fluency IRL with a one-day Taco Bell takeover in New York City on October 6.",
-          "answer": "yes"
-        },
-        "f2_digital_action": {
-          "quote": "Download the Taco Bell app and join Taco Bell Rewards to access exclusive drops",
-          "answer": "yes"
-        },
-        "f3_matches_play": {
-          "quote": "Download the Taco Bell app and join Taco Bell Rewards to access exclusive drops, including the featured $1 deals",
-          "answer": "yes"
-        },
-        "i1_scale_stated": {
-          "quote": "10,000 Taco Bell Rewards Members who act quickly can score their new usual for $1 via the Tuesday Drops page",
-          "answer": "yes"
-        },
-        "i2_national": {
-          "quote": "Each “usual” will be available for $4 nationwide throughout its featured week",
-          "answer": "unknown"
-        },
-        "i3_live_or_upcoming": {
-          "quote": "Taco Bell will give away 200 limited-edition Taco Bell x Flamin' Hot Puffer Jackets to Taco Bell Rewards Members through its app.",
-          "answer": "yes"
-        }
-      },
-      "scores": {
-        "recency": 0.992,
-        "evidence": 0.65,
-        "fit": 1.0,
-        "impact": 0.667,
-        "total": 0.844,
-        "passed": [
-          "f1_touchpoint",
-          "f2_digital_action",
-          "f3_matches_play",
-          "i1_scale_stated",
-          "i3_live_or_upcoming"
-        ]
-      },
-      "confidence": "medium"
-    },
     {
       "opportunity": {
         "signal_ids": [
           "S1",
           "S2",
+          "S3",
+          "S24",
           "S25",
-          "S26",
-          "S27"
+          "S63",
+          "S64",
+          "S65"
         ],
-        "evidence_quote": "Taco Bell is the backer of the Live Más Open, a nine-hole golf tournament that brings together celebrities, professional athletes, creators and even some qualifying fans.",
-        "title": "Live Más Open: turn the Peacock and Golf Channel broadcast into fan sign-ups",
-        "what_happening": "Taco Bell produced the Live Más Open celebrity golf tournament with Kevin Hart in Laguna Beach on Nov 2. It streams on Peacock on Nov 20 and airs on Golf Channel. Experimental menu items were served at the event, and the winning team helps pick a discontinued item to return in 2027.",
+        "evidence_quote": "The competition, which took place in Laguna Beach on November 2, will stream on NBCUniversal’s Peacock on November 20 and air on Versant’s Golf Channel.",
+        "title": "Live Más Open and Live Más LIVE: turn Peacock viewers into known fans",
+        "what_happening": "Taco Bell produced the Live Más Open celebrity golf tournament (played Nov 2, streaming on Peacock Nov 20 and airing on Golf Channel). Earlier it premiered its Live Más LIVE menu reveal show on Peacock. Both reach national audiences well beyond the in-person guests.",
         "channel": "tv",
-        "why_flowcode_fits": "A broadcast and streaming show reaches many viewers, but there is likely no link from the screen to a Taco Bell Rewards sign-up or a vote. A QR code on screen gives a measurable response. The 2027 menu-return vote gives viewers a reason to act.",
+        "why_flowcode_fits": "Streaming and broadcast viewers are anonymous to Taco Bell. An on-screen code can link a viewer to a sign-up or app download and show which show and which market drove it.",
         "flowcode_products": [
           "flowcodes",
           "flowhubs",
           "flowid",
           "analytics"
         ],
-        "suggested_play": "Your Live Más Open, streaming on Peacock Nov 20 and airing on Golf Channel, is a branded show with a built-in hook: the winning team helps pick which discontinued item returns in 2027. Today you likely cannot tell which viewers cared enough to act or who they are. Put a dynamic Flowcode on screen and in the show's graphics that opens a FlowHub where viewers vote on the item to bring back, join Taco Bell Rewards and download the app. You would get scans by airing and platform, new Rewards sign-ups and app installs tied to the show, and first-party data synced to your CRM. Flowcode's ESPN College GameDay broadcast code collected 32,000 emails in one day. How are you measuring the response to the show and tying viewers to the app today?",
-        "would_measure": "Scans by airing and platform, vote participation, Rewards sign-ups, app installs and CRM-matched viewers.",
+        "suggested_play": "Your Live Más Open golf special streams on Peacock on Nov 20 and airs on Golf Channel, after Live Más LIVE premiered on Peacock in March. You likely cannot tell which viewers came from the shows or what they did next. Put a dynamic Flowcode on screen that opens a FlowHub with the app download, a Rewards sign-up and a first look at the secret menu items shown at the event. Use a different code per show and airing so the destination can change as the menu changes. You would see scans by show and market, new Rewards sign-ups and app installs tied to the broadcast. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How are you measuring what viewers do after they watch your Peacock shows today?",
+        "would_measure": "Scans per airing and platform, app installs and Rewards sign-ups from the code, and secret-menu page views.",
         "evidence": [
           {
             "url": "https://variety.com/2026/tv/news/taco-bell-kevin-hart-live-mas-golf-tournament-commercials-1236950193/",
             "published": "2026-11-17",
-            "quote": "The competition, which took place in Laguna Beach on November 2, will stream on NBCUniversal's Peacock on November 20 and air on Versant's Golf Channel."
+            "quote": "Earlier this year, the taco chain transformed its annual Live Más Live, an annual celebration of its food offerings, into a streaming variety show hosted by rapper Vince Staples that also appeared on Peacock."
           },
           {
             "url": "https://www.dexerto.com/food/taco-bell-quietly-tests-fire-pina-hot-dog-on-exclusive-secret-menu-3426756/",
             "published": "2026-11-09",
-            "quote": "However, as Dexerto previously reported, the Live Más Open will result in a discontinued Taco Bell menu item returning for a limited time in 2027, with the winning team helping decide what comes back."
+            "quote": "Fans will be able to watch the tournament when it premieres on Peacock on November 20."
+          },
+          {
+            "url": "https://www.eventmarketer.com/article/brief-delivery-runners-sally-beauty-colorfest/",
+            "published": "2026-03-16",
+            "quote": "The reimagined “Live Más LIVE: A Night at the Palladium” extravaganza was helmed by rapper and actor Vince Staples, and featured a blend of celebrity star power, comedy, music performances and appearances by leadership, all of which helped build hype for the 20-plus menu items that were revealed at the event, like Crème Brulee Crunchwrap Sliders and Mexican Pizza Empanadas."
           }
         ]
       },
       "verdict": {
-        "reason": "Every fact in the claim appears in the sources. Variety says Taco Bell backs the Live Más Open, hosted by Kevin Hart, held in Laguna Beach on Nov 2, streaming on Peacock Nov 20 and airing on Golf Channel. Variety says it is Taco Bell-created content, so 'produced' is fair. Dexerto says exclusive experimental items were served and that the winning team helps decide which discontinued item returns for a limited time in 2027. The claim's 'returns in 2027' is slightly condensed but consistent.",
+        "reason": "Claim facts are supported: Variety says Live Más Open took place Nov 2, streams on Peacock Nov 20 and airs on Golf Channel, and Taco Bell produces/backs it; Event Marketer says Live Más LIVE premiered on Peacock March 10 and was accessible nationwide. 'Both reach national audiences' is supported for Live Más LIVE (nationwide) but only implied for the Open (Peacock/Golf Channel, no explicit 'national' word). Mostly supported; 'produced' is a fair reading of 'backer' and 'creating its own content'. Minor inference on national reach for the Open, but streaming plus Golf Channel is reasonable. No explicit digital action sought from viewers and no scale numbers (audience size) stated.",
         "supported": true,
         "f1_touchpoint": {
           "quote": "will stream on NBCUniversal’s Peacock on November 20 and air on Versant’s Golf Channel",
@@ -166,15 +66,15 @@
           "answer": "yes"
         },
         "i1_scale_stated": {
-          "quote": "A major campaign with ads placed in NFL and NBA games can run an advertiser hundreds of thousands, even millions of dollars.",
+          "quote": "the spectacle’s first-ever TV premiere on Peacock—a debut that made the event accessible to people nationwide",
           "answer": "no"
         },
         "i2_national": {
-          "quote": "will stream on NBCUniversal’s Peacock on November 20 and air on Versant’s Golf Channel",
+          "quote": "a debut that made the event accessible to people nationwide, not just the influencers, VIPs and loyalty members who got to attend in person.",
           "answer": "yes"
         },
         "i3_live_or_upcoming": {
-          "quote": "will stream on NBCUniversal’s Peacock on November 20",
+          "quote": "will stream on NBCUniversal’s Peacock on November 20 and air on Versant’s Golf Channel",
           "answer": "yes"
         }
       },
@@ -197,153 +97,414 @@
     {
       "opportunity": {
         "signal_ids": [
-          "S64",
-          "S65",
-          "S66",
-          "S3"
+          "S10",
+          "S11",
+          "S12",
+          "S17",
+          "S18"
         ],
-        "evidence_quote": "Taco Bell’s third annual Live Más LIVE event, hosted March 10 in Hollywood, was packed with all of the controlled chaos and wild menu innovations you’d expect.",
-        "title": "Live Más LIVE variety show on Peacock",
-        "what_happening": "Taco Bell's third annual Live Más LIVE, hosted by Vince Staples on March 10 in Hollywood, premiered on Peacock as a variety show and revealed over 20 menu items.",
-        "channel": "tv",
-        "why_flowcode_fits": "A national broadcast reveals menu items, but the link from viewing to trying an item or joining Rewards is likely invisible. An on-screen code can offer early access.",
+        "evidence_quote": "To celebrate these launches, the Taco Bell Rewards program’s Tuesday Drop will include the chance to win one of 200 limited-edition Taco Bell x Flamin’ Hot puffer jackets on Nov. 17.",
+        "title": "Flamin' Hot launch and puffer jacket giveaway: bring in-store customers into the drop",
+        "what_happening": "Taco Bell brought back the Flamin' Hot Grilled Cheese Burrito, launched the Flamin' Hot Mini Taco Salad, and is giving away 200 puffer jackets through the Nov 17 Rewards Tuesday Drop.",
+        "channel": "retail",
+        "why_flowcode_fits": "The giveaway is app-only while the launch is in restaurants nationwide. A code on in-store materials connects menu buyers to the drop and measures how many enter.",
         "flowcode_products": [
           "flowcodes",
           "flowhubs",
           "analytics"
         ],
-        "suggested_play": "Your Live Más LIVE show, hosted by Vince Staples and streamed on Peacock after the March 10 Hollywood event, revealed more than 20 menu items to a national audience. You likely cannot see which viewers acted on them. Add a dynamic Flowcode during menu reveals that opens a FlowHub with early access signup and an app download, and update it as items launch. You would get scans per reveal and new members by item interest. Flowcode's Welch's campaign had a 55% click-through. How do you tie show viewers to menu trial today?",
-        "would_measure": "Scans per reveal segment, early-access sign-ups, app installs and later item purchases.",
+        "suggested_play": "Your Flamin' Hot Grilled Cheese Burrito and new Mini Taco Salad are on menus nationwide, with 200 puffer jackets going to Rewards members on the Nov 17 Tuesday Drop. Customers buying the new items likely do not all know about the giveaway or have the app. Put a Flowcode on in-store posters and packaging that opens a FlowHub with the drop entry and app sign-up. You would see which restaurants and which menu item prompted entries and new app sign-ups. How do you currently get in-store customers into your app drops?",
+        "would_measure": "Scans by restaurant and placement, giveaway entries, and new app installs from the code.",
         "evidence": [
           {
-            "url": "https://www.eventmarketer.com/article/brief-delivery-runners-sally-beauty-colorfest/",
-            "published": "2026-03-16",
-            "quote": "The reimagined “Live Más LIVE: A Night at the Palladium” extravaganza was helmed by rapper and actor Vince Staples, and featured a blend of celebrity star power, comedy, music performances and appearances by leadership, all of which helped build hype for the 20-plus menu items that were revealed at the event, like Crème Brulee Crunchwrap Sliders and Mexican Pizza Empanadas."
+            "url": "https://www.usatoday.com/story/food/dining/2026/11/17/taco-bell-flamin-hot-puffer-jacket/92807789007/",
+            "published": "2026-11-17",
+            "quote": "It also unveiled the new Flamin' Hot Mini Taco Salad."
           },
           {
-            "url": "https://variety.com/2026/tv/news/taco-bell-kevin-hart-live-mas-golf-tournament-commercials-1236950193/",
-            "published": "2026-11-17",
-            "quote": "Earlier this year, the taco chain transformed its annual Live Más Live, an annual celebration of its food offerings, into a streaming variety show hosted by rapper Vince Staples that also appeared on Peacock."
+            "url": "https://www.nrn.com/quick-service/taco-bell-brings-back-flamin-hot-burrito-tests-carne-asada",
+            "published": "2026-11-12",
+            "quote": "To celebrate these launches, the Taco Bell Rewards program’s Tuesday Drop will include the chance to win one of 200 limited-edition Taco Bell x Flamin’ Hot puffer jackets on Nov. 17."
           }
         ]
       },
       "verdict": {
-        "reason": "The claim says the third annual Live Más LIVE, hosted by Vince Staples on March 10 in Hollywood, premiered on Peacock as a variety show and revealed over 20 menu items. The Event Marketer article states each point: third annual, March 10, Hollywood, variety show format, first-ever TV premiere on Peacock, hosted by Vince Staples, 20-plus menu items. Variety confirms the Peacock variety show hosted by Staples. All facts are supported. However, the event is a past recap (March 2026), and no digital action or Flowcode-matching play is named.",
+        "reason": "The claim's facts all appear in the sources. The Flamin' Hot Grilled Cheese Burrito returned and the Flamin' Hot Mini Taco Salad debuted (NRN and USA Today). 200 puffer jackets are given away through the Taco Bell Rewards Tuesday Drop on Nov. 17 (NRN, and USA Today via the app). The 'retail' channel label is loose, but the facts are supported.",
         "supported": true,
         "f1_touchpoint": {
-          "quote": "the spectacle’s first-ever TV premiere on Peacock—a debut that made the event accessible to people nationwide",
+          "quote": "adding Fritos Flamin' Hot to a burrito on menus nationwide",
           "answer": "yes"
         },
         "f2_digital_action": {
-          "quote": "helped build hype for the 20-plus menu items that were revealed at the event",
-          "answer": "no"
+          "quote": "Taco Bell will give away 200 limited-edition Taco Bell x Flamin' Hot Puffer Jackets to Taco Bell Rewards Members through its app.",
+          "answer": "yes"
         },
         "f3_matches_play": {
-          "quote": "first-ever TV premiere on Peacock",
+          "quote": "Taco Bell will give away 200 limited-edition Taco Bell x Flamin' Hot Puffer Jackets to Taco Bell Rewards Members through its app.",
           "answer": "yes"
         },
         "i1_scale_stated": {
-          "quote": "the 20-plus menu items that were revealed at the event",
+          "quote": "the chance to win one of 200 limited-edition Taco Bell x Flamin' Hot puffer jackets on Nov. 17",
           "answer": "yes"
         },
         "i2_national": {
-          "quote": "a debut that made the event accessible to people nationwide",
+          "quote": "adding Fritos Flamin' Hot to a burrito on menus nationwide",
           "answer": "yes"
         },
         "i3_live_or_upcoming": {
-          "quote": "Taco Bell’s third annual Live Más LIVE event, hosted March 10 in Hollywood",
-          "answer": "no"
+          "quote": "On Nov. 17, from 5 p.m. ET to 6 p.m. ET, Taco Bell will give away 200 limited-edition Taco Bell x Flamin' Hot Puffer Jackets",
+          "answer": "yes"
         }
       },
       "scores": {
         "recency": 0.992,
-        "evidence": 0.5,
-        "fit": 0.667,
-        "impact": 0.667,
-        "total": 0.723,
+        "evidence": 0.15,
+        "fit": 1.0,
+        "impact": 1.0,
+        "total": 0.785,
         "passed": [
           "f1_touchpoint",
+          "f2_digital_action",
           "f3_matches_play",
           "i1_scale_stated",
-          "i2_national"
+          "i2_national",
+          "i3_live_or_upcoming"
         ]
       },
-      "confidence": "high"
+      "confidence": "low"
     },
     {
       "opportunity": {
         "signal_ids": [
-          "S4",
-          "S5",
-          "S6",
-          "S38"
+          "S19",
+          "S20",
+          "S21",
+          "S22",
+          "S23"
         ],
-        "evidence_quote": "Taco Bell’s franchise players, Fernando Mendoza and Davante Adams, are kicking off the football season with playful campaigns from Deutsch connecting with athlete partners on how they ‘Live Más’ outside of their sport.",
-        "title": "Manager Mendoza campaign: link TV and the stadium store takeover to the Special",
-        "what_happening": "Taco Bell's football-season campaign features franchise players Fernando Mendoza and Davante Adams. TV ads show Mendoza as a rookie store manager. A \"Manager Mendoza's Special\" meal deal ties in, along with a takeover of a real Taco Bell in a stadium.",
-        "channel": "tv",
-        "why_flowcode_fits": "The TV ads, the meal deal and the stadium store all point to one offer, but it is likely hard to see which touchpoint drives orders. A Flowcode on the spot and in the store can send people to the deal and the app with per-touchpoint tracking.",
+        "evidence_quote": "Customers in Nashville, Tennessee, and Minneapolis-St. Paul can try the new Cantina Carne Asada in six new offerings, each paired with the classic Avocado Verde Salsa Sauce Packet.",
+        "title": "Menu tests (Cantina Carne Asada, Avalanche Taco Trio): in-store feedback codes",
+        "what_happening": "Taco Bell is testing seven new items at select restaurants in three states, including a six-item Cantina Carne Asada menu in Nashville and Minneapolis-St. Paul and the Avalanche Taco Trio in Tampa.",
+        "channel": "retail",
+        "why_flowcode_fits": "Limited tests need quick customer feedback from specific restaurants. A code on test packaging or table cards links feedback to the exact market and item.",
         "flowcode_products": [
           "flowcodes",
           "flowhubs",
           "analytics"
         ],
-        "suggested_play": "Your football-season campaign with Fernando Mendoza as a rookie store manager has been on TV since September, with a Manager Mendoza's Special and a stadium store takeover. You likely cannot see which of the TV spot, the stadium store or social drives people to the deal. Add a dynamic Flowcode to the TV spot and on in-store signage and cups at the stadium location, opening a FlowHub with the Special, an app download and a Rewards sign-up. You would get scans by touchpoint and market, app installs and new members attributed to each. Which touchpoint do you think is driving Special redemptions today, and how would you know?",
-        "would_measure": "Scans per spot and per store, Special redemptions, app installs and Rewards sign-ups by touchpoint.",
+        "suggested_play": "Your Cantina Carne Asada test began Nov 12 in Nashville and Minneapolis-St. Paul, and the Avalanche Taco Trio is at select Tampa restaurants. You likely rely on sales data and social posts to judge reactions. Put a Flowcode on the test-item wrapper and sauce packet that opens a FlowHub with a short rating form and a Rewards sign-up. You would see feedback by item and market and which testers joined Rewards. How do you collect customer feedback on test items today?",
+        "would_measure": "Scans and ratings by test item and market, plus Rewards sign-ups from testers.",
         "evidence": [
           {
-            "url": "https://lbbonline.com/news/fernando-mendoza-davante-adams-taco-bell",
-            "published": "2026-10-05",
-            "quote": "Deutsch even created a “Manager Mendoza’s Special” meal deal."
+            "url": "https://www.nrn.com/quick-service/taco-bell-brings-back-flamin-hot-burrito-tests-carne-asada",
+            "published": "2026-11-12",
+            "quote": "Taco Bell is also testing Carne Asada as a potential addition to its Cantina menu."
           },
           {
-            "url": "https://adage.com/media/tv-streaming/aa-hot-spots-taco-bell-fernanco-mendoza/",
-            "published": "2026-09-22",
-            "quote": "Fernando Mendoza becomes a Taco Bell manager in the latest from the fast food chain."
+            "url": "https://www.allrecipes.com/taco-bell-menu-test-november-2026-12257958",
+            "published": "2026-11-16",
+            "quote": "The Avalanche Taco Trio is currently available at select restaurants in Tampa, Florida."
+          },
+          {
+            "url": "https://www.delish.com/food-news/a74430693/taco-bell-carne-asada-steak-cantina-menu-test/",
+            "published": "2026-11-14",
+            "quote": "Taco Bell began testing a new carne asada steak on November 12 in Nashville and the Minneapolis-St. Paul area."
           }
         ]
       },
       "verdict": {
-        "reason": "Claim facts are supported by the LBB source: Mendoza and Adams are Taco Bell franchise players, TV ads/documentaries show Mendoza as a rookie manager, Deutsch took over a real Taco Bell in the stadium where his team plays, and created the 'Manager Mendoza's Special' meal deal. The claim is all in the source. Note the source says Deutsch took over the store; the claim's phrasing is compatible. Football season kicking off in 2026 is stated.",
+        "reason": "The Allrecipes source states Taco Bell began market testing seven new items at select restaurants in three states, with the Avalanche Taco Trio at select Tampa restaurants and a six-item Cantina Carne Asada menu in Nashville and Minneapolis-St. Paul. NRN and Delish confirm the six-item carne asada test in those markets. Every fact in the claim is supported.",
         "supported": true,
         "f1_touchpoint": {
-          "quote": "Deutsch chose a store located in the very stadium where his team plays games, and added a plaque on the wall identifying him as manager, business cards",
+          "quote": "Taco Bell began market testing seven new items at select restaurants in three states.",
           "answer": "yes"
         },
         "f2_digital_action": {
-          "quote": "Fernando posted on social as if he were an actual manager (\"New role. Same work ethic.\")",
-          "answer": "no"
+          "quote": "the Taco Bell Rewards program’s Tuesday Drop will include the chance to win one of 200 limited-edition Taco Bell x Flamin’ Hot puffer jackets on Nov. 17.",
+          "answer": "yes"
         },
         "f3_matches_play": {
-          "quote": "Deutsch even created a \"Manager Mendoza's Special\" meal deal.",
+          "quote": "Taco Bell began market testing seven new items at select restaurants in three states.",
           "answer": "yes"
         },
         "i1_scale_stated": {
-          "quote": "evolved into an in-person takeover of part of one of the football's largest stadiums, where thousands of Rams and Taco Bell fans got to step inside",
-          "answer": "no"
+          "quote": "Taco Bell began market testing seven new items at select restaurants in three states.",
+          "answer": "yes"
         },
         "i2_national": {
-          "quote": "Taco Bell's franchise players, Fernando Mendoza and Davante Adams, are kicking off the football season with playful campaigns",
-          "answer": "unknown"
+          "quote": "Customers in the three respective test markets can try the Avalanche Taco Trio and Cantina Carne Asada menu for a limited time.",
+          "answer": "no"
         },
         "i3_live_or_upcoming": {
-          "quote": "So as the 2026 football season kicks off, Davante enters his fifth year as a Taco Bell franchise player.",
+          "quote": "Taco Bell is currently testing an Avalanche Taco Trio and new Cantina Carne Asada menu.",
           "answer": "yes"
         }
       },
       "scores": {
-        "recency": 0.713,
-        "evidence": 0.5,
-        "fit": 0.667,
-        "impact": 0.333,
-        "total": 0.572,
+        "recency": 0.985,
+        "evidence": 0.15,
+        "fit": 1.0,
+        "impact": 0.667,
+        "total": 0.716,
         "passed": [
           "f1_touchpoint",
+          "f2_digital_action",
           "f3_matches_play",
+          "i1_scale_stated",
           "i3_live_or_upcoming"
         ]
       },
-      "confidence": "medium"
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S44",
+          "S45",
+          "S46",
+          "S47",
+          "S48",
+          "S49",
+          "S50",
+          "S51",
+          "S52",
+          "S53"
+        ],
+        "evidence_quote": "Taco Bell is introducing a reimagined app experience designed around how fans actually order.",
+        "title": "Redesigned app and Tuesday Drops: drive installs and Rewards sign-ups from physical touchpoints",
+        "what_happening": "Taco Bell redesigned its app in August with My Menu, My Mods, a new loyalty hub and a Tuesday Drops section. Rewards members earn 10 points per $1, and weekly drops like the Pretty Pink Picnic Kit run in the app.",
+        "channel": "app",
+        "why_flowcode_fits": "Taco Bell has a stronger app and loyalty offer, and in-restaurant and on-pack spaces can bring in new members. Codes at those places show which ones drive installs and first orders.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowurls",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your redesigned app launched in early August with My Menu, My Mods, a new loyalty hub and a Tuesday Drops section. Many people in your restaurants and on your packaging likely do not use the app yet. Put Flowcodes on cups, bags, tray liners and counter signage that open a FlowHub showing this week's Tuesday Drop with a one-tap install or Rewards sign-up. Personalize the hub by location or loyalty tier through FlowID. You would see installs and sign-ups by restaurant and touchpoint, and which codes produce first orders. How do you currently credit in-store promotion for new app members?",
+        "would_measure": "Scans by restaurant and placement, app installs, new Rewards sign-ups, and Tuesday Drop participation.",
+        "evidence": [
+          {
+            "url": "https://www.nrn.com/quick-service/taco-bell-has-redesigned-its-loyalty-program",
+            "published": "2026-08-05",
+            "quote": "The app also now includes a redesigned “loyalty hub” for members to track their points and past orders, and a dedicated Tuesday Drops section for easy access to the chain’s weekly exclusives."
+          },
+          {
+            "url": "https://www.qsrmagazine.com/news/taco-bell-introduces-reimagined-app-experience/",
+            "published": "2026-08-04",
+            "quote": "Redesigned Loyalty Hub + Tuesday Drops: A streamlined home for rewards members to track points and past orders, while staying on top of upcoming offers and experiences."
+          },
+          {
+            "url": "https://www.linkedin.com/posts/taco-bell_tacobell-app-loyalty-activity-7490835087131947008-QJRs",
+            "published": "2026-08-05",
+            "quote": "So we rolled out a new update to the Taco Bell app! ✨📲"
+          },
+          {
+            "url": "https://www.tbmenus.com/app/",
+            "published": "2026-09-25",
+            "quote": "Rack up points on every qualifying order, unlock rewards, and access exclusive offers."
+          },
+          {
+            "url": "https://joy.so/blog/taco-bell-rewards-program/",
+            "published": "2026-06-03",
+            "quote": "According to Taco Bell's official rewards page, members earn 10 points per $1 spent, and reaching 2,000 points in a calendar year unlocks Fire status."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Every fact in the claim appears in the sources. The redesign with My Menu, My Mods, a redesigned loyalty hub and a Tuesday Drops section is in NRN, QSR Magazine and LinkedIn, all dated August 2026. The 10 points per $1 earn rate is in the joy.so source. The Pretty Pink Picnic Kit Tuesday Drop on September 29 appears in the tbmenus source, which describes Tuesday Drops as in-app releases. One small gap: the claim says weekly drops run in the app, which is supported, but the specific kit is a single drop rather than a weekly one. This is minor.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "Rewards Members can redeem rewards and earn points in the app, kiosk, or drive-thru.",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "Download the latest version of the app to check it out.",
+          "answer": "yes"
+        },
+        "f3_matches_play": {
+          "quote": "Drive app installs and loyalty enrolment from any physical touchpoint",
+          "answer": "unknown"
+        },
+        "i1_scale_stated": {
+          "quote": "30 percent year-over-year loyalty growth and nearly half of U.S. sales now coming through digital channels",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "The modern version of Taco Bell Rewards launched nationwide in July 2020 through the Taco Bell mobile app.",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Taco Bell will continue to enhance the app throughout the next year, with features such as lock screen order tracking, profile avatars",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.66,
+        "evidence": 0.15,
+        "fit": 0.667,
+        "impact": 1.0,
+        "total": 0.602,
+        "passed": [
+          "f1_touchpoint",
+          "f2_digital_action",
+          "i1_scale_stated",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S31",
+          "S33",
+          "S34",
+          "S35"
+        ],
+        "evidence_quote": "Taco Bell Rewards customers can use the same email address as their account to be eligible for bonus Rewards points throughout the year.",
+        "title": "Sauce packet recycling: make the packet a doorway to Rewards",
+        "what_happening": "Taco Bell and TerraCycle run a U.S. sauce packet recycling program open to all brands. They report one million packets collected over five years, and Rewards members can earn bonus points by registering their recycling email.",
+        "channel": "packaging",
+        "why_flowcode_fits": "The program asks people to match an email address across two systems. A code on the sauce packet could make joining one scan instead of a manual step.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your TerraCycle sauce packet program has collected one million packets over five years, and Rewards members can earn bonus points by registering the same email. Sign-up likely depends on people finding and following instructions on their own. Print a Flowcode on the sauce packet that opens a FlowHub explaining recycling and linking the program email to a Rewards account. You would see how many packets lead to registrations and how many Rewards members join the program. Flowcode result: LOVE CORN had 62% CRM conversion and 27k new customers from a packaging QR. How many Rewards members have linked their recycling email so far?",
+        "would_measure": "Packet scans by region, recycling registrations, linked Rewards accounts, and bonus point claims.",
+        "evidence": [
+          {
+            "url": "https://packaging-journal.de/en/yum-brands-is-focusing-on-more-circular-packaging/",
+            "published": "2026-07-02",
+            "quote": "Taco Bell has continued its sauce packet recycling programme in partnership with TerraCycle."
+          },
+          {
+            "url": "https://www.packagingeurope.com/one-million-taco-bell-sauce-packets-collected-through-us-recycling-programme/",
+            "published": "2026-04-13",
+            "quote": "Taco Bell Rewards customers can use the same email address as their account to be eligible for bonus Rewards points throughout the year."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Claim facts check out: U.S. sauce packet recycling program with TerraCycle, accepts all brands, one million packets over five years, and Taco Bell Rewards members using the same email as their account get bonus points. The claim says 'registering their recycling email'; the source says use the same email address as their Rewards account to be eligible for bonus points, which is a close paraphrase. Supported.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "Taco Bell’s hot sauce packets are made from single-use flexible film materials",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "Interested parties can sign up through TerraCycle. Taco Bell Rewards customers can use the same email address as their account to be eligible for bonus Rewards points",
+          "answer": "yes"
+        },
+        "f3_matches_play": {
+          "quote": "Taco Bell Rewards customers can use the same email address as their account to be eligible for bonus Rewards points throughout the year.",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "one million sauce packets and single-serve containers have been collected through the Taco Bell Sauce Container US Recycling Program",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "pilot a national recycling programme for used sauce packets",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Taco Bell has continued its sauce packet recycling programme in partnership with TerraCycle.",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.343,
+        "evidence": 0.15,
+        "fit": 1.0,
+        "impact": 1.0,
+        "total": 0.59,
+        "passed": [
+          "f1_touchpoint",
+          "f2_digital_action",
+          "f3_matches_play",
+          "i1_scale_stated",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S59",
+          "S60"
+        ],
+        "evidence_quote": "Taco Bell just collaborated with Olivia Rodrigo on her own drink, \"You Seem Pretty Pink for a Baja Blast,\" inspired by the singer's recent album.",
+        "title": "Olivia Rodrigo pink Baja Blast and festival activation",
+        "what_happening": "Taco Bell launched the Olivia Rodrigo pink Baja Blast in select California, Las Vegas and Texas locations before a Sept 24 nationwide release. It ran an activation at her Daisy Chain Fields festival, serving samples and giving out merch.",
+        "channel": "event",
+        "why_flowcode_fits": "Festival sampling and limited-edition merch reach fans who likely stay unidentified. A code can capture them and send them to the drink and the app.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your Olivia Rodrigo 'You Seem Pretty Pink for a Baja Blast' drink launched in select markets and went nationwide on Sept 24, with an activation at her Daisy Chain Fields festival. You likely cannot tell how many sample recipients or merch holders became customers. Put Flowcodes on sample cups, merch and ambassador signage that open a FlowHub with a Rewards sign-up, the nearest store and the app. You would see scans by event and by market and who signed up. Which part of the festival activation do you measure today?",
+        "would_measure": "Scans by event, merch and cup, Rewards sign-ups, and drink-related store visits by market.",
+        "evidence": [
+          {
+            "url": "https://www.eventmarketer.com/article/experiential-marketing-trend-of-the-week-concert-tie-ins/",
+            "published": "2026-08-31",
+            "quote": "Taco Bell activated a pink footprint."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "Every fact in the claim appears in the source. The drink debuted at Live Más Cafés in California, Las Vegas and Texas on Aug. 29, ahead of a Sept. 24 nationwide release. Taco Bell activated at Rodrigo's Daisy Chain Fields festival, where ambassadors served samples and handed out merch. The claim says 'select locations' while the source says 'exclusively at Live Más Cafés', which is a minor paraphrase. The claim says 'launched', which fits the Aug. 29 debut.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "Taco Bell activated a pink footprint. Brand ambassadors in pink aprons served samples of the drink and distributed limited-edition merch",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "fans waited hours to get a first taste and snag a custom embroidered tote bag and a free sticker with purchase.",
+          "answer": "no"
+        },
+        "f3_matches_play": {
+          "quote": "Taco Bell activated a pink footprint. Brand ambassadors in pink aprons served samples of the drink and distributed limited-edition merch like towels, can coolers and cup-shaped car ornaments.",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "debuted exclusively at Live Más Cafés in California, Las Vegas and Texas on Aug. 29",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "Before its nationwide release on Sept. 24",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Before its nationwide release on Sept. 24, the pink twist on the brand's signature beverage debuted exclusively at Live Más Cafés",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.544,
+        "evidence": 0.15,
+        "fit": 0.667,
+        "impact": 1.0,
+        "total": 0.567,
+        "passed": [
+          "f1_touchpoint",
+          "f3_matches_play",
+          "i1_scale_stated",
+          "i2_national",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
     },
     {
       "opportunity": {
@@ -352,19 +513,19 @@
           "S8",
           "S9"
         ],
-        "evidence_quote": "As an extension of the campaign, exclusive merchandise was made available yesterday as part of Taco Bell Rewards' Tuesday Drop, featuring collaborations with streetwear brand Anti Social Social Club and the screen-free camera brand Camp Snap.",
-        "title": "Decades Menu Vine campaign: connect the nostalgia spot to the merch drop",
-        "what_happening": "Taco Bell launched a 2016-themed Decades Menu with a nostalgic spot built from Vines. It partnered with the Divine app and offered merch through a Rewards Tuesday Drop with Anti Social Social Club and Camp Snap.",
-        "channel": "tv",
-        "why_flowcode_fits": "The spot and the Divine partnership create interest, and the merch drop is a Rewards-only reward. A scannable link from the spot to the Drop can bring new viewers into Rewards and show which exposures led to sign-ups.",
+        "evidence_quote": "Taco Bell launched a 2016-inspired menu and a nostalgic spot that incorporates popular videos from Vine, the shuttered short-video app that served as a precursor to TikTok.",
+        "title": "2016 Decades Menu: link the Vine spot, Divine app and Tuesday Drop merch",
+        "what_happening": "Taco Bell launched a 2016-themed Decades Menu with a Vine-inspired spot, a partnership with the Divine app, and exclusive Tuesday Drop merch (Anti Social Social Club, Camp Snap) plus an in-app scavenger hunt from Aug 25 to Sept 14.",
+        "channel": "app",
+        "why_flowcode_fits": "The campaign spreads across TV, a partner app and Rewards. One code can send people to a single hub that routes them to the right place and shows which route worked.",
         "flowcode_products": [
           "flowcodes",
           "flowurls",
           "flowhubs",
           "analytics"
         ],
-        "suggested_play": "Your 2016-themed Decades Menu spot, launched in late August, comes with a Rewards Tuesday Drop of merch from Anti Social Social Club and Camp Snap. You likely cannot see how many people who watched the spot went on to join Rewards for the Drop. Put a dynamic Flowcode on the spot and a FlowURL in the Divine partnership content, opening a FlowHub with the Decades Menu, Drop access and a Rewards sign-up. You would get scans by channel, new Rewards members and Drop entries tied to each source. Flowcode's Lunchables campaign saw a 50% campaign conversion. How do you tell today which creative brings new members into the Tuesday Drop?",
-        "would_measure": "Scans and clicks by creative and channel, new Rewards sign-ups, Drop entries and app installs.",
+        "suggested_play": "Your 2016 Decades Menu launched on Aug 27 with a Vine-style spot, the Divine app partnership and a Rewards scavenger hunt running to Sept 14. You likely cannot see how many people moved from the spot to the app hunt or the Divine tie-in. Put a Flowcode on the spot and a branded FlowURL in partner posts that open a FlowHub linking to the Rewards app hunt, the merch drop and Divine. You would see which touchpoint drove Rewards activity during the hunt. How do you tie your TV spots to in-app scavenger hunt participation today?",
+        "would_measure": "Scans and clicks by source, Rewards app opens and hunt participation, and merch drop entries.",
         "evidence": [
           {
             "url": "https://www.campaignlive.com/article/taco-bell-channels-classic-vine-nostalgic-ad-menu-drop/1968546",
@@ -374,10 +535,10 @@
         ]
       },
       "verdict": {
-        "reason": "Claim facts: 2016-themed Decades Menu, nostalgic spot built from Vines, Divine app partnership, merch via Taco Bell Rewards' Tuesday Drop with Anti Social Social Club and Camp Snap. All appear in the source. The source does not explicitly say the spot is on TV, but it says 'spot' and 'campaign film'; the channel label is a minor inference. Core facts are supported.",
+        "reason": "Every fact in the claim appears in the source: the 2016-inspired Decades Menu, the Vine-inspired spot, the Divine app partnership, Tuesday Drop merch with Anti Social Social Club and Camp Snap, and the in-app scavenger hunt from Aug 25 to Sept 14. Nothing is added beyond the source.",
         "supported": true,
         "f1_touchpoint": {
-          "quote": "a nostalgic spot that incorporates popular videos from Vine",
+          "quote": "Taco Bell launched a 2016-inspired menu and a nostalgic spot that incorporates popular videos from Vine",
           "answer": "yes"
         },
         "f2_digital_action": {
@@ -385,11 +546,11 @@
           "answer": "yes"
         },
         "f3_matches_play": {
-          "quote": "exclusive merchandise was made available yesterday as part of Taco Bell Rewards’ Tuesday Drop",
+          "quote": "Taco Bell also developed an in-app scavenger hunt game to unlock exclusive offers",
           "answer": "yes"
         },
         "i1_scale_stated": {
-          "quote": "TikTok using its viral 2016 filter a reported 55 million times",
+          "quote": "users on TikTok using its viral 2016 filter a reported 55 million times",
           "answer": "no"
         },
         "i2_national": {
@@ -397,7 +558,7 @@
           "answer": "unknown"
         },
         "i3_live_or_upcoming": {
-          "quote": "in-app scavenger hunt game to unlock exclusive offers over the three-week period from August 25 to September 14",
+          "quote": "Taco Bell also developed an in-app scavenger hunt game to unlock exclusive offers over the three-week period from August 25 to September 14.",
           "answer": "yes"
         }
       },
@@ -419,63 +580,145 @@
     {
       "opportunity": {
         "signal_ids": [
-          "S59",
-          "S60"
+          "S56"
         ],
-        "evidence_quote": "Taco Bell activated a pink footprint.",
-        "title": "Olivia Rodrigo pink Baja Blast and festival activation",
-        "what_happening": "Taco Bell launched the Olivia Rodrigo pink Baja Blast, rolled out regionally then nationally on Sept 24, and ran a pink activation at her Daisy Chain Fields festival with samples and limited-edition merch.",
+        "evidence_quote": "To celebrate the big opening, Taco Bell will be offering a free Crunchy Taco to the first 100 customers, plus the chance to spin the prize wheel to win some exclusive merch.",
+        "title": "Birmingham New Street opening: scan-to-claim free taco and prize wheel",
+        "what_happening": "Taco Bell opened a station restaurant at Birmingham New Street with a free Crunchy Taco for the first 100 customers and a prize wheel for merch.",
         "channel": "event",
-        "why_flowcode_fits": "Festival attendees get samples and merch but are likely not captured as known customers. A code on cups and merch can convert them into Rewards members.",
+        "why_flowcode_fits": "A promo built on a queue and a wheel can capture each participant's details through a scan.",
         "flowcode_products": [
           "flowcodes",
           "flowhubs",
           "flowid"
         ],
-        "suggested_play": "Your pink Baja Blast activation at Olivia Rodrigo's Daisy Chain Fields festival gave out samples and limited-edition merch to a big young audience. You likely did not capture who they were or what they did next. Put a Flowcode on sample cups and merch that opens a FlowHub with Rewards sign-up, an app download and the nationwide drink availability. You would get scans by event, new members and later redemptions linked to the festival. Flowcode's CLEAR deployment saw 1.2M+ scans across 7,000+ codes. How do you follow up with festival guests today?",
-        "would_measure": "Scans by event and item, Rewards sign-ups, app installs and follow-up redemptions.",
+        "suggested_play": "Your Birmingham New Street station restaurant opened with a free Crunchy Taco for the first 100 customers and a prize wheel for merch. You likely have no record of who took part or whether they return. Put a Flowcode on the queue signage and prize wheel that opens a FlowHub where people claim their prize, join Rewards and see store hours. You would get an opted-in list and a count of first-day visitors. How do you capture contact details from new store openings today?",
+        "would_measure": "Scans, sign-ups, prize claims and return visits after opening day.",
         "evidence": [
           {
-            "url": "https://www.eventmarketer.com/article/experiential-marketing-trend-of-the-week-concert-tie-ins/",
-            "published": "2026-08-31",
-            "quote": "Taco Bell activated a pink footprint."
+            "url": "https://www.compass-group.co.uk/media/one-retail-launches-taco-bell-in-birmingham-new-street-station/",
+            "published": "2026-05-28",
+            "quote": "To celebrate the big opening, Taco Bell will be offering a free Crunchy Taco to the first 100 customers, plus the chance to spin the prize wheel to win some exclusive merch."
           }
         ]
       },
       "verdict": {
-        "reason": "Sources confirm the Olivia Rodrigo 'You Seem Pretty Pink for a Baja Blast' drink, a regional debut at Live Más Cafés in California, Las Vegas and Texas on Aug. 29, a nationwide release on Sept. 24, and the pink activation at Daisy Chain Fields with samples and limited-edition merch. All claim facts appear in the sources.",
+        "reason": "The claim says Taco Bell opened a station restaurant at Birmingham New Street, with a free Crunchy Taco for the first 100 customers and a prize wheel for merch. The source states all of this: the opening on 27 May, the free Crunchy Taco for the first 100 customers, and the chance to spin the prize wheel to win exclusive merch. Every fact in the claim is supported.",
         "supported": true,
         "f1_touchpoint": {
-          "quote": "Taco Bell activated a pink footprint. Brand ambassadors in pink aprons served samples of the drink and distributed limited-edition merch",
+          "quote": "Taco Bell will be offering a free Crunchy Taco to the first 100 customers, plus the chance to spin the prize wheel to win some exclusive merch.",
           "answer": "yes"
         },
         "f2_digital_action": {
-          "quote": "Festivalgoers snapped pictures in a photo booth and inside a giant cup installation.",
-          "answer": "no"
+          "quote": "Guests can sign up for Taco Bell Rewards through the app, where new members receive a complimentary Crunchy Taco.",
+          "answer": "yes"
         },
         "f3_matches_play": {
-          "quote": "Taco Bell activated a pink footprint. Brand ambassadors in pink aprons served samples of the drink and distributed limited-edition merch like towels, can coolers and cup-shaped car ornaments.",
+          "quote": "Fans can also skip the line by placing orders through the app before arriving at the store.",
           "answer": "yes"
         },
         "i1_scale_stated": {
-          "quote": "fans waited hours to get a first taste",
-          "answer": "no"
-        },
-        "i2_national": {
-          "quote": "Before its nationwide release on Sept. 24",
+          "quote": "Birmingham New Street is the UK's busiest station outside London, welcoming over 54m passengers every year",
           "answer": "yes"
         },
+        "i2_national": {
+          "quote": "opened Taco Bell's first railway station location in Birmingham New Street, on 27 May.",
+          "answer": "no"
+        },
         "i3_live_or_upcoming": {
-          "quote": "Before its nationwide release on Sept. 24, the pink twist on the brand's signature beverage debuted exclusively at Live Más Cafés",
+          "quote": "has opened Taco Bell's first railway station location in Birmingham New Street, on 27 May.",
           "answer": "yes"
         }
       },
       "scores": {
-        "recency": 0.544,
+        "recency": 0.262,
+        "evidence": 0.15,
+        "fit": 1.0,
+        "impact": 0.667,
+        "total": 0.499,
+        "passed": [
+          "f1_touchpoint",
+          "f2_digital_action",
+          "f3_matches_play",
+          "i1_scale_stated",
+          "i3_live_or_upcoming"
+        ]
+      },
+      "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S36",
+          "S54",
+          "S55",
+          "S58"
+        ],
+        "evidence_quote": "The Cravings Kit line has since expanded to include Queso Burrito and Crunchy Taco options, both available at Walmart in stores and online, as well as at select grocery retailers across the U.S. and Canada.",
+        "title": "Taco Bell grocery line: on-pack codes for Cravings Kits, sauces and seasonings",
+        "what_happening": "Taco Bell Home Originals products (Cravings Kits, seasonings, sauces, bottled hot sauces with Kraft Heinz) are sold at Walmart, BJ's, Sam's Club and other grocers. The line's packaging was redesigned to tie back to the restaurant brand.",
+        "channel": "packaging",
+        "why_flowcode_fits": "Grocery sales are anonymous to Taco Bell. An on-pack code can link shoppers to the restaurant app and capture who they are.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your Cravings Kits, seasonings and hot sauces are sold at Walmart, BJ's, Sam's Club and other grocers, and the Home Originals packaging was redesigned to echo the restaurant brand. You likely cannot see who buys these at the grocery shelf or whether they come to your restaurants. Put a GS1 Digital Link-compliant Flowcode on the packs that opens a FlowHub with recipes, a Rewards sign-up and an offer for the restaurant. You would see scans by product and retailer and new Rewards members from grocery shoppers. Flowcode result: Lunchables saw a 22% sales lift and 50% campaign conversion from playable packaging. Who owns the link between grocery and Rewards on your team?",
+        "would_measure": "Scans by product and retailer, Rewards sign-ups from grocery packs, and restaurant offer redemptions.",
+        "evidence": [
+          {
+            "url": "https://www.vantagepointinsights.com/post/packaging-changes-that-support-brand-growth-a-case-study",
+            "published": "2026-06-09",
+            "quote": "A few years back, Taco Bell Home Originals made exactly the right kind of change — and it's a clean example of how this is supposed to work."
+          },
+          {
+            "url": "https://www.tastingtable.com/2155000/walmart-fast-food-chain-partner-taco-bell/",
+            "published": "2026-04-24",
+            "quote": "Walmart has also carried other Taco Bell products for about eight years, offering the company's branded fajita and taco seasoning mix, hot sauce, salsa, queso, spicy bean dip, taco shells, and more, both in stores and online for home delivery."
+          },
+          {
+            "url": "https://www.foodrepublic.com/2239204/brand-behind-taco-bell-grocery-store-hot-sauces/",
+            "published": "2026-08-22",
+            "quote": "The five flavors, which are available at Walmart, come in 7.5-ounce bottles, and there are also larger 25-ounce ones at warehouse membership retailers like BJ's and Sam's Club."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "The sources support most of the claim. Cravings Kits, seasonings, hot sauces and Kraft Heinz are all covered. Walmart is covered for kits, seasonings and sauces. BJ's and Sam's Club are covered for the 25-ounce hot sauces. Other grocers are covered by 'select grocery retailers across the U.S. and Canada'. The packaging redesign to tie back to the restaurant is covered by the Vantage Point case study. The name 'Home Originals' and the 'sauces' grouping appear in the sources. The claim's reference to 'Cravings Kits' being sold at BJ's and Sam's Club is not stated, but the claim lists products and retailers generally, so this is not a clear contradiction. The redesign went live in 2023, so it is a past event rather than something upcoming.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "when the in-store package leaned into those familiar restaurant equities, shoppers recognized and remembered it faster",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "Taco Bell debuted two Cravings Kits, which were sold on its website as well as in Walmart stores",
+          "answer": "no"
+        },
+        "f3_matches_play": {
+          "quote": "Through Kraft Heinz, a line of Taco Bell products is sold at retail under the name Taco Bell Home Originals, or TBHO.",
+          "answer": "yes"
+        },
+        "i1_scale_stated": {
+          "quote": "available at select grocery retailers across the U.S. and Canada",
+          "answer": "no"
+        },
+        "i2_national": {
+          "quote": "A national graphics change is expensive. It touches every package, every shelf, every distribution point",
+          "answer": "yes"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "Since the change went live in 2023, TBHO has had continued success, with sales growing steadily since the new graphics launched.",
+          "answer": "yes"
+        }
+      },
+      "scores": {
+        "recency": 0.508,
         "evidence": 0.15,
         "fit": 0.667,
         "impact": 0.667,
-        "total": 0.501,
+        "total": 0.49,
         "passed": [
           "f1_touchpoint",
           "f3_matches_play",
@@ -488,165 +731,21 @@
     {
       "opportunity": {
         "signal_ids": [
-          "S33",
-          "S34"
+          "S29",
+          "S30"
         ],
-        "evidence_quote": "TerraCycle and Taco Bell claim that over five years, one million sauce packets and single-serve containers have been collected through the Taco Bell Sauce Container US Recycling Program, to be repurposed or recycled.",
-        "title": "Sauce packet recycling program with TerraCycle",
-        "what_happening": "Taco Bell and TerraCycle run a US sauce packet recycling program, reporting one million items collected over five years.",
-        "channel": "packaging",
-        "why_flowcode_fits": "Sauce packets can carry a code that opens recycling instructions and a Rewards sign-up, linking a sustainability message to measurable engagement.",
-        "flowcode_products": [
-          "flowcodes",
-          "flowhubs",
-          "analytics"
-        ],
-        "suggested_play": "Your TerraCycle sauce packet recycling program, reporting one million items collected over five years, relies on guests knowing about it. You likely cannot see how many learn of it from the packet. Add a Flowcode to sauce packets that opens a FlowHub with recycling instructions and a Rewards sign-up. You would get scans by product and region and sign-ups from sustainability-minded guests. How do you promote the program to guests today?",
-        "would_measure": "Scans by packet type and region, program sign-ups, Rewards enrolment.",
-        "evidence": [
-          {
-            "url": "https://packaging-journal.de/en/yum-brands-is-focusing-on-more-circular-packaging/",
-            "published": "2026-07-02",
-            "quote": "Taco Bell has continued its sauce packet recycling programme in partnership with TerraCycle."
-          },
-          {
-            "url": "https://www.packagingeurope.com/one-million-taco-bell-sauce-packets-collected-through-us-recycling-programme/",
-            "published": "2026-04-13",
-            "quote": "TerraCycle and Taco Bell claim that over five years, one million sauce packets and single-serve containers have been collected through the Taco Bell Sauce Container US Recycling Program, to be repurposed or recycled."
-          }
-        ]
-      },
-      "verdict": {
-        "reason": "The claim says Taco Bell and TerraCycle run a US sauce packet recycling program and report one million items collected over five years. Packaging Europe says the same: over five years, one million sauce packets and single-serve containers were collected through the Taco Bell Sauce Container US Recycling Program. Packaging Journal confirms the TerraCycle partnership, the 2021 start and the total of over one million packages. Every fact in the claim appears in the sources.",
-        "supported": true,
-        "f1_touchpoint": {
-          "quote": "Taco Bell’s hot sauce packets are made from single-use flexible film materials",
-          "answer": "yes"
-        },
-        "f2_digital_action": {
-          "quote": "Interested parties can sign up through TerraCycle. ... print a free shipping label by logging in to the TerraCycle portal.",
-          "answer": "unknown"
-        },
-        "f3_matches_play": {
-          "quote": "Taco Bell Rewards customers can use the same email address as their account to be eligible for bonus Rewards points throughout the year.",
-          "answer": "yes"
-        },
-        "i1_scale_stated": {
-          "quote": "over five years, one million sauce packets and single-serve containers have been collected",
-          "answer": "yes"
-        },
-        "i2_national": {
-          "quote": "pilot a national recycling programme for used sauce packets ... open to anyone across the contiguous U.S.",
-          "answer": "unknown"
-        },
-        "i3_live_or_upcoming": {
-          "quote": "Taco Bell has continued its sauce packet recycling programme in partnership with TerraCycle.",
-          "answer": "yes"
-        }
-      },
-      "scores": {
-        "recency": 0.343,
-        "evidence": 0.15,
-        "fit": 0.667,
-        "impact": 0.667,
-        "total": 0.44,
-        "passed": [
-          "f1_touchpoint",
-          "f3_matches_play",
-          "i1_scale_stated",
-          "i3_live_or_upcoming"
-        ]
-      },
-      "confidence": "low"
-    },
-    {
-      "opportunity": {
-        "signal_ids": [
-          "S61",
-          "S62",
-          "S63"
-        ],
-        "evidence_quote": "Each year, Taco Bell provides an exclusive stage-side experience for 500 students during the College Football Playoff (CFP) National Championship game day event, Championship Tailgate.",
-        "title": "College Football Playoff tailgate Student Section",
-        "what_happening": "Each year Taco Bell runs a Live Más Student Section for 500 students at the CFP National Championship Tailgate, with life-sized sauce packet photo ops and free food trucks, designed for TV and social exposure.",
-        "channel": "event",
-        "why_flowcode_fits": "The activation gets broadcast and social visibility but likely captures little first-party data on the students. Codes at the photo ops and food trucks can turn presence into Rewards members.",
-        "flowcode_products": [
-          "flowcodes",
-          "flowhubs",
-          "flowid",
-          "analytics"
-        ],
-        "suggested_play": "Your yearly Live Más Student Section at the CFP National Championship Tailgate gives 500 students a stage-side experience, built for TV and social visibility. You likely cannot tell how many of those students became Rewards members. Put Flowcodes on the sauce packet photo ops, food truck windows and giveaways that open a FlowHub with Rewards sign-up and a share prompt. You would get scans by station, new members and emails from a young audience. What do you capture from tailgate guests after the event today?",
-        "would_measure": "Scans by station, new Rewards sign-ups, emails captured and social shares.",
-        "evidence": [
-          {
-            "url": "https://engagestar.com/insights/taco-bell-college-football-playoff-national-championship/",
-            "published": "2026-03-17",
-            "quote": "The challenge was not only to create an unforgettable experience for the students but to ensure brand exposure through live TV broadcasts and other media coverage."
-          }
-        ]
-      },
-      "verdict": {
-        "reason": "The claim's facts are in the source: an annual 500-student Live Más Student Section at the CFP National Championship Tailgate, life-sized sauce packet photo ops, free food trucks, and branded visuals meant for TV and social exposure. The source is a case study dated October 4, 2024 (page date 2026-03-17) describing a past activation. It names no digital action, and it states no current or upcoming run beyond \"each year\".",
-        "supported": true,
-        "f1_touchpoint": {
-          "quote": "Taco Bell provides an exclusive stage-side experience for 500 students during the College Football Playoff (CFP) National Championship game day event, Championship Tailgate.",
-          "answer": "yes"
-        },
-        "f2_digital_action": {
-          "quote": "The branded photo ops and immersive environment encouraged students to share their experience online",
-          "answer": "yes"
-        },
-        "f3_matches_play": {
-          "quote": "Codes on screens, signage, merch for fan sign-up, sweepstakes, ticketing",
-          "answer": "unknown"
-        },
-        "i1_scale_stated": {
-          "quote": "exclusive stage-side experience for 500 students",
-          "answer": "yes"
-        },
-        "i2_national": {
-          "quote": "College Football Playoff (CFP) National Championship game day event, Championship Tailgate.",
-          "answer": "no"
-        },
-        "i3_live_or_upcoming": {
-          "quote": "The Taco Bell Live Más Student Section was a huge success at the Championship Tailgate",
-          "answer": "no"
-        }
-      },
-      "scores": {
-        "recency": 0.15,
-        "evidence": 0.15,
-        "fit": 0.667,
-        "impact": 0.333,
-        "total": 0.316,
-        "passed": [
-          "f1_touchpoint",
-          "f2_digital_action",
-          "i1_scale_stated"
-        ]
-      },
-      "confidence": "low"
-    },
-    {
-      "opportunity": {
-        "signal_ids": [
-          "S31",
-          "S32"
-        ],
-        "evidence_quote": "This season, the Yotes will debut jerseys featuring the iconic purple Taco Bell logo splashed across the front, marking a milestone partnership that blends hoops with flavor and a dash of fun.",
-        "title": "College of Idaho basketball sponsorship",
-        "what_happening": "Taco Bell sponsors College of Idaho basketball with its logo on women's team jerseys and the purple student section barriers.",
+        "evidence_quote": "Taco Bell is also sponsoring the iconic purple barriers in front of the student section during both men's and women's games, turning the home court into a full-on Yote fiesta.",
+        "title": "College of Idaho basketball sponsorship: codes on jerseys and courtside barriers",
+        "what_happening": "Taco Bell is a multi-year sponsor of College of Idaho women's basketball with its logo on jerseys, and it sponsors the purple barriers in front of the student section at men's and women's home games.",
         "channel": "sponsorship",
-        "why_flowcode_fits": "Student section barriers are a visible spot for a code that converts students into Rewards members, with scans reported by game.",
+        "why_flowcode_fits": "Sponsor logos in a crowd give little measurable return. A scannable code on the barriers could capture student sign-ups and show the value.",
         "flowcode_products": [
           "flowcodes",
           "flowhubs",
           "analytics"
         ],
-        "suggested_play": "Your sponsorship of College of Idaho basketball, with the logo on jerseys and the purple student-section barriers since last season, reaches students at every home game. You likely have no way to measure sign-ups from it. Put a Flowcode on the barriers and arena screens opening a FlowHub with a Rewards sign-up and a game-day offer. You would get scans by game and new student members. Flowcode's NFL Shop code drove 10k connections in 60 seconds. How do you measure the return from your local sponsorships today?",
-        "would_measure": "Scans by game, Rewards sign-ups, offer redemptions and nearby store traffic.",
+        "suggested_play": "Your College of Idaho deal puts the Taco Bell logo on women's basketball jerseys and on the purple barriers in front of the student section. You likely cannot measure what fans do after seeing the logos. Add a Flowcode to the barriers and arena screens that opens a FlowHub with a Rewards sign-up and a game-night offer. You would see scans per game and who joined. How do you currently show the return on local sponsorships like this?",
+        "would_measure": "Scans per game and placement, Rewards sign-ups, and offer redemptions near campus.",
         "evidence": [
           {
             "url": "https://yoteathletics.com/news/2025/11/20/talking-taco-bell-yotes-womens-basketball-partners-with-taco-bell.aspx",
@@ -656,14 +755,14 @@
         ]
       },
       "verdict": {
-        "reason": "The claim says Taco Bell sponsors College of Idaho basketball, with its logo on women's team jerseys and the purple student section barriers. The source confirms the multi-year jersey sponsorship for women's basketball and the sponsorship of the purple barriers in front of the student section at men's and women's games. Every fact in the claim is in the source. The source gives no scale beyond one college and has no digital action.",
+        "reason": "The claim matches the source: a multi-year agreement makes Taco Bell the official jersey sponsor of Yotes women's basketball with its logo on the jersey front, and Taco Bell also sponsors the purple barriers in front of the student section at men's and women's games. Home games are implied by the JA Albertsons Activities Center and 'home court'. All claim facts are supported. The checklist: a physical touchpoint exists (jerseys, barriers); no digital action is named; no scale is stated; it is a single college, not national; it is live this season.",
         "supported": true,
         "f1_touchpoint": {
           "quote": "Taco Bell is also sponsoring the iconic purple barriers in front of the student section during both men's and women's games",
           "answer": "yes"
         },
         "f2_digital_action": {
-          "quote": "Live Más",
+          "quote": "Taco Bell is also sponsoring the iconic purple barriers in front of the student section during both men's and women's games, turning the home court into a full-on Yote fiesta.",
           "answer": "no"
         },
         "f3_matches_play": {
@@ -696,131 +795,154 @@
         ]
       },
       "confidence": "low"
+    },
+    {
+      "opportunity": {
+        "signal_ids": [
+          "S61",
+          "S62"
+        ],
+        "evidence_quote": "Each year, Taco Bell provides an exclusive stage-side experience for 500 students during the College Football Playoff (CFP) National Championship game day event, Championship Tailgate.",
+        "title": "Live Más Student Section: capture the 500 students",
+        "what_happening": "Taco Bell runs a Live Más Student Section for 500 students at the CFP National Championship Tailgate, built with agencies Etzel and Star. It includes photo ops, games and free food trucks.",
+        "channel": "event",
+        "why_flowcode_fits": "A branded on-site event with photo ops and games is a natural place for a scan-to-join code. Without one, the contact details of students who attend likely stay with the event team.",
+        "flowcode_products": [
+          "flowcodes",
+          "flowhubs",
+          "flowid",
+          "analytics"
+        ],
+        "suggested_play": "Your Live Más Student Section at the CFP Championship Tailgate hosts 500 students each year, with photo ops, games and food trucks. You likely have few ways to follow up with those students after the event. Put Flowcodes on the photo-op signage, game stations and food truck windows that open a FlowHub with a Rewards sign-up, an app download and an offer for the next visit. Give each station its own code. You would get sign-ups and scans by station and a list of opted-in students you can reach later. Flowcode result: NFL Shop made $25k in revenue and 10k connections in 60 seconds. What do you do today to stay in touch with the students after the tailgate?",
+        "would_measure": "Scans per station, Rewards sign-ups, app installs, and later redemption of the follow-up offer.",
+        "evidence": [
+          {
+            "url": "https://engagestar.com/insights/taco-bell-college-football-playoff-national-championship/",
+            "published": "2026-03-17",
+            "quote": "Taco Bell partnered with Etzel and Star to design, install, and manage an interactive and visually engaging experience at the Live Más Student Section."
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "The claim's facts all appear in the source: Live Más Student Section, 500 students, CFP National Championship Tailgate, Etzel and Star, photo ops, games, and free food from food trucks. The source is a case study dated October 4, 2024 describing a past event, but the claim states no date, so nothing in it is contradicted.",
+        "supported": true,
+        "f1_touchpoint": {
+          "quote": "Taco Bell provides an exclusive stage-side experience for 500 students during the College Football Playoff (CFP) National Championship game day event, Championship Tailgate.",
+          "answer": "yes"
+        },
+        "f2_digital_action": {
+          "quote": "The branded photo ops and immersive environment encouraged students to share their experience online",
+          "answer": "no"
+        },
+        "f3_matches_play": {
+          "quote": "Codes on screens, signage, merch for fan sign-up, sweepstakes, ticketing",
+          "answer": "unknown"
+        },
+        "i1_scale_stated": {
+          "quote": "Each year, Taco Bell provides an exclusive stage-side experience for 500 students",
+          "answer": "yes"
+        },
+        "i2_national": {
+          "quote": "College Football Playoff (CFP) National Championship game day event, Championship Tailgate.",
+          "answer": "no"
+        },
+        "i3_live_or_upcoming": {
+          "quote": "The Taco Bell Live Más Student Section was a huge success at the Championship Tailgate",
+          "answer": "no"
+        }
+      },
+      "scores": {
+        "recency": 0.15,
+        "evidence": 0.15,
+        "fit": 0.333,
+        "impact": 0.333,
+        "total": 0.233,
+        "passed": [
+          "f1_touchpoint",
+          "i1_scale_stated"
+        ]
+      },
+      "confidence": "low"
     }
   ],
   "dropped": [
     {
-      "stage": "extract",
-      "what": "https://www.tacobell.com/newsroom/taco-bell-national-taco-month-celebration: Taco Bell is offering Doja Cat's usual order, anchored by the Mexican Pizza, at $4 nationwide in late October and early November, with a $1 Rewards deal in the app.",
-      "reason": "quote not found word for word on the page"
+      "stage": "match",
+      "what": "Taco Bell is running a new advertising campaign, created with agency Highdive, that adopts a gritty, high-intensity style inspired by the show \"The Bear.\"",
+      "reason": "no Flowcode fit: Creative style change for a TV campaign with no mention of a response or offer mechanism."
     },
     {
       "stage": "match",
-      "what": "Duolingo Global Taco Day: Duo Habanero sauce and NYC takeover",
-      "reason": "same sources as 'Tuesday Drops and Rewards: pull in-person traffic into the app': likely the same campaign"
+      "what": "Taco Bell is launching a zero sugar version of Mountain Dew Baja Midnight in fountain drinks nationwide.",
+      "reason": "no Flowcode fit: National fountain drink launch with no touchpoint where a code adds value."
     },
     {
       "stage": "match",
-      "what": "Taco Bell has brought back the Flamin' Hot Grilled Cheese Burrito with Fritos Flamin' Hot on menus nationwide.",
-      "reason": "no Flowcode fit: Menu item return; no clear touchpoint gap."
+      "what": "Taco Bell is bringing back its Cheesy Street Chalupas on menus nationwide.",
+      "reason": "no Flowcode fit: Nationwide menu item return with nothing specific to measure."
     },
     {
       "stage": "match",
-      "what": "Taco Bell has launched a new Flamin' Hot Mini Taco Salad.",
-      "reason": "no Flowcode fit: Menu item launch alone; no real Flowcode role."
+      "what": "Taco Bell is returning its Steak & Jalapeño Nacho Fries for a limited time.",
+      "reason": "no Flowcode fit: Limited-time menu return with no distinct campaign touchpoint."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is launching a zero sugar version of Mountain Dew Baja Midnight nationwide as a fountain beverage in three sizes.",
-      "reason": "no Flowcode fit: Fountain beverage launch; no meaningful Flowcode role."
+      "what": "Taco Bell and PepsiCo renewed their U.S. beverage partnership for 11 years, keeping Mountain Dew Baja Blast and other PepsiCo drinks across participating Taco Bell locations nationwide.",
+      "reason": "no Flowcode fit: Corporate beverage supply partnership renewal, not a consumer touchpoint."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is bringing back its Cheesy Street Chalupas nationwide, with a combo option that includes a crunchy taco, Nacho Fries and a large drink.",
-      "reason": "no Flowcode fit: Menu item return; no touchpoint gap."
+      "what": "Taco Bell and PepsiCo plan to launch new crafted, functional and energy drinks, including energy offerings aimed at Gen Z, under the renewed partnership.",
+      "reason": "no Flowcode fit: Future product plans with no current campaign."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is returning the Naked Chicken Chalupa for a limited time, arriving on menus November 19.",
-      "reason": "no Flowcode fit: Menu item return; no touchpoint gap."
+      "what": "Taco Bell and PepsiCo plan new Doritos Locos Tacos flavors for the menu item's 15th anniversary in 2027.",
+      "reason": "no Flowcode fit: Future 2027 product plan with no current touchpoint."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is bringing back its Flamin’ Hot Grilled Cheese Burrito and launching a Flamin’ Hot Mini Taco Salad as part of a Make It Flamin’ Hot customizable option.",
-      "reason": "no Flowcode fit: Menu item launch; no touchpoint gap."
+      "what": "Taco Bell reportedly switched the Nachos BellGrande from a black plastic container to cardboard at some U.S. locations, though the company has not confirmed a broader change.",
+      "reason": "no Flowcode fit: Unconfirmed packaging material change reported on Reddit; no customer engagement angle."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is testing a Carne Asada Cantina menu lineup in Nashville and Minneapolis-St. Paul.",
-      "reason": "no Flowcode fit: Small market menu test; Flowcode does not solve a clear problem."
+      "what": "Taco Bell has switched its Nachos BellGrande packaging from a plastic tub to a paper container, which customers say holds less food.",
+      "reason": "no Flowcode fit: Packaging material swap over portion complaints; a code would not address it."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is market testing seven new menu items at select restaurants in three U.S. states.",
-      "reason": "no Flowcode fit: Menu testing; no Flowcode fit."
+      "what": "Taco Bell is promoting its new Diablo Dusted Crispy Chicken Nuggets in a TV commercial.",
+      "reason": "no Flowcode fit: Product TV spot with no offer or response mechanism in the evidence."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is selling a Avalanche Taco Trio mini-taco three-pack at select Tampa, Florida restaurants as a menu test.",
-      "reason": "no Flowcode fit: Single-market menu test; no fit."
+      "what": "Taco Bell is running a 30-second TV commercial promoting its Diablo Dusted Crispy Chicken Nuggets.",
+      "reason": "no Flowcode fit: Product TV spot with no offer or response mechanism in the evidence."
     },
     {
       "stage": "match",
-      "what": "Taco Bell is testing a new Cantina Carne Asada menu with six items in Nashville and Minneapolis-St. Paul.",
-      "reason": "no Flowcode fit: Menu test; no fit."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell is testing a new carne asada steak across six Cantina menu items in Nashville and the Minneapolis-St. Paul area as a limited-market test.",
-      "reason": "no Flowcode fit: Menu test; no fit."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell and PepsiCo renewed their U.S. beverage partnership for 11 more years, covering participating Taco Bell, Taco Bell Cantina and Live Más Cafe locations nationwide.",
-      "reason": "no Flowcode fit: Corporate beverage partnership renewal; no touchpoint."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell and PepsiCo plan new DORITOS Locos Tacos flavors for the 15th anniversary of the collaboration in 2027.",
-      "reason": "no Flowcode fit: Future product plan with no current touchpoint."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell and PepsiCo are developing new beverages, including the premium Refrescas beverage platform and a growing range of crafted and functional drinks.",
-      "reason": "no Flowcode fit: Beverage product development; no touchpoint."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell reportedly switched the Nachos BellGrande from a plastic container to a cardboard box at some U.S. locations, though the company has not confirmed a broader change.",
-      "reason": "no Flowcode fit: Unconfirmed packaging change driven by cost and portion complaints; no clear fit."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell is switching some Nachos BellGrande orders to a smaller paper box in place of the plastic tub, a change customers say gives them less food for the same price.",
-      "reason": "no Flowcode fit: Customer complaints about portion size; not a Flowcode problem."
-    },
-    {
-      "stage": "match",
-      "what": "Taco Bell operates a small number of restaurants inside Walmart stores, including locations in California and North Carolina.",
-      "reason": "no Flowcode fit: A handful of in-Walmart restaurants; too small to pitch."
-    },
-    {
-      "stage": "match",
-      "what": "Applegreen opened a service station in Lisburn, Northern Ireland, that includes a Taco Bell restaurant, which is outside the United States.",
-      "reason": "no Flowcode fit: Outside the US at a partner service station; weak fit."
+      "what": "Applegreen opened a service station in Lisburn, Northern Ireland, with a Taco Bell restaurant inside, which is a United Kingdom location rather than a U.S. one.",
+      "reason": "no Flowcode fit: Service station opening in Northern Ireland with no promotion described."
     },
     {
       "stage": "verify",
-      "what": "Redesigned app: drive downloads and updates from physical touchpoints",
+      "what": "Football season: stadium Taco Bell takeover and athlete TV ads",
       "reason": "no specific physical or broadcast touchpoint named in the sources"
     },
     {
       "stage": "verify",
-      "what": "Luxe Value Menu and product TV spots: add a measurable response layer",
-      "reason": "claim not supported by sources: The sources show TV spots for each of the three products: Luxe Value Menu (Ad Age Oct 2026; Luxierge spot, priced $3 or less, nationwide launch), Luxe Cravings Box (Lavish Adventures 30-second TV spot, Dec 2025) and Diablo Dusted Crispy Chicken Nuggets (Ad Age Apr 2026, 'new commercials'). However, 'recurring' is only loosely supported by spots spread across several dates, and the Ad Age pages show only captions, not national airing. The nationwide claim is backed only for the Luxe Value Menu launch, not for the Cravings Box or the Nuggets. The claim is mostly supported but overreaches on 'recurring national TV' for all three products, so supported is false under a strict reading."
-    },
-    {
-      "stage": "verify",
-      "what": "Grocery packaging: Cravings Kits, seasonings and sauces",
-      "reason": "no specific physical or broadcast touchpoint named in the sources"
+      "what": "Luxe Value Menu: TV spots and drive-thru tasting tied to app-only $1 drops",
+      "reason": "claim not supported by sources: Most claim facts are supported: Luxierge TV spot (Jan 2026), Luxe Cravings Box 'Lavish Adventures' spot (Dec 2025), Laps of Luxury drive-thru tasting activation (Adweek), and app-only $1 Tuesday Drops (abancommercials). The Ad Age source from Oct 23, 2026 shows only a headline and caption 'Taco Bell hypes its Luxe Value Menu', with no description of a new ad or confirmation it is a new Oct 2026 ad beyond being in an Ad Age roundup of newest commercials. That is thinly supported; the claim's 'new Oct 2026 ad' is inferred from the headline. 'App-only' is not stated; the source says use the app to snag Luxe items for $1 during Tuesday Drops. Mostly supported but with gaps, so strict reading: not fully supported."
     }
   ],
   "stats": {
-    "input_tokens": 102090,
-    "output_tokens": 14220,
-    "search_calls": 0,
-    "cost_usd": 0.34637999999999997,
-    "seconds": 59.6
+    "input_tokens": 181583,
+    "output_tokens": 28281,
+    "search_calls": 10,
+    "cost_usd": 0.44930720000000013,
+    "seconds": 87.6
   },
   "crm_rows": [
     {
@@ -828,30 +950,7 @@
       "domain": "tacobell.com",
       "existing_customer": false,
       "rank": 1,
-      "title": "Tuesday Drops and Rewards: pull in-person traffic into the app",
-      "channel": "app",
-      "products": "flowcodes; flowhubs; flowid; analytics",
-      "score_total": 0.844,
-      "score_recency": 0.992,
-      "score_evidence": 0.65,
-      "score_fit": 1.0,
-      "score_impact": 0.667,
-      "confidence": "medium",
-      "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i1_scale_stated; i3_live_or_upcoming",
-      "newest_source_date": "2026-11-17",
-      "source_urls": "https://www.tacobell.com/newsroom/taco-bell-national-taco-month-celebration | https://www.usatoday.com/story/food/dining/2026/11/17/taco-bell-flamin-hot-puffer-jacket/92807789007/ | https://www.nrn.com/quick-service/taco-bell-brings-back-flamin-hot-burrito-tests-carne-asada | https://abancommercials.com/taco-bell/luxe-value-menu-quotluxierge-quot-2026-ad-commercial/287778/ | https://thepointsguy.com/loyalty-programs/taco-bell-rewards | https://www.tbmenus.com/app/ | https://www.tacobell.com/newsroom/taco-bell-and-duolingo-take-national-taco-day-global",
-      "what_happening": "Taco Bell runs weekly app-only Tuesday Drops, including the $1 Kevin Hart's Usual, the 200 Flamin' Hot puffer jackets, the Pretty Pink Picnic Kit and a free month of Super Duolingo. Some rewards can be redeemed only in the app.",
-      "why_flowcode_fits": "Drops are app-only, so every physical touchpoint (cups, bags, receipts, table tents, store windows) can drive members into the app. Taco Bell likely cannot tell which in-restaurant message brought someone into Rewards.",
-      "suggested_play": "Your Tuesday Drops, from the $1 Kevin Hart's Usual in October to the 200 Flamin' Hot puffer jackets on Nov 17, are app-only. You likely cannot tell which in-restaurant or packaging message pulls guests in to join Rewards or enter a Drop. Put dynamic Flowcodes on cups, bags and in-store signage that open a FlowHub with the current Drop, an app download and a Rewards sign-up, changing each week without reprinting. You would get scans by store and market, app installs and new members by touchpoint, and a CRM sync. Flowcode's LOVE CORN packaging code produced a 62% CRM conversion. Which in-store touchpoint do you rely on today to drive Drop sign-ups?",
-      "would_measure": "Scans by store and week, app installs, new Rewards members and Drop entries by touchpoint.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
-    },
-    {
-      "company": "Taco Bell",
-      "domain": "tacobell.com",
-      "existing_customer": false,
-      "rank": 2,
-      "title": "Live Más Open: turn the Peacock and Golf Channel broadcast into fan sign-ups",
+      "title": "Live Más Open and Live Más LIVE: turn Peacock viewers into known fans",
       "channel": "tv",
       "products": "flowcodes; flowhubs; flowid; analytics",
       "score_total": 0.806,
@@ -862,66 +961,135 @@
       "confidence": "high",
       "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i2_national; i3_live_or_upcoming",
       "newest_source_date": "2026-11-17",
-      "source_urls": "https://variety.com/2026/tv/news/taco-bell-kevin-hart-live-mas-golf-tournament-commercials-1236950193/ | https://www.dexerto.com/food/taco-bell-quietly-tests-fire-pina-hot-dog-on-exclusive-secret-menu-3426756/",
-      "what_happening": "Taco Bell produced the Live Más Open celebrity golf tournament with Kevin Hart in Laguna Beach on Nov 2. It streams on Peacock on Nov 20 and airs on Golf Channel. Experimental menu items were served at the event, and the winning team helps pick a discontinued item to return in 2027.",
-      "why_flowcode_fits": "A broadcast and streaming show reaches many viewers, but there is likely no link from the screen to a Taco Bell Rewards sign-up or a vote. A QR code on screen gives a measurable response. The 2027 menu-return vote gives viewers a reason to act.",
-      "suggested_play": "Your Live Más Open, streaming on Peacock Nov 20 and airing on Golf Channel, is a branded show with a built-in hook: the winning team helps pick which discontinued item returns in 2027. Today you likely cannot tell which viewers cared enough to act or who they are. Put a dynamic Flowcode on screen and in the show's graphics that opens a FlowHub where viewers vote on the item to bring back, join Taco Bell Rewards and download the app. You would get scans by airing and platform, new Rewards sign-ups and app installs tied to the show, and first-party data synced to your CRM. Flowcode's ESPN College GameDay broadcast code collected 32,000 emails in one day. How are you measuring the response to the show and tying viewers to the app today?",
-      "would_measure": "Scans by airing and platform, vote participation, Rewards sign-ups, app installs and CRM-matched viewers.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
+      "source_urls": "https://variety.com/2026/tv/news/taco-bell-kevin-hart-live-mas-golf-tournament-commercials-1236950193/ | https://www.dexerto.com/food/taco-bell-quietly-tests-fire-pina-hot-dog-on-exclusive-secret-menu-3426756/ | https://www.eventmarketer.com/article/brief-delivery-runners-sally-beauty-colorfest/",
+      "what_happening": "Taco Bell produced the Live Más Open celebrity golf tournament (played Nov 2, streaming on Peacock Nov 20 and airing on Golf Channel). Earlier it premiered its Live Más LIVE menu reveal show on Peacock. Both reach national audiences well beyond the in-person guests.",
+      "why_flowcode_fits": "Streaming and broadcast viewers are anonymous to Taco Bell. An on-screen code can link a viewer to a sign-up or app download and show which show and which market drove it.",
+      "suggested_play": "Your Live Más Open golf special streams on Peacock on Nov 20 and airs on Golf Channel, after Live Más LIVE premiered on Peacock in March. You likely cannot tell which viewers came from the shows or what they did next. Put a dynamic Flowcode on screen that opens a FlowHub with the app download, a Rewards sign-up and a first look at the secret menu items shown at the event. Use a different code per show and airing so the destination can change as the menu changes. You would see scans by show and market, new Rewards sign-ups and app installs tied to the broadcast. Flowcode result: ESPN College GameDay collected 32,000 emails in one day from a broadcast code. How are you measuring what viewers do after they watch your Peacock shows today?",
+      "would_measure": "Scans per airing and platform, app installs and Rewards sign-ups from the code, and secret-menu page views.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
+    },
+    {
+      "company": "Taco Bell",
+      "domain": "tacobell.com",
+      "existing_customer": false,
+      "rank": 2,
+      "title": "Flamin' Hot launch and puffer jacket giveaway: bring in-store customers into the drop",
+      "channel": "retail",
+      "products": "flowcodes; flowhubs; analytics",
+      "score_total": 0.785,
+      "score_recency": 0.992,
+      "score_evidence": 0.15,
+      "score_fit": 1.0,
+      "score_impact": 1.0,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-11-17",
+      "source_urls": "https://www.usatoday.com/story/food/dining/2026/11/17/taco-bell-flamin-hot-puffer-jacket/92807789007/ | https://www.nrn.com/quick-service/taco-bell-brings-back-flamin-hot-burrito-tests-carne-asada",
+      "what_happening": "Taco Bell brought back the Flamin' Hot Grilled Cheese Burrito, launched the Flamin' Hot Mini Taco Salad, and is giving away 200 puffer jackets through the Nov 17 Rewards Tuesday Drop.",
+      "why_flowcode_fits": "The giveaway is app-only while the launch is in restaurants nationwide. A code on in-store materials connects menu buyers to the drop and measures how many enter.",
+      "suggested_play": "Your Flamin' Hot Grilled Cheese Burrito and new Mini Taco Salad are on menus nationwide, with 200 puffer jackets going to Rewards members on the Nov 17 Tuesday Drop. Customers buying the new items likely do not all know about the giveaway or have the app. Put a Flowcode on in-store posters and packaging that opens a FlowHub with the drop entry and app sign-up. You would see which restaurants and which menu item prompted entries and new app sign-ups. How do you currently get in-store customers into your app drops?",
+      "would_measure": "Scans by restaurant and placement, giveaway entries, and new app installs from the code.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
     },
     {
       "company": "Taco Bell",
       "domain": "tacobell.com",
       "existing_customer": false,
       "rank": 3,
-      "title": "Live Más LIVE variety show on Peacock",
-      "channel": "tv",
+      "title": "Menu tests (Cantina Carne Asada, Avalanche Taco Trio): in-store feedback codes",
+      "channel": "retail",
       "products": "flowcodes; flowhubs; analytics",
-      "score_total": 0.723,
-      "score_recency": 0.992,
-      "score_evidence": 0.5,
-      "score_fit": 0.667,
+      "score_total": 0.716,
+      "score_recency": 0.985,
+      "score_evidence": 0.15,
+      "score_fit": 1.0,
       "score_impact": 0.667,
-      "confidence": "high",
-      "checks_passed": "f1_touchpoint; f3_matches_play; i1_scale_stated; i2_national",
-      "newest_source_date": "2026-11-17",
-      "source_urls": "https://www.eventmarketer.com/article/brief-delivery-runners-sally-beauty-colorfest/ | https://variety.com/2026/tv/news/taco-bell-kevin-hart-live-mas-golf-tournament-commercials-1236950193/",
-      "what_happening": "Taco Bell's third annual Live Más LIVE, hosted by Vince Staples on March 10 in Hollywood, premiered on Peacock as a variety show and revealed over 20 menu items.",
-      "why_flowcode_fits": "A national broadcast reveals menu items, but the link from viewing to trying an item or joining Rewards is likely invisible. An on-screen code can offer early access.",
-      "suggested_play": "Your Live Más LIVE show, hosted by Vince Staples and streamed on Peacock after the March 10 Hollywood event, revealed more than 20 menu items to a national audience. You likely cannot see which viewers acted on them. Add a dynamic Flowcode during menu reveals that opens a FlowHub with early access signup and an app download, and update it as items launch. You would get scans per reveal and new members by item interest. Flowcode's Welch's campaign had a 55% click-through. How do you tie show viewers to menu trial today?",
-      "would_measure": "Scans per reveal segment, early-access sign-ups, app installs and later item purchases.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i1_scale_stated; i3_live_or_upcoming",
+      "newest_source_date": "2026-11-16",
+      "source_urls": "https://www.nrn.com/quick-service/taco-bell-brings-back-flamin-hot-burrito-tests-carne-asada | https://www.allrecipes.com/taco-bell-menu-test-november-2026-12257958 | https://www.delish.com/food-news/a74430693/taco-bell-carne-asada-steak-cantina-menu-test/",
+      "what_happening": "Taco Bell is testing seven new items at select restaurants in three states, including a six-item Cantina Carne Asada menu in Nashville and Minneapolis-St. Paul and the Avalanche Taco Trio in Tampa.",
+      "why_flowcode_fits": "Limited tests need quick customer feedback from specific restaurants. A code on test packaging or table cards links feedback to the exact market and item.",
+      "suggested_play": "Your Cantina Carne Asada test began Nov 12 in Nashville and Minneapolis-St. Paul, and the Avalanche Taco Trio is at select Tampa restaurants. You likely rely on sales data and social posts to judge reactions. Put a Flowcode on the test-item wrapper and sauce packet that opens a FlowHub with a short rating form and a Rewards sign-up. You would see feedback by item and market and which testers joined Rewards. How do you collect customer feedback on test items today?",
+      "would_measure": "Scans and ratings by test item and market, plus Rewards sign-ups from testers.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
     },
     {
       "company": "Taco Bell",
       "domain": "tacobell.com",
       "existing_customer": false,
       "rank": 4,
-      "title": "Manager Mendoza campaign: link TV and the stadium store takeover to the Special",
-      "channel": "tv",
-      "products": "flowcodes; flowhubs; analytics",
-      "score_total": 0.572,
-      "score_recency": 0.713,
-      "score_evidence": 0.5,
+      "title": "Redesigned app and Tuesday Drops: drive installs and Rewards sign-ups from physical touchpoints",
+      "channel": "app",
+      "products": "flowcodes; flowurls; flowhubs; flowid; analytics",
+      "score_total": 0.602,
+      "score_recency": 0.66,
+      "score_evidence": 0.15,
       "score_fit": 0.667,
-      "score_impact": 0.333,
-      "confidence": "medium",
-      "checks_passed": "f1_touchpoint; f3_matches_play; i3_live_or_upcoming",
-      "newest_source_date": "2026-10-05",
-      "source_urls": "https://lbbonline.com/news/fernando-mendoza-davante-adams-taco-bell | https://adage.com/media/tv-streaming/aa-hot-spots-taco-bell-fernanco-mendoza/",
-      "what_happening": "Taco Bell's football-season campaign features franchise players Fernando Mendoza and Davante Adams. TV ads show Mendoza as a rookie store manager. A \"Manager Mendoza's Special\" meal deal ties in, along with a takeover of a real Taco Bell in a stadium.",
-      "why_flowcode_fits": "The TV ads, the meal deal and the stadium store all point to one offer, but it is likely hard to see which touchpoint drives orders. A Flowcode on the spot and in the store can send people to the deal and the app with per-touchpoint tracking.",
-      "suggested_play": "Your football-season campaign with Fernando Mendoza as a rookie store manager has been on TV since September, with a Manager Mendoza's Special and a stadium store takeover. You likely cannot see which of the TV spot, the stadium store or social drives people to the deal. Add a dynamic Flowcode to the TV spot and on in-store signage and cups at the stadium location, opening a FlowHub with the Special, an app download and a Rewards sign-up. You would get scans by touchpoint and market, app installs and new members attributed to each. Which touchpoint do you think is driving Special redemptions today, and how would you know?",
-      "would_measure": "Scans per spot and per store, Special redemptions, app installs and Rewards sign-ups by touchpoint.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
+      "score_impact": 1.0,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f2_digital_action; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-09-25",
+      "source_urls": "https://www.nrn.com/quick-service/taco-bell-has-redesigned-its-loyalty-program | https://www.qsrmagazine.com/news/taco-bell-introduces-reimagined-app-experience/ | https://www.linkedin.com/posts/taco-bell_tacobell-app-loyalty-activity-7490835087131947008-QJRs | https://www.tbmenus.com/app/ | https://joy.so/blog/taco-bell-rewards-program/",
+      "what_happening": "Taco Bell redesigned its app in August with My Menu, My Mods, a new loyalty hub and a Tuesday Drops section. Rewards members earn 10 points per $1, and weekly drops like the Pretty Pink Picnic Kit run in the app.",
+      "why_flowcode_fits": "Taco Bell has a stronger app and loyalty offer, and in-restaurant and on-pack spaces can bring in new members. Codes at those places show which ones drive installs and first orders.",
+      "suggested_play": "Your redesigned app launched in early August with My Menu, My Mods, a new loyalty hub and a Tuesday Drops section. Many people in your restaurants and on your packaging likely do not use the app yet. Put Flowcodes on cups, bags, tray liners and counter signage that open a FlowHub showing this week's Tuesday Drop with a one-tap install or Rewards sign-up. Personalize the hub by location or loyalty tier through FlowID. You would see installs and sign-ups by restaurant and touchpoint, and which codes produce first orders. How do you currently credit in-store promotion for new app members?",
+      "would_measure": "Scans by restaurant and placement, app installs, new Rewards sign-ups, and Tuesday Drop participation.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
     },
     {
       "company": "Taco Bell",
       "domain": "tacobell.com",
       "existing_customer": false,
       "rank": 5,
-      "title": "Decades Menu Vine campaign: connect the nostalgia spot to the merch drop",
-      "channel": "tv",
+      "title": "Sauce packet recycling: make the packet a doorway to Rewards",
+      "channel": "packaging",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.59,
+      "score_recency": 0.343,
+      "score_evidence": 0.15,
+      "score_fit": 1.0,
+      "score_impact": 1.0,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-07-02",
+      "source_urls": "https://packaging-journal.de/en/yum-brands-is-focusing-on-more-circular-packaging/ | https://www.packagingeurope.com/one-million-taco-bell-sauce-packets-collected-through-us-recycling-programme/",
+      "what_happening": "Taco Bell and TerraCycle run a U.S. sauce packet recycling program open to all brands. They report one million packets collected over five years, and Rewards members can earn bonus points by registering their recycling email.",
+      "why_flowcode_fits": "The program asks people to match an email address across two systems. A code on the sauce packet could make joining one scan instead of a manual step.",
+      "suggested_play": "Your TerraCycle sauce packet program has collected one million packets over five years, and Rewards members can earn bonus points by registering the same email. Sign-up likely depends on people finding and following instructions on their own. Print a Flowcode on the sauce packet that opens a FlowHub explaining recycling and linking the program email to a Rewards account. You would see how many packets lead to registrations and how many Rewards members join the program. Flowcode result: LOVE CORN had 62% CRM conversion and 27k new customers from a packaging QR. How many Rewards members have linked their recycling email so far?",
+      "would_measure": "Packet scans by region, recycling registrations, linked Rewards accounts, and bonus point claims.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
+    },
+    {
+      "company": "Taco Bell",
+      "domain": "tacobell.com",
+      "existing_customer": false,
+      "rank": 6,
+      "title": "Olivia Rodrigo pink Baja Blast and festival activation",
+      "channel": "event",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.567,
+      "score_recency": 0.544,
+      "score_evidence": 0.15,
+      "score_fit": 0.667,
+      "score_impact": 1.0,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f3_matches_play; i1_scale_stated; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-08-31",
+      "source_urls": "https://www.eventmarketer.com/article/experiential-marketing-trend-of-the-week-concert-tie-ins/",
+      "what_happening": "Taco Bell launched the Olivia Rodrigo pink Baja Blast in select California, Las Vegas and Texas locations before a Sept 24 nationwide release. It ran an activation at her Daisy Chain Fields festival, serving samples and giving out merch.",
+      "why_flowcode_fits": "Festival sampling and limited-edition merch reach fans who likely stay unidentified. A code can capture them and send them to the drink and the app.",
+      "suggested_play": "Your Olivia Rodrigo 'You Seem Pretty Pink for a Baja Blast' drink launched in select markets and went nationwide on Sept 24, with an activation at her Daisy Chain Fields festival. You likely cannot tell how many sample recipients or merch holders became customers. Put Flowcodes on sample cups, merch and ambassador signage that open a FlowHub with a Rewards sign-up, the nearest store and the app. You would see scans by event and by market and who signed up. Which part of the festival activation do you measure today?",
+      "would_measure": "Scans by event, merch and cup, Rewards sign-ups, and drink-related store visits by market.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
+    },
+    {
+      "company": "Taco Bell",
+      "domain": "tacobell.com",
+      "existing_customer": false,
+      "rank": 7,
+      "title": "2016 Decades Menu: link the Vine spot, Divine app and Tuesday Drop merch",
+      "channel": "app",
       "products": "flowcodes; flowurls; flowhubs; analytics",
       "score_total": 0.512,
       "score_recency": 0.528,
@@ -932,87 +1100,64 @@
       "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i3_live_or_upcoming",
       "newest_source_date": "2026-08-27",
       "source_urls": "https://www.campaignlive.com/article/taco-bell-channels-classic-vine-nostalgic-ad-menu-drop/1968546",
-      "what_happening": "Taco Bell launched a 2016-themed Decades Menu with a nostalgic spot built from Vines. It partnered with the Divine app and offered merch through a Rewards Tuesday Drop with Anti Social Social Club and Camp Snap.",
-      "why_flowcode_fits": "The spot and the Divine partnership create interest, and the merch drop is a Rewards-only reward. A scannable link from the spot to the Drop can bring new viewers into Rewards and show which exposures led to sign-ups.",
-      "suggested_play": "Your 2016-themed Decades Menu spot, launched in late August, comes with a Rewards Tuesday Drop of merch from Anti Social Social Club and Camp Snap. You likely cannot see how many people who watched the spot went on to join Rewards for the Drop. Put a dynamic Flowcode on the spot and a FlowURL in the Divine partnership content, opening a FlowHub with the Decades Menu, Drop access and a Rewards sign-up. You would get scans by channel, new Rewards members and Drop entries tied to each source. Flowcode's Lunchables campaign saw a 50% campaign conversion. How do you tell today which creative brings new members into the Tuesday Drop?",
-      "would_measure": "Scans and clicks by creative and channel, new Rewards sign-ups, Drop entries and app installs.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
-    },
-    {
-      "company": "Taco Bell",
-      "domain": "tacobell.com",
-      "existing_customer": false,
-      "rank": 6,
-      "title": "Olivia Rodrigo pink Baja Blast and festival activation",
-      "channel": "event",
-      "products": "flowcodes; flowhubs; flowid",
-      "score_total": 0.501,
-      "score_recency": 0.544,
-      "score_evidence": 0.15,
-      "score_fit": 0.667,
-      "score_impact": 0.667,
-      "confidence": "low",
-      "checks_passed": "f1_touchpoint; f3_matches_play; i2_national; i3_live_or_upcoming",
-      "newest_source_date": "2026-08-31",
-      "source_urls": "https://www.eventmarketer.com/article/experiential-marketing-trend-of-the-week-concert-tie-ins/",
-      "what_happening": "Taco Bell launched the Olivia Rodrigo pink Baja Blast, rolled out regionally then nationally on Sept 24, and ran a pink activation at her Daisy Chain Fields festival with samples and limited-edition merch.",
-      "why_flowcode_fits": "Festival attendees get samples and merch but are likely not captured as known customers. A code on cups and merch can convert them into Rewards members.",
-      "suggested_play": "Your pink Baja Blast activation at Olivia Rodrigo's Daisy Chain Fields festival gave out samples and limited-edition merch to a big young audience. You likely did not capture who they were or what they did next. Put a Flowcode on sample cups and merch that opens a FlowHub with Rewards sign-up, an app download and the nationwide drink availability. You would get scans by event, new members and later redemptions linked to the festival. Flowcode's CLEAR deployment saw 1.2M+ scans across 7,000+ codes. How do you follow up with festival guests today?",
-      "would_measure": "Scans by event and item, Rewards sign-ups, app installs and follow-up redemptions.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
-    },
-    {
-      "company": "Taco Bell",
-      "domain": "tacobell.com",
-      "existing_customer": false,
-      "rank": 7,
-      "title": "Sauce packet recycling program with TerraCycle",
-      "channel": "packaging",
-      "products": "flowcodes; flowhubs; analytics",
-      "score_total": 0.44,
-      "score_recency": 0.343,
-      "score_evidence": 0.15,
-      "score_fit": 0.667,
-      "score_impact": 0.667,
-      "confidence": "low",
-      "checks_passed": "f1_touchpoint; f3_matches_play; i1_scale_stated; i3_live_or_upcoming",
-      "newest_source_date": "2026-07-02",
-      "source_urls": "https://packaging-journal.de/en/yum-brands-is-focusing-on-more-circular-packaging/ | https://www.packagingeurope.com/one-million-taco-bell-sauce-packets-collected-through-us-recycling-programme/",
-      "what_happening": "Taco Bell and TerraCycle run a US sauce packet recycling program, reporting one million items collected over five years.",
-      "why_flowcode_fits": "Sauce packets can carry a code that opens recycling instructions and a Rewards sign-up, linking a sustainability message to measurable engagement.",
-      "suggested_play": "Your TerraCycle sauce packet recycling program, reporting one million items collected over five years, relies on guests knowing about it. You likely cannot see how many learn of it from the packet. Add a Flowcode to sauce packets that opens a FlowHub with recycling instructions and a Rewards sign-up. You would get scans by product and region and sign-ups from sustainability-minded guests. How do you promote the program to guests today?",
-      "would_measure": "Scans by packet type and region, program sign-ups, Rewards enrolment.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
+      "what_happening": "Taco Bell launched a 2016-themed Decades Menu with a Vine-inspired spot, a partnership with the Divine app, and exclusive Tuesday Drop merch (Anti Social Social Club, Camp Snap) plus an in-app scavenger hunt from Aug 25 to Sept 14.",
+      "why_flowcode_fits": "The campaign spreads across TV, a partner app and Rewards. One code can send people to a single hub that routes them to the right place and shows which route worked.",
+      "suggested_play": "Your 2016 Decades Menu launched on Aug 27 with a Vine-style spot, the Divine app partnership and a Rewards scavenger hunt running to Sept 14. You likely cannot see how many people moved from the spot to the app hunt or the Divine tie-in. Put a Flowcode on the spot and a branded FlowURL in partner posts that open a FlowHub linking to the Rewards app hunt, the merch drop and Divine. You would see which touchpoint drove Rewards activity during the hunt. How do you tie your TV spots to in-app scavenger hunt participation today?",
+      "would_measure": "Scans and clicks by source, Rewards app opens and hunt participation, and merch drop entries.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
     },
     {
       "company": "Taco Bell",
       "domain": "tacobell.com",
       "existing_customer": false,
       "rank": 8,
-      "title": "College Football Playoff tailgate Student Section",
+      "title": "Birmingham New Street opening: scan-to-claim free taco and prize wheel",
       "channel": "event",
-      "products": "flowcodes; flowhubs; flowid; analytics",
-      "score_total": 0.316,
-      "score_recency": 0.15,
+      "products": "flowcodes; flowhubs; flowid",
+      "score_total": 0.499,
+      "score_recency": 0.262,
       "score_evidence": 0.15,
-      "score_fit": 0.667,
-      "score_impact": 0.333,
+      "score_fit": 1.0,
+      "score_impact": 0.667,
       "confidence": "low",
-      "checks_passed": "f1_touchpoint; f2_digital_action; i1_scale_stated",
-      "newest_source_date": "2026-03-17",
-      "source_urls": "https://engagestar.com/insights/taco-bell-college-football-playoff-national-championship/",
-      "what_happening": "Each year Taco Bell runs a Live Más Student Section for 500 students at the CFP National Championship Tailgate, with life-sized sauce packet photo ops and free food trucks, designed for TV and social exposure.",
-      "why_flowcode_fits": "The activation gets broadcast and social visibility but likely captures little first-party data on the students. Codes at the photo ops and food trucks can turn presence into Rewards members.",
-      "suggested_play": "Your yearly Live Más Student Section at the CFP National Championship Tailgate gives 500 students a stage-side experience, built for TV and social visibility. You likely cannot tell how many of those students became Rewards members. Put Flowcodes on the sauce packet photo ops, food truck windows and giveaways that open a FlowHub with Rewards sign-up and a share prompt. You would get scans by station, new members and emails from a young audience. What do you capture from tailgate guests after the event today?",
-      "would_measure": "Scans by station, new Rewards sign-ups, emails captured and social shares.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
+      "checks_passed": "f1_touchpoint; f2_digital_action; f3_matches_play; i1_scale_stated; i3_live_or_upcoming",
+      "newest_source_date": "2026-05-28",
+      "source_urls": "https://www.compass-group.co.uk/media/one-retail-launches-taco-bell-in-birmingham-new-street-station/",
+      "what_happening": "Taco Bell opened a station restaurant at Birmingham New Street with a free Crunchy Taco for the first 100 customers and a prize wheel for merch.",
+      "why_flowcode_fits": "A promo built on a queue and a wheel can capture each participant's details through a scan.",
+      "suggested_play": "Your Birmingham New Street station restaurant opened with a free Crunchy Taco for the first 100 customers and a prize wheel for merch. You likely have no record of who took part or whether they return. Put a Flowcode on the queue signage and prize wheel that opens a FlowHub where people claim their prize, join Rewards and see store hours. You would get an opted-in list and a count of first-day visitors. How do you capture contact details from new store openings today?",
+      "would_measure": "Scans, sign-ups, prize claims and return visits after opening day.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
     },
     {
       "company": "Taco Bell",
       "domain": "tacobell.com",
       "existing_customer": false,
       "rank": 9,
-      "title": "College of Idaho basketball sponsorship",
+      "title": "Taco Bell grocery line: on-pack codes for Cravings Kits, sauces and seasonings",
+      "channel": "packaging",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.49,
+      "score_recency": 0.508,
+      "score_evidence": 0.15,
+      "score_fit": 0.667,
+      "score_impact": 0.667,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; f3_matches_play; i2_national; i3_live_or_upcoming",
+      "newest_source_date": "2026-08-22",
+      "source_urls": "https://www.vantagepointinsights.com/post/packaging-changes-that-support-brand-growth-a-case-study | https://www.tastingtable.com/2155000/walmart-fast-food-chain-partner-taco-bell/ | https://www.foodrepublic.com/2239204/brand-behind-taco-bell-grocery-store-hot-sauces/",
+      "what_happening": "Taco Bell Home Originals products (Cravings Kits, seasonings, sauces, bottled hot sauces with Kraft Heinz) are sold at Walmart, BJ's, Sam's Club and other grocers. The line's packaging was redesigned to tie back to the restaurant brand.",
+      "why_flowcode_fits": "Grocery sales are anonymous to Taco Bell. An on-pack code can link shoppers to the restaurant app and capture who they are.",
+      "suggested_play": "Your Cravings Kits, seasonings and hot sauces are sold at Walmart, BJ's, Sam's Club and other grocers, and the Home Originals packaging was redesigned to echo the restaurant brand. You likely cannot see who buys these at the grocery shelf or whether they come to your restaurants. Put a GS1 Digital Link-compliant Flowcode on the packs that opens a FlowHub with recipes, a Rewards sign-up and an offer for the restaurant. You would see scans by product and retailer and new Rewards members from grocery shoppers. Flowcode result: Lunchables saw a 22% sales lift and 50% campaign conversion from playable packaging. Who owns the link between grocery and Rewards on your team?",
+      "would_measure": "Scans by product and retailer, Rewards sign-ups from grocery packs, and restaurant offer redemptions.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
+    },
+    {
+      "company": "Taco Bell",
+      "domain": "tacobell.com",
+      "existing_customer": false,
+      "rank": 10,
+      "title": "College of Idaho basketball sponsorship: codes on jerseys and courtside barriers",
       "channel": "sponsorship",
       "products": "flowcodes; flowhubs; analytics",
       "score_total": 0.289,
@@ -1024,11 +1169,34 @@
       "checks_passed": "f1_touchpoint; f3_matches_play; i3_live_or_upcoming",
       "newest_source_date": "2025-11-20",
       "source_urls": "https://yoteathletics.com/news/2025/11/20/talking-taco-bell-yotes-womens-basketball-partners-with-taco-bell.aspx",
-      "what_happening": "Taco Bell sponsors College of Idaho basketball with its logo on women's team jerseys and the purple student section barriers.",
-      "why_flowcode_fits": "Student section barriers are a visible spot for a code that converts students into Rewards members, with scans reported by game.",
-      "suggested_play": "Your sponsorship of College of Idaho basketball, with the logo on jerseys and the purple student-section barriers since last season, reaches students at every home game. You likely have no way to measure sign-ups from it. Put a Flowcode on the barriers and arena screens opening a FlowHub with a Rewards sign-up and a game-day offer. You would get scans by game and new student members. Flowcode's NFL Shop code drove 10k connections in 60 seconds. How do you measure the return from your local sponsorships today?",
-      "would_measure": "Scans by game, Rewards sign-ups, offer redemptions and nearby store traffic.",
-      "generated_at": "2026-11-18T19:59:34.417015+00:00"
+      "what_happening": "Taco Bell is a multi-year sponsor of College of Idaho women's basketball with its logo on jerseys, and it sponsors the purple barriers in front of the student section at men's and women's home games.",
+      "why_flowcode_fits": "Sponsor logos in a crowd give little measurable return. A scannable code on the barriers could capture student sign-ups and show the value.",
+      "suggested_play": "Your College of Idaho deal puts the Taco Bell logo on women's basketball jerseys and on the purple barriers in front of the student section. You likely cannot measure what fans do after seeing the logos. Add a Flowcode to the barriers and arena screens that opens a FlowHub with a Rewards sign-up and a game-night offer. You would see scans per game and who joined. How do you currently show the return on local sponsorships like this?",
+      "would_measure": "Scans per game and placement, Rewards sign-ups, and offer redemptions near campus.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
+    },
+    {
+      "company": "Taco Bell",
+      "domain": "tacobell.com",
+      "existing_customer": false,
+      "rank": 11,
+      "title": "Live Más Student Section: capture the 500 students",
+      "channel": "event",
+      "products": "flowcodes; flowhubs; flowid; analytics",
+      "score_total": 0.233,
+      "score_recency": 0.15,
+      "score_evidence": 0.15,
+      "score_fit": 0.333,
+      "score_impact": 0.333,
+      "confidence": "low",
+      "checks_passed": "f1_touchpoint; i1_scale_stated",
+      "newest_source_date": "2026-03-17",
+      "source_urls": "https://engagestar.com/insights/taco-bell-college-football-playoff-national-championship/",
+      "what_happening": "Taco Bell runs a Live Más Student Section for 500 students at the CFP National Championship Tailgate, built with agencies Etzel and Star. It includes photo ops, games and free food trucks.",
+      "why_flowcode_fits": "A branded on-site event with photo ops and games is a natural place for a scan-to-join code. Without one, the contact details of students who attend likely stay with the event team.",
+      "suggested_play": "Your Live Más Student Section at the CFP Championship Tailgate hosts 500 students each year, with photo ops, games and food trucks. You likely have few ways to follow up with those students after the event. Put Flowcodes on the photo-op signage, game stations and food truck windows that open a FlowHub with a Rewards sign-up, an app download and an offer for the next visit. Give each station its own code. You would get sign-ups and scans by station and a list of opted-in students you can reach later. Flowcode result: NFL Shop made $25k in revenue and 10k connections in 60 seconds. What do you do today to stay in touch with the students after the tailgate?",
+      "would_measure": "Scans per station, Rewards sign-ups, app installs, and later redemption of the follow-up offer.",
+      "generated_at": "2026-11-18T20:28:09.957405+00:00"
     }
   ]
 }

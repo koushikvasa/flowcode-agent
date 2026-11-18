@@ -60,7 +60,7 @@ async def run_company(
     generated_at = datetime.now(timezone.utc)
 
     def step(stage: str, message: str) -> None:
-        log.info("%s: %s", stage, message)
+        log.info("%s: %s  [$%.3f, %d searches so far]", stage, message, stats.cost_usd, stats.search_calls)
         if on_progress:
             on_progress(stage, message)
 

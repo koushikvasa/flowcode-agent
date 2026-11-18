@@ -11,3 +11,4 @@ CLAUDE.md
 
 .vercel
 .env*
+.cache-before-cold-run/

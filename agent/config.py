@@ -66,4 +66,4 @@ CONCURRENCY = 8  # parallel network calls
 REQUEST_TIMEOUT_S = 30  # web requests
 LLM_TIMEOUT_S = 300  # Claude calls; match thinks over all signals at once
 REPORT_FRESH_DAYS = 7  # web app: a saved report younger than this is shown instead of re-running
-DAILY_RUN_LIMIT = 20  # web app: new (paid) runs per day, about $6; saved reports are always free
+DAILY_RUN_LIMIT = 20  # web app: new (paid) runs per day, about $9 at ~$0.45 each; saved reports are always free
