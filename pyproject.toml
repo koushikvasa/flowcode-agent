@@ -5,12 +5,14 @@ requires-python = ">=3.11"
 dependencies = [
     "anthropic>=2.10.0",
     "exa-py>=2.28.0",
+    "fastapi>=0.164.0",
     "pydantic>=2.14.3",
 ]
 
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",
+    "uvicorn>=0.54.0",
 ]
 
 [tool.pytest.ini_options]
