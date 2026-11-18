@@ -48,8 +48,8 @@ MAJOR_PRESS_DOMAINS = {
 }
 EVIDENCE_FULL_AT = 2.0  # sum of tier weights that counts as full evidence (two first-party sources)
 
-# Confidence: rule-based, so a seller can see why.
-HIGH_MIN_SOURCES = 2  # plus: one first_party or major_press, no unknowns, newest source under HIGH_MAX_AGE_DAYS
+# Confidence: rule-based, so a seller can see why. No first_party or major_press source at all = low.
+HIGH_MIN_SOURCES = 2  # plus: no unknowns, newest source under HIGH_MAX_AGE_DAYS
 HIGH_MAX_AGE_DAYS = 90
 LOW_MIN_UNKNOWNS = 2  # 2+ unknown answers = low
 LOW_MIN_AGE_DAYS = 180  # newest source older than this = low

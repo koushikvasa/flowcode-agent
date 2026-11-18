@@ -55,10 +55,10 @@ def checklist_score(verdict: Verdict, weights: dict[str, float]) -> float:
 
 def confidence(tiers: dict[str, str], verdict: Verdict, age_days: int) -> Literal["high", "medium", "low"]:
     unknowns = sum(getattr(verdict, f).answer == "unknown" for f in CHECK_FIELDS)
-    if unknowns >= config.LOW_MIN_UNKNOWNS or age_days > config.LOW_MIN_AGE_DAYS:
-        return "low"
     strong = any(t in ("first_party", "major_press") for t in tiers.values())
-    if len(tiers) >= config.HIGH_MIN_SOURCES and strong and unknowns == 0 and age_days <= config.HIGH_MAX_AGE_DAYS:
+    if not strong or unknowns >= config.LOW_MIN_UNKNOWNS or age_days > config.LOW_MIN_AGE_DAYS:
+        return "low"  # only blogs and small sites, too many unanswered checks, or old news
+    if len(tiers) >= config.HIGH_MIN_SOURCES and unknowns == 0 and age_days <= config.HIGH_MAX_AGE_DAYS:
         return "high"
     return "medium"
 
