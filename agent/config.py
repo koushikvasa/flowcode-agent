@@ -59,3 +59,4 @@ TOP_N = 5  # opportunities shown in the report
 CONCURRENCY = 8  # parallel network calls
 REQUEST_TIMEOUT_S = 30  # web requests
 LLM_TIMEOUT_S = 300  # Claude calls; match thinks over all signals at once
+REPORT_FRESH_DAYS = 7  # web app: a saved report younger than this is shown instead of re-running
